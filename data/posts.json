@@ -3272,5 +3272,467 @@
     "reason": "Company news, customer story, announcement or essay without enough technical depth."
    }
   }
+ ],
+ "ben": [
+  {
+   "title": "They expect us to keep changing",
+   "url": "https://benv.ca/blog/posts/they-expect-us-to-keep-changing",
+   "date": "2025-05-14T00:00:00+00:00",
+   "summary": "If you’re a software engineer and you’re feeling anxious, disoriented, or vaguely defensive lately — you’re not alone. AI is changing how we build things. Fast. And for many developers, it’s triggering a new,…",
+   "seen": "2026-10-19T15:53:39.727350+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Now or Never Now",
+   "url": "https://benv.ca/blog/posts/now-or-never-now",
+   "date": "2024-11-08T00:00:00+00:00",
+   "summary": "This is mostly a verbatim repost of a Twitter thread about my impending Sentry departure from Wednesday, October 30th, 2024, but with some added commentary and laid out for the web. Some news: Friday is my last day at…",
+   "seen": "2026-10-19T15:53:39.727350+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Counterscale and the New Self-Hosted",
+   "url": "https://benv.ca/blog/posts/counterscale-and-the-new-self-hosted",
+   "date": "2024-06-24T00:00:00+00:00",
+   "summary": "Back in January I launched an open source product. It’s called Counterscale , and it’s a web analytics service to help you understand your website traffic. Feature-wise, Counterscale isn’t that impressive. It does…",
+   "seen": "2026-10-19T15:53:39.727350+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "backend",
+     "databases"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "The Hardest Problem",
+   "url": "https://benv.ca/blog/posts/the-hardest-problem",
+   "date": "2024-03-04T00:00:00+00:00",
+   "summary": "For what feels like forever now, there’s been an ongoing debate about the rising complexity of web development. Developers feel overwhelmed with the amount of choice they face when starting a new project. Which…",
+   "seen": "2026-10-19T15:53:39.727350+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": ""
+   }
+  },
+  {
+   "title": "The Community Startup Scenes We Lost",
+   "url": "https://benv.ca/blog/posts/the-community-startup-scenes-we-lost",
+   "date": "2023-12-12T00:00:00+00:00",
+   "summary": "The late 2000s/early 2010s was the last time I remember where local communities were a big part of finding success if you were launching a web startup. I experienced this firsthand in Toronto at a volunteer-run event…",
+   "seen": "2026-10-19T15:53:39.727350+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": ""
+   }
+  },
+  {
+   "title": "The Story of Third-party JavaScript",
+   "url": "https://benv.ca/blog/posts/the-story-of-third-party-javascript",
+   "date": "2023-10-03T00:00:00+00:00",
+   "summary": "It’s been 10 years since myself and Anton Kovalyov published Third-party JavaScript (Manning, 2013). As far as I know, it’s the first and only book dedicated entirely to teaching readers how to build JavaScript…",
+   "seen": "2026-10-19T15:53:39.727350+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "backend"
+    ],
+    "reason": ""
+   }
+  }
+ ],
+ "dhh": [
+  {
+   "title": "Redundancy is the engine of progress",
+   "url": "https://world.hey.com/dhh/redundancy-is-the-engine-of-progress-76499402",
+   "date": "2026-10-07T08:01:15+00:00",
+   "summary": "In the 18th century, 90% of Americans worked in agriculture to feed themselves and the nation. Today, it's around 1% . In the 1950s, there were hundreds of thousands of telephone switchboard operators . Today, they're…",
+   "seen": "2026-10-19T15:53:39.727350+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Over my dead pencil",
+   "url": "https://world.hey.com/dhh/over-my-dead-pencil-fb0f3647",
+   "date": "2026-10-06T07:28:30+00:00",
+   "summary": "Two weeks ago at Rails World, I told my fellow programmers that it's time to put down the pencils . We're not going to write the vast majority of code by hand any longer. Coding agents have gotten so good that it's…",
+   "seen": "2026-10-19T15:53:39.727350+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "What on earth are you dooming about?",
+   "url": "https://world.hey.com/dhh/what-on-earth-are-you-dooming-about-386cc1da",
+   "date": "2026-10-05T13:30:45+00:00",
+   "summary": "Paradise is not lost, the world is not ending, and most material metrics of humanity have never been better. Yet the endless, incessant dooming about the climate, the inequality, and AI is everywhere. We may have…",
+   "seen": "2026-10-19T15:53:39.727350+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Endless execution",
+   "url": "https://world.hey.com/dhh/endless-execution-4157e065",
+   "date": "2026-08-09T20:27:38+00:00",
+   "summary": "The age of agents has brought us endless execution. Every idea, every hunch, every experiment is now within immediate reach. For people with endless ideas, this is nirvana. It's also the most fucking sci-fi thing I've…",
+   "seen": "2026-10-19T15:53:39.727350+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "I'm sorry, Dave",
+   "url": "https://world.hey.com/dhh/i-m-sorry-dave-380ec27d",
+   "date": "2026-07-27T15:26:47+00:00",
+   "summary": "Stanley Kubrick's 2001: A Space Odyssey has always been an incredible movie, but its value as a cautionary tale has increased exponentially since AI took off. The iconic scene with HAL 9000 refusing to open the pod-bay…",
+   "seen": "2026-10-19T15:53:39.727350+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Sitting down with Senra",
+   "url": "https://world.hey.com/dhh/sitting-down-with-senra-69f5e368",
+   "date": "2026-07-26T17:22:08+00:00",
+   "summary": "Jason and I have been making the same argument for over a quarter of a century now: Small teams can do incredible things when they embrace their constraints . And when they work in software or media or other…",
+   "seen": "2026-10-19T15:53:39.727350+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Wolves, sheep, and gypsies",
+   "url": "https://world.hey.com/dhh/wolves-sheep-and-gypsies-ba44af6a",
+   "date": "2026-07-21T20:02:31+00:00",
+   "summary": "In 2012, the first Danish wolf in nearly two hundred years was discovered in the northwestern part of the country. Their numbers increased slowly in the years that followed, and by 2020, fewer than ten wolves were…",
+   "seen": "2026-10-19T15:53:39.727350+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Three sacred cows that must die so Europe can live",
+   "url": "https://world.hey.com/dhh/three-sacred-cows-that-must-die-so-europe-can-live-1afb203d",
+   "date": "2026-07-16T19:15:59+00:00",
+   "summary": "The decline of Europe is not inevitable, despite how much Americans love to joke/proclaim that the continent is doomed to become an open-air museum. Sure, it's possible that things have to get worse before they get…",
+   "seen": "2026-10-19T15:53:39.727350+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Dell is on a roll with the XPS",
+   "url": "https://world.hey.com/dhh/dell-is-on-a-roll-with-the-xps-5a09a84e",
+   "date": "2026-07-14T22:04:28+00:00",
+   "summary": "We've been buying servers from Dell since the 2000s at 37signals , but I was never too impressed with their personal computers. They either felt cheap or enterprisey to me. Like they were made exclusively for people…",
+   "seen": "2026-10-19T15:53:39.727350+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "backend"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "The will to power will return",
+   "url": "https://world.hey.com/dhh/the-will-to-power-will-return-58ffb9dc",
+   "date": "2026-07-12T18:46:19+00:00",
+   "summary": "In the 1980s, France started 43 nuclear reactors across 14 sites . On average, each reactor took just seven years to build. Forty years later, all but one of these reactors are still running, and they continue to…",
+   "seen": "2026-10-19T15:53:39.727350+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": ""
+   }
+  },
+  {
+   "title": "But Y",
+   "url": "https://world.hey.com/dhh/but-y-2c04e16a",
+   "date": "2026-07-11T23:41:48+00:00",
+   "summary": "It's no mystery to me why the Tesla Model Y is the world's best-selling car. As a total package, I could make a fair argument that it's simply because it is the world's best car. I'm no stranger to Teslas at this…",
+   "seen": "2026-10-19T15:53:39.727350+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": ""
+   }
+  },
+  {
+   "title": "European Delusions & Danish Drones",
+   "url": "https://world.hey.com/dhh/european-delusions-danish-drones-a3da0d27",
+   "date": "2026-06-19T11:03:21+00:00",
+   "summary": "Europe is finally waking up from many decades of naive pacifism. While the continent is loath to give America credit, this is largely where it's due, as Trump has pulled back on blanket security guarantees. Well, that…",
+   "seen": "2026-10-19T15:53:39.727350+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": ""
+   }
+  },
+  {
+   "title": "The Rape of Britain",
+   "url": "https://world.hey.com/dhh/the-rape-of-britain-610412f8",
+   "date": "2026-06-17T14:19:34+00:00",
+   "summary": "Rupert Lowe , member of the British Parliament and leader of the Restore Britain party, released The Rape Gang Inquiry yesterday. It details the industrial-scale sexual atrocities committed by predominantly Pakistani…",
+   "seen": "2026-10-19T15:53:39.727350+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": ""
+   }
+  },
+  {
+   "title": "A pond of interesting problems",
+   "url": "https://world.hey.com/dhh/a-pond-of-interesting-problems-5f697567",
+   "date": "2026-06-03T07:10:51+00:00",
+   "summary": "The great joy of having built a successful business that employs a broad team of talented people is that I get to fish for exactly the kind of problems that most interest me, most of the time. Usually, this coincides…",
+   "seen": "2026-10-19T15:53:39.727350+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Let the agents democratize open source",
+   "url": "https://world.hey.com/dhh/let-the-agents-democratize-open-source-9fd630a9",
+   "date": "2026-06-01T09:22:27+00:00",
+   "summary": "The open source movement spent decades fighting for everyone's right to change software, through free access to code and permissive licenses to release improvements. But at the dawn of the AI revolution, as this…",
+   "seen": "2026-10-19T15:53:39.727350+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Basecamp Five",
+   "url": "https://world.hey.com/dhh/basecamp-five-8fcfd2ef",
+   "date": "2026-05-26T10:52:29+00:00",
+   "summary": "I've been working on Basecamp for half my life, and nearly my entire professional career in software. The first code was written in the summer of 2003 when I was just 23. Now I'm 46, and we've just released the fifth…",
+   "seen": "2026-10-19T15:53:39.727350+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Celebrating computers at Omacon",
+   "url": "https://world.hey.com/dhh/celebrating-computers-at-omacon-163eb568",
+   "date": "2026-04-21T10:56:33+00:00",
+   "summary": "Do you see the same truth? That's how C.S. Lewis defined the essence of friendship. And that's what we gathered 130 people in New York to honor for Omacon two weeks ago. Seeing the same truth: A love of computers.…",
+   "seen": "2026-10-19T15:53:39.727350+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": ""
+   }
+  },
+  {
+   "title": "The malleable computer",
+   "url": "https://world.hey.com/dhh/the-malleable-computer-7c187a9b",
+   "date": "2026-04-15T15:06:27+00:00",
+   "summary": "Open source promised that users would be free to change whatever code they were running. The reality, however, is that hardly any of them ever did — it was simply too hard. Now, with AI, it suddenly isn't. This is very…",
+   "seen": "2026-10-19T15:53:39.727350+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Panther Lake is the real deal",
+   "url": "https://world.hey.com/dhh/panther-lake-is-the-real-deal-4bd731f1",
+   "date": "2026-04-06T12:39:21+00:00",
+   "summary": "Intel really delivered with Panther Lake. A 2026 Dell XPS 14 using this chipset with an IPS screen can hit just 1.4 watts of idle power draw on Omarchy . That's good enough for over 47 hours!! And in real-world mixed…",
+   "seen": "2026-10-19T15:53:39.727350+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Basecamp becomes agent accessible",
+   "url": "https://world.hey.com/dhh/basecamp-becomes-agent-accessible-3ae6b949",
+   "date": "2026-03-25T17:37:25+00:00",
+   "summary": "In the past 18 months, we've experimented with a ton of AI-infused features at 37signals. Fizzy had all sorts of attempts. As did Basecamp. But as Microsoft and many others have realized, it's not that easy to make…",
+   "seen": "2026-10-19T15:53:39.727350+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai",
+     "backend"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Denmark desperately needs more inequality",
+   "url": "https://world.hey.com/dhh/denmark-desperately-needs-more-inequality-8e84a8d0",
+   "date": "2026-03-23T17:35:04+00:00",
+   "summary": "The Danish election is tomorrow. One of the central themes in the incumbent campaign has been a proposed wealth tax. The fig leaf for this proposal was \"smaller classrooms in the early grades\", but that quickly fell…",
+   "seen": "2026-10-19T15:53:39.727350+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": ""
+   }
+  },
+  {
+   "title": "ONCE (Again)",
+   "url": "https://world.hey.com/dhh/once-again-3e99f755",
+   "date": "2026-03-16T18:03:01+00:00",
+   "summary": "The original concept for ONCE sought to sell self-hostable web apps for a one-time fee . That didn't work. Sure, we recouped the investment on Campfire, our chat app, but that was it. You gotta listen when the market…",
+   "seen": "2026-10-19T15:53:39.727350+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "backend"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Omacon comes to New York",
+   "url": "https://world.hey.com/dhh/omacon-comes-to-new-york-e6ee93cb",
+   "date": "2026-02-18T16:23:03+00:00",
+   "summary": "The vibes around Linux are changing fast. Companies of all shapes and sizes are paying fresh attention. The hardware game on x86 is rapidly improving . And thanks to OpenCode and Claude Code, terminal user interfaces…",
+   "seen": "2026-10-19T15:53:39.727350+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Clankers with claws",
+   "url": "https://world.hey.com/dhh/clankers-with-claws-9f86fa71",
+   "date": "2026-02-05T15:30:07+00:00",
+   "summary": "With OpenClaw you're giving AI its own machine, long-term memory, reminders, and persistent execution. The model is no longer confined to a prompt-response cycle, but able to check its own email, Basecamp…",
+   "seen": "2026-10-19T15:53:39.727350+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Cloud gaming is kinda amazing",
+   "url": "https://world.hey.com/dhh/cloud-gaming-is-kinda-amazing-b8a19c57",
+   "date": "2026-02-03T14:01:29+00:00",
+   "summary": "I fully understand the nostalgia for real ownership of physical-media games. I grew up on cassette tapes (C64 + Amstrad 464!), floppy disks (C64 5-1/4\" then Amiga 3-1/2\"), cartridges, and CDs. I occasionally envy the…",
+   "seen": "2026-10-19T15:53:39.727350+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Promoting AI agents",
+   "url": "https://world.hey.com/dhh/promoting-ai-agents-3ee04945",
+   "date": "2026-01-07T09:03:58+00:00",
+   "summary": "At the end of last year, AI agents really came alive for me. Partly because the models got better, but more so because we gave them the tools to take their capacity beyond pure reasoning. Now coding agents are…",
+   "seen": "2026-10-19T15:53:39.727350+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "The O'Saasy License",
+   "url": "https://world.hey.com/dhh/the-o-saasy-license-336c5c8f",
+   "date": "2025-12-16T19:59:04+00:00",
+   "summary": "One of my favorite parts of the early web was how easy it was to see how the front-end was built. Before View Source was ruined by minification, transpiling, and bundling, you really could just right-click on any web…",
+   "seen": "2026-10-19T15:53:39.727350+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Europe is weak and delusional (but not doomed)",
+   "url": "https://world.hey.com/dhh/europe-is-weak-and-delusional-but-not-doomed-8b10e7cb",
+   "date": "2025-12-09T12:49:21+00:00",
+   "summary": "The gap between Europe's self-image and reality has grown into a chasm of delulu. One that's threatening to swallow the continent's future whole, as dangerous dependencies on others for energy, security, software, and…",
+   "seen": "2026-10-19T15:53:39.727350+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Fizzy is our fun, modern take on Kanban (and we made it open source!)",
+   "url": "https://world.hey.com/dhh/fizzy-is-our-fun-modern-take-on-kanban-and-we-made-it-open-source-54ac41b6",
+   "date": "2025-12-03T08:50:09+00:00",
+   "summary": "Kanban is a simple, practical approach to visually managing processes and backlogs by moving work cards from one progress column to another. Toyota came up with it to track their production lines back in the middle of…",
+   "seen": "2026-10-19T15:53:39.727350+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Six billion reasons to cheer for Shopify",
+   "url": "https://world.hey.com/dhh/six-billion-reasons-to-cheer-for-shopify-55720846",
+   "date": "2025-12-01T08:32:41+00:00",
+   "summary": "Black Friday is usually when ecommerce sets new records. This has certainly been true for Shopify through most of its existence. So much so that the company spends months in advance preparing for The Big Day(s). You'd…",
+   "seen": "2026-10-19T15:53:39.727350+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": ""
+   }
+  }
  ]
 }

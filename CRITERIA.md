@@ -1,5 +1,8 @@
 # What counts as relevant
 
+This applies only to company blogs (`"filter": true` in `blogs.json`). Posts from individual
+people (`"filter": false`) are always shown; for those, only tag the topics that fit.
+
 I'm a backend engineer. Keep a post only when its main subject is one or more of:
 
 - **ai** — engineering with AI: building on LLMs, agents, tool use, evals, prompting

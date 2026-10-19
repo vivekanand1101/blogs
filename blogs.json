@@ -3,54 +3,128 @@
     "id": "anthropic",
     "name": "Anthropic",
     "home": "https://www.anthropic.com/news",
+    "filter": true,
     "sources": [
-      { "type": "anthropic", "url": "https://www.anthropic.com/news" },
-      { "type": "anthropic", "url": "https://www.anthropic.com/engineering" }
+      {
+        "type": "anthropic",
+        "url": "https://www.anthropic.com/news"
+      },
+      {
+        "type": "anthropic",
+        "url": "https://www.anthropic.com/engineering"
+      }
     ]
   },
   {
     "id": "openai",
     "name": "OpenAI",
     "home": "https://openai.com/news/",
-    "sources": [{ "type": "feed", "url": "https://openai.com/news/rss.xml" }]
+    "filter": true,
+    "sources": [
+      {
+        "type": "feed",
+        "url": "https://openai.com/news/rss.xml"
+      }
+    ]
+  },
+  {
+    "id": "meta",
+    "name": "Meta Engineering",
+    "home": "https://engineering.fb.com/",
+    "filter": true,
+    "sources": [
+      {
+        "type": "feed",
+        "url": "https://engineering.fb.com/feed/"
+      }
+    ]
+  },
+  {
+    "id": "cloudflare",
+    "name": "Cloudflare",
+    "home": "https://blog.cloudflare.com/",
+    "filter": true,
+    "sources": [
+      {
+        "type": "feed",
+        "url": "https://blog.cloudflare.com/rss/"
+      }
+    ]
+  },
+  {
+    "id": "railway",
+    "name": "Railway",
+    "home": "https://blog.railway.com/",
+    "filter": true,
+    "sources": [
+      {
+        "type": "feed",
+        "url": "https://blog.railway.com/rss.xml"
+      }
+    ]
   },
   {
     "id": "armin",
     "name": "Armin Ronacher",
     "home": "https://lucumr.pocoo.org/",
-    "sources": [{ "type": "feed", "url": "https://lucumr.pocoo.org/feed.atom" }]
+    "filter": false,
+    "sources": [
+      {
+        "type": "feed",
+        "url": "https://lucumr.pocoo.org/feed.atom"
+      }
+    ]
   },
   {
     "id": "thorsten",
     "name": "Thorsten Ball",
     "home": "https://thorstenball.com/",
+    "filter": false,
     "sources": [
-      { "type": "feed", "url": "https://thorstenball.com/atom.xml" },
-      { "type": "feed", "url": "https://registerspill.thorstenball.com/feed" }
+      {
+        "type": "feed",
+        "url": "https://thorstenball.com/atom.xml"
+      },
+      {
+        "type": "feed",
+        "url": "https://registerspill.thorstenball.com/feed"
+      }
     ]
   },
   {
     "id": "mario",
     "name": "Mario Zechner",
     "home": "https://mariozechner.at/",
-    "sources": [{ "type": "feed", "url": "https://mariozechner.at/rss.xml" }]
+    "filter": false,
+    "sources": [
+      {
+        "type": "feed",
+        "url": "https://mariozechner.at/rss.xml"
+      }
+    ]
   },
   {
-    "id": "meta",
-    "name": "Meta Engineering",
-    "home": "https://engineering.fb.com/",
-    "sources": [{ "type": "feed", "url": "https://engineering.fb.com/feed/" }]
+    "id": "ben",
+    "name": "Ben Vinegar",
+    "home": "https://benv.ca/blog",
+    "filter": false,
+    "sources": [
+      {
+        "type": "feed",
+        "url": "https://benv.ca/blog/feed.xml"
+      }
+    ]
   },
   {
-    "id": "cloudflare",
-    "name": "Cloudflare",
-    "home": "https://blog.cloudflare.com/",
-    "sources": [{ "type": "feed", "url": "https://blog.cloudflare.com/rss/" }]
-  },
-  {
-    "id": "railway",
-    "name": "Railway",
-    "home": "https://blog.railway.com/",
-    "sources": [{ "type": "feed", "url": "https://blog.railway.com/rss.xml" }]
+    "id": "dhh",
+    "name": "DHH",
+    "home": "https://world.hey.com/dhh",
+    "filter": false,
+    "sources": [
+      {
+        "type": "feed",
+        "url": "https://world.hey.com/dhh/feed.atom"
+      }
+    ]
   }
 ]

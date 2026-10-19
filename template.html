@@ -120,7 +120,7 @@
     </div>
   </div>
   <main id="main"></main>
-  <footer>Refreshed daily; Claude reads every new post and keeps the ones about AI, backend engineering or databases. <span id="since"></span></footer>
+  <footer>Refreshed daily. Posts from people are always shown; from company blogs, Claude keeps the ones about AI, backend engineering or databases. <span id="since"></span></footer>
 </div>
 <script>
 const DATA = /*__DATA__*/null;
@@ -140,11 +140,12 @@ const state = {
 };
 const all = DATA.blogs.flatMap(b => b.posts.map(p => ({ ...p, blog: b })))
   .sort((a, b) => b.date.localeCompare(a.date));
-const relevant = p => p.verdict && p.verdict.relevant;
+const relevant = p => !p.blog.filter || !!(p.verdict && p.verdict.relevant);
 const isFresh = p => Date.now() - Date.parse(p.date) < WEEK;
 const isUnseen = p => lastVisit && Date.parse(p.seen) > lastVisit;
-const pool = () => all.filter(p => state.skipped ? p.verdict : relevant(p));
-const byTopic = (p, t = state.topic) => t === "all" || (p.verdict.topics || []).includes(t);
+const pool = () => all.filter(p => relevant(p) || (state.skipped && p.verdict));
+const topicsOf = p => (p.verdict && p.verdict.topics) || [];
+const byTopic = (p, t = state.topic) => t === "all" || topicsOf(p).includes(t);
 const byBlog = (p, b = state.blog) => b === "all" || p.blog.id === b;
 
 const el = (tag, props = {}, ...kids) => {
@@ -161,14 +162,14 @@ function postEl(p, { showSource = true, showSummary = true } = {}) {
   const meta = el("div", { className: "meta" },
     showSource ? el("span", { className: "src", textContent: p.blog.name }) : null,
     el("span", { textContent: fmtShort(p.date) }),
-    ...(p.verdict.topics || []).map(t => el("span", { className: "tag", textContent: TOPICS[t] || t })),
+    ...topicsOf(p).map(t => el("span", { className: "tag", textContent: TOPICS[t] || t })),
     !ok ? el("span", { className: "tag off", textContent: "Skipped" })
       : isUnseen(p) ? el("span", { className: "new", textContent: "New since last visit" })
       : isFresh(p) ? el("span", { className: "new", textContent: "This week" }) : null);
-  return el("a", { className: "post" + (ok ? "" : " skipped"), href: safeUrl(p.url), target: "_blank", rel: "noopener", title: p.verdict.reason || "" },
+  return el("a", { className: "post" + (ok ? "" : " skipped"), href: safeUrl(p.url), target: "_blank", rel: "noopener", title: (p.verdict && p.verdict.reason) || "" },
     meta, el("div", { className: "t", textContent: p.title }),
     showSummary && p.summary ? el("div", { className: "s", textContent: p.summary }) : null,
-    !ok && p.verdict.reason ? el("div", { className: "why", textContent: p.verdict.reason }) : null);
+    !ok && p.verdict && p.verdict.reason ? el("div", { className: "why", textContent: p.verdict.reason }) : null);
 }
 
 function chip(label, n, pressed, onclick) {
@@ -229,12 +230,14 @@ function render() {
 
 document.querySelectorAll(".toggle button").forEach(b => b.onclick = () => { state.view = b.dataset.view; render(); });
 document.getElementById("skipped").onchange = e => { state.skipped = e.target.checked; render(); };
+const companyPosts = all.filter(p => p.blog.filter);
 const kept = all.filter(relevant);
-const judged = all.filter(p => p.verdict).length;
+const judged = companyPosts.filter(p => p.verdict).length;
+const keptCompany = companyPosts.filter(relevant).length;
 document.getElementById("sub").textContent =
-  `AI, backend and database posts from ${DATA.blogs.length} blogs · ${kept.filter(isFresh).length} this week · updated ${new Date(DATA.updated).toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" })}`;
+  `Everything from ${DATA.blogs.filter(b => !b.filter).length} people, plus AI, backend and database posts from ${DATA.blogs.filter(b => b.filter).length} company blogs · ${kept.filter(isFresh).length} this week · updated ${new Date(DATA.updated).toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" })}`;
 document.getElementById("since").textContent =
-  `Claude kept ${kept.length} of ${judged} posts.` + (judged < all.length ? ` ${all.length - judged} are waiting to be judged.` : "") +
+  `From company blogs, Claude kept ${keptCompany} of ${judged} posts.` + (judged < companyPosts.length ? ` ${companyPosts.length - judged} are waiting to be judged.` : "") +
   (lastVisit ? ` Your last visit: ${new Date(lastVisit).toLocaleString()}.` : "");
 render();
 </script>

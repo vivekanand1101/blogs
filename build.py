@@ -98,7 +98,8 @@ def parse_feed(raw, base):
                 "title": text_of(it.find("title")),
                 "url": urljoin(base, text_of(it.find("link"))),
                 "date": parse_date(text_of(it.find("pubDate"))),
-                "summary": summarize(text_of(it.find("description"))),
+                "summary": summarize(text_of(it.find("description"))
+                                     or text_of(it.find("{http://purl.org/rss/1.0/modules/content/}encoded"))),
             })
     return posts
 
@@ -192,11 +193,13 @@ def fetch_all(blogs, store):
 
 
 def write_pending(blogs, store):
-    """List posts Claude hasn't judged yet, for the daily routine to read."""
-    names = {b["id"]: b["name"] for b in blogs}
+    """List posts Claude hasn't judged yet, for the daily routine to read.
+    Posts from blogs with "filter": false are always shown; Claude only tags their topics."""
+    by_id = {b["id"]: b for b in blogs}
     pending = [
-        {"url": p["url"], "blog": names.get(bid, bid), "title": p["title"], "summary": p.get("summary", "")}
-        for bid, ps in store.items() for p in ps if not p.get("verdict")
+        {"url": p["url"], "blog": by_id[bid]["name"], "title": p["title"], "summary": p.get("summary", ""),
+         "always_shown": not by_id[bid].get("filter", True)}
+        for bid, ps in store.items() if bid in by_id for p in ps if not p.get("verdict")
     ]
     PENDING.write_text(json.dumps(pending, indent=1, ensure_ascii=False) + "\n")
     print(f"[pending] {len(pending)} posts need a verdict -> {PENDING.relative_to(ROOT)}")
@@ -225,7 +228,7 @@ def render(blogs, store, status=None):
     payload = {
         "updated": NOW.isoformat(),
         "blogs": [
-            {"id": b["id"], "name": b["name"], "home": b["home"],
+            {"id": b["id"], "name": b["name"], "home": b["home"], "filter": b.get("filter", True),
              "ok": (status or {}).get(b["id"], {"ok": True})["ok"],
              "posts": store.get(b["id"], [])}
             for b in blogs

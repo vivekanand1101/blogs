@@ -14,6 +14,7 @@ import email.utils
 import html
 import json
 import re
+import shutil
 import sys
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -269,6 +270,8 @@ def render(blogs, store, status=None):
     data_js = json.dumps(payload, ensure_ascii=False).replace("</", "<\\/")
     page = (ROOT / "template.html").read_text().replace("/*__DATA__*/null", data_js)
     (OUT / "index.html").write_text(page)
+    for f in (ROOT / "static").iterdir():  # favicon shared with anandvivek.in
+        shutil.copy(f, OUT / f.name)
     print(f"[render] {OUT.relative_to(ROOT)}/index.html")
 
 

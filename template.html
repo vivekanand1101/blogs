@@ -3,147 +3,162 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Blog Tracker</title>
-<meta name="description" content="AI, backend and database posts from the tech blogs I follow, picked by Claude daily.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<title>Reading · Vivek Anand</title>
+<meta name="description" content="What Vivek Anand reads: every post from a few people and teams, plus AI, backend and database posts from company engineering blogs, picked by Claude daily.">
+<meta name="author" content="Vivek Anand">
+<link rel="icon" type="image/svg+xml" href="/favicon-editorial.svg">
+<link rel="canonical" href="https://blogs.anandvivek.in/">
+<meta property="og:title" content="Reading · Vivek Anand">
+<meta property="og:url" content="https://blogs.anandvivek.in/">
+<meta property="og:type" content="website">
 <style>
+  /* Same editorial palette and type as anandvivek.in and blog.anandvivek.in. */
   :root {
-    --bg: #faf9f6; --surface: #ffffff; --text: #1c1b19; --muted: #6b6860;
-    --line: #e6e3dc; --accent: #c2410c; --accent-soft: #fdeee6; --chip: #f1efe9;
+    --bg: #fdfdfc; --text: #1c1c1c; --muted: #62625e; --rule: #e4e4e2;
+    --code-bg: #f4f4f2; --link: #1f4e8c;
+    --serif: Charter, "Bitstream Charter", "Iowan Old Style", Georgia, Cambria, serif;
+    color-scheme: light;
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
-      --bg: #151413; --surface: #1d1c1a; --text: #ecebe7; --muted: #9c998f;
-      --line: #2e2c29; --accent: #fb923c; --accent-soft: #3a2316; --chip: #262422;
+      --bg: #161616; --text: #e2e2e0; --muted: #aaa9a3; --rule: #2e2e2c;
+      --code-bg: #1f1f1e; --link: #8fb3e6; color-scheme: dark;
     }
   }
   :root[data-theme="dark"] {
-    --bg: #151413; --surface: #1d1c1a; --text: #ecebe7; --muted: #9c998f;
-    --line: #2e2c29; --accent: #fb923c; --accent-soft: #3a2316; --chip: #262422;
+    --bg: #161616; --text: #e2e2e0; --muted: #aaa9a3; --rule: #2e2e2c;
+    --code-bg: #1f1f1e; --link: #8fb3e6; color-scheme: dark;
   }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0; background: var(--bg); color: var(--text);
-    font: 15px/1.5 Inter, system-ui, sans-serif; -webkit-font-smoothing: antialiased;
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 18px/1.65 var(--serif); }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+  a { color: var(--link); text-underline-offset: 2px; }
+  a:hover { text-decoration-thickness: 2px; }
+  a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible {
+    outline: 2px solid var(--link); outline-offset: 4px;
   }
-  .wrap { max-width: 860px; margin: 0 auto; padding: 48px 16px 80px; }
-  header h1 {
-    font: 600 clamp(30px, 6vw, 42px)/1.1 Newsreader, Georgia, serif;
-    letter-spacing: -0.01em; margin: 0 0 6px;
-  }
-  header p { margin: 0; color: var(--muted); }
+
+  /* Header & footer, as on the blog */
+  .site-header { display: flex; justify-content: space-between; align-items: baseline; gap: 24px; padding: 32px 0 48px; }
+  .site-header a { color: var(--text); text-decoration: none; }
+  .site-title { font-weight: 700; white-space: nowrap; }
+  .site-header nav { display: flex; flex-wrap: wrap; gap: 20px; font-size: 16px; }
+  .site-header nav a { color: var(--muted); }
+  .site-header nav a:hover, .site-header nav a[aria-current] { color: var(--text); }
+  .site-footer { margin-top: 80px; padding: 24px 0 48px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 15px; }
+  .site-footer p { margin: 0 0 8px; }
+  .site-footer a { color: var(--muted); }
+
+  .eyebrow { color: var(--muted); font-size: 15px; margin: 0 0 8px; }
+  h1 { font-size: 40px; letter-spacing: -.025em; line-height: 1.25; margin: 8px 0 16px; }
+  .intro { color: var(--muted); margin: 0 0 32px; }
+
+  /* Controls: plain text, one accent */
   .bar {
     position: sticky; top: 0; z-index: 2; background: var(--bg);
-    padding: 20px 0 14px; margin-top: 18px; border-bottom: 1px solid var(--line);
-    display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
+    display: flex; flex-direction: column; gap: 10px;
+    padding: 14px 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
+    font-size: 16px;
   }
-  .seg {
-    display: inline-flex; padding: 3px; gap: 2px; background: var(--chip);
-    border-radius: 10px;
+  .opts { display: flex; flex-wrap: wrap; gap: 4px 16px; }
+  .opts button {
+    font: inherit; color: var(--muted); background: none; border: 0; padding: 0; cursor: pointer;
+    text-underline-offset: 6px;
   }
-  .seg button {
-    font: 500 13px Inter, sans-serif; color: var(--muted); background: none;
-    border: 0; border-radius: 7px; padding: 6px 12px; cursor: pointer; white-space: nowrap;
+  .opts button:hover { color: var(--text); }
+  .opts button[aria-pressed="true"] { color: var(--text); text-decoration: underline; text-decoration-thickness: 1px; }
+  .bar select {
+    font: inherit; color: var(--text); background: transparent; cursor: pointer;
+    border: 0; border-bottom: 1px solid var(--rule); border-radius: 0; padding: 0 2px 2px;
   }
-  .seg button:hover { color: var(--text); }
-  .seg button[aria-pressed="true"] {
-    background: var(--surface); color: var(--text);
-    box-shadow: 0 1px 2px rgba(0,0,0,.08), 0 0 0 1px var(--line);
-  }
-  .select {
-    position: relative; display: inline-flex; align-items: center;
-  }
-  .select select {
-    appearance: none; -webkit-appearance: none; font: 500 13px Inter, sans-serif;
-    color: var(--text); background: var(--chip); border: 0; border-radius: 10px;
-    padding: 9px 32px 9px 12px; cursor: pointer; max-width: 100%;
-  }
-  .select select:focus-visible, .seg button:focus-visible, .check input:focus-visible {
-    outline: 2px solid var(--accent); outline-offset: 2px;
-  }
-  .select::after {
-    content: ""; position: absolute; right: 13px; top: 50%; width: 6px; height: 6px;
-    border: solid var(--muted); border-width: 0 1.5px 1.5px 0;
-    transform: translateY(-70%) rotate(45deg); pointer-events: none;
-  }
-  .spacer { flex: 1; }
+  .bar select option, .bar select optgroup { background: var(--bg); color: var(--text); }
+  .check { color: var(--muted); display: inline-flex; gap: 6px; align-items: baseline; cursor: pointer; white-space: nowrap; }
+  .check input { accent-color: var(--link); margin: 0; position: relative; top: 1px; }
+  .row { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 8px 24px; }
   .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
-  .check {
-    font-size: 13px; color: var(--muted); display: inline-flex; gap: 6px; align-items: center;
-    cursor: pointer; white-space: nowrap;
+
+  /* Post list, after the blog's home page */
+  .month { font-size: 16px; color: var(--muted); font-weight: 400; margin: 40px 0 8px; }
+  .posts { list-style: none; padding: 0; margin: 0; }
+  .posts li { display: flex; gap: 20px; padding: 6px 0; }
+  .posts time {
+    flex: 0 0 4.5em; color: var(--muted); font-size: 16px;
+    font-variant-numeric: tabular-nums; padding-top: 2px;
   }
-  .check input { accent-color: var(--accent); margin: 0; }
-  .tag { font-size: 11px; font-weight: 600; color: var(--muted); border: 1px solid var(--line); padding: 0 7px; border-radius: 999px; }
-  .tag.off { border-style: dashed; }
-  .tag.label { color: var(--accent); border-color: var(--accent); }
-  .post.skipped { opacity: .6; }
-  .why { font-size: 13px; color: var(--muted); font-style: italic; margin-top: 3px; }
-  h2.day {
-    font: 600 12px Inter, sans-serif; text-transform: uppercase; letter-spacing: .06em;
-    color: var(--muted); margin: 32px 0 6px;
-  }
-  .post { display: block; padding: 14px 0; border-bottom: 1px solid var(--line); text-decoration: none; color: inherit; }
-  .post:hover .t { color: var(--accent); }
-  .meta { font-size: 12.5px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 4px 8px; align-items: center; margin-bottom: 3px; }
-  .meta > * { white-space: nowrap; }
-  .src { font-weight: 600; color: var(--text); }
-  .new {
-    font-size: 11px; font-weight: 600; color: var(--accent); background: var(--accent-soft);
-    padding: 1px 7px; border-radius: 999px;
-  }
-  .t { font: 600 19px/1.3 Newsreader, Georgia, serif; transition: color .15s; }
-  .s { color: var(--muted); font-size: 14px; margin-top: 3px;
-       display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px; margin-top: 24px; }
-  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 18px 18px 6px; min-width: 0; }
-  .card h3 { margin: 0 0 4px; font: 600 20px Newsreader, Georgia, serif; display: flex; justify-content: space-between; gap: 8px; }
-  .card h3 a { color: inherit; text-decoration: none; }
-  .card h3 a:hover { color: var(--accent); }
-  .card .post { padding: 10px 0; }
-  .card .post:last-child { border-bottom: 0; }
-  .card .t { font-size: 16.5px; }
-  .warn { font: 500 12px Inter, sans-serif; color: var(--accent); }
-  .empty { color: var(--muted); padding: 40px 0; text-align: center; }
+  .entry { min-width: 0; }
+  .entry > a { color: var(--text); text-decoration: none; }
+  .entry > a:hover { text-decoration: underline; }
+  .meta { color: var(--muted); font-size: 15px; line-height: 1.5; }
+  .meta .fresh { color: var(--link); }
+  .summary { color: var(--muted); font-size: 15px; line-height: 1.5; margin-top: 2px;
+             display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .skipped .entry > a { color: var(--muted); }
+  .why { font-style: italic; }
+
+  /* By blog */
+  .blog { padding: 32px 0 8px; border-bottom: 1px solid var(--rule); }
+  .blog:last-child { border-bottom: 0; }
+  .blog h2 { font-size: 22px; line-height: 1.3; margin: 0 0 8px; display: flex; gap: 12px; align-items: baseline; }
+  .blog h2 a { color: var(--text); text-decoration: none; }
+  .blog h2 a:hover { text-decoration: underline; }
+  .blog h2 .meta { font-weight: 400; }
+  .warn { color: var(--link); font-size: 15px; font-weight: 400; }
+
+  .empty { color: var(--muted); padding: 32px 0; }
   button.more {
-    display: block; margin: 24px auto 0; font: 500 13px Inter, sans-serif; color: var(--text);
-    background: var(--chip); border: 0; border-radius: 10px; padding: 9px 16px; cursor: pointer;
+    display: block; margin: 32px 0 0; font: inherit; font-size: 16px; color: var(--link);
+    background: none; border: 0; padding: 0; cursor: pointer; text-decoration: underline; text-underline-offset: 2px;
   }
-  button.more:hover { box-shadow: 0 0 0 1px var(--line); }
-  footer { margin-top: 48px; color: var(--muted); font-size: 13px; }
-  footer a { color: inherit; }
-  @media (max-width: 620px) {
-    .grid { grid-template-columns: 1fr; }
-    .wrap { padding-top: 32px; }
-    .bar { gap: 8px; }
-    #topics { display: flex; width: 100%; }
-    #topics button { flex: 1; padding: 6px 4px; }
-    .select { flex: 1 1 100%; }
-    .check { margin-right: auto; }
-    .select select { width: 100%; }
-    .spacer { display: none; }
+
+  @media (max-width: 560px) {
+    body { font-size: 17px; }
+    .site-header { flex-direction: column; gap: 12px; padding: 24px 0 32px; }
+    h1 { font-size: 34px; }
+    .bar { position: static; }
+    .posts li { flex-direction: column; gap: 0; padding: 8px 0; }
+    .posts time { flex: none; font-size: 14px; }
   }
 </style>
 </head>
 <body>
 <div class="wrap">
-  <header>
-    <h1>Blog Tracker</h1>
-    <p id="sub"></p>
+  <header class="site-header">
+    <a class="site-title" href="https://anandvivek.in/">Vivek Anand</a>
+    <nav>
+      <a href="https://blog.anandvivek.in/">Writing</a>
+      <a href="https://blogs.anandvivek.in/" aria-current="page">Reading</a>
+      <a href="https://anandvivek.in/">About</a>
+    </nav>
   </header>
+
+  <p class="eyebrow">Backend engineering · AI · Databases</p>
+  <h1>Reading</h1>
+  <p class="intro" id="sub"></p>
+
   <div class="bar">
-    <div class="seg" id="topics" role="group" aria-label="Topic"></div>
-    <label class="select"><span class="sr">Blog</span><select id="blog" aria-label="Blog"></select></label>
-    <span class="spacer"></span>
-    <label class="check"><input type="checkbox" id="skipped"> Show skipped</label>
-    <div class="seg" id="view" role="group" aria-label="View">
-      <button type="button" data-view="latest">Latest</button>
-      <button type="button" data-view="blogs">By blog</button>
+    <div class="row">
+      <div class="opts" id="topics" role="group" aria-label="Topic"></div>
+      <div class="opts" id="view" role="group" aria-label="View">
+        <button type="button" data-view="latest">Latest</button>
+        <button type="button" data-view="blogs">By blog</button>
+      </div>
+    </div>
+    <div class="row">
+      <label><span class="sr">Blog</span><select id="blog" aria-label="Blog"></select></label>
+      <label class="check"><input type="checkbox" id="skipped"> Show skipped</label>
     </div>
   </div>
+
   <main id="main"></main>
-  <footer>Refreshed daily. Full-feed blogs show every post; for the others, Claude keeps the ones about AI, backend engineering or databases. <span id="since"></span></footer>
+
+  <footer class="site-footer">
+    <p>Refreshed daily. Full-feed blogs show every post; for the others, Claude keeps the ones about AI, backend engineering or databases. <span id="since"></span></p>
+    <p>&copy; <span id="year"></span> Vivek Anand &middot;
+      <a href="https://github.com/vivekanand1101">GitHub</a> &middot;
+      <a href="https://linkedin.com/in/vivekanandxyz">LinkedIn</a> &middot;
+      <a href="mailto:mail@anandvivek.in">Email</a></p>
+  </footer>
 </div>
 <script>
 const DATA = /*__DATA__*/null;
@@ -178,23 +193,31 @@ const el = (tag, props = {}, ...kids) => {
   return n;
 };
 const safeUrl = u => /^https?:\/\//.test(u) ? u : "#";
-const fmtDay = d => new Date(d).toLocaleDateString(undefined, { weekday: "long", month: "long", day: "numeric", year: "numeric" });
-const fmtShort = d => new Date(d).toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" });
+// Dates read like the blog's: "Oct 06", grouped under "October 2026".
+const fmtMonth = d => new Date(d).toLocaleDateString("en-US", { month: "long", year: "numeric" });
+const fmtDay = d => new Date(d).toLocaleDateString("en-US", { month: "short", day: "2-digit" });
+const sep = () => document.createTextNode(" · ");
 
 function postEl(p, { showSource = true, showSummary = true } = {}) {
   const ok = relevant(p);
-  const meta = el("div", { className: "meta" },
-    showSource ? el("span", { className: "src", textContent: p.blog.name }) : null,
-    el("span", { textContent: fmtShort(p.date) }),
-    p.label ? el("span", { className: "tag label", textContent: p.label }) : null,
-    ...topicsOf(p).map(t => el("span", { className: "tag", textContent: TOPICS[t] || t })),
-    !ok ? el("span", { className: "tag off", textContent: "Skipped" })
-      : isUnseen(p) ? el("span", { className: "new", textContent: "New since last visit" })
-      : isFresh(p) ? el("span", { className: "new", textContent: "This week" }) : null);
-  return el("a", { className: "post" + (ok ? "" : " skipped"), href: safeUrl(p.url), target: "_blank", rel: "noopener", title: (p.verdict && p.verdict.reason) || "" },
-    meta, el("div", { className: "t", textContent: p.title }),
-    showSummary && p.summary ? el("div", { className: "s", textContent: p.summary }) : null,
-    !ok && p.verdict && p.verdict.reason ? el("div", { className: "why", textContent: p.verdict.reason }) : null);
+  const bits = [
+    showSource ? p.blog.name : null,
+    p.label || null,
+    topicsOf(p).map(t => TOPICS[t] || t).join(", ") || null,
+    ok ? null : "skipped",
+  ].filter(Boolean);
+  const fresh = ok && (isUnseen(p) ? "new since your last visit" : isFresh(p) ? "this week" : null);
+  const meta = el("div", { className: "meta" });
+  bits.forEach((b, i) => { if (i) meta.append(sep()); meta.append(b); });
+  if (fresh) { if (bits.length) meta.append(sep()); meta.append(el("span", { className: "fresh", textContent: fresh })); }
+  const reason = p.verdict && p.verdict.reason;
+  return el("li", { className: ok ? "" : "skipped" },
+    el("time", { dateTime: p.date.slice(0, 10), textContent: fmtDay(p.date) }),
+    el("div", { className: "entry" },
+      el("a", { href: safeUrl(p.url), target: "_blank", rel: "noopener", title: reason || "", textContent: p.title }),
+      meta,
+      showSummary && p.summary && p.summary !== p.title ? el("div", { className: "summary", textContent: p.summary }) : null,
+      !ok && reason ? el("div", { className: "meta why", textContent: reason }) : null));
 }
 
 function renderFilters() {
@@ -207,37 +230,39 @@ function renderFilters() {
   const opt = (value, label) => el("option", { value, textContent: label, selected: state.blog === value });
   const group = (label, blogs) => el("optgroup", { label }, ...blogs.map(b => opt(b.id, b.name)));
   document.getElementById("blog").replaceChildren(
-    opt("all", "All blogs"), opt("people", "All full-feed blogs"), opt("companies", "All topic-filtered blogs"),
+    opt("all", "All blogs"), opt("people", "Full-feed blogs"), opt("companies", "Filtered blogs"),
     group("Full feed", DATA.blogs.filter(b => !b.filter)),
-    group("Topic-filtered by Claude", DATA.blogs.filter(b => b.filter)));
+    group("Filtered by Claude", DATA.blogs.filter(b => b.filter)));
 }
 
 function renderLatest(main, list) {
   if (!list.length) return main.append(el("p", { className: "empty", textContent: "Nothing matches yet." }));
-  let day = "";
+  let month = "", ul;
   for (const p of list.slice(0, state.limit)) {
-    const d = fmtDay(p.date);
-    if (d !== day) { main.append(el("h2", { className: "day", textContent: d })); day = d; }
-    main.append(postEl(p));
+    const m = fmtMonth(p.date);
+    if (m !== month) {
+      main.append(el("h2", { className: "month", textContent: m }), ul = el("ul", { className: "posts" }));
+      month = m;
+    }
+    ul.append(postEl(p));
   }
   if (list.length > state.limit) {
-    main.append(el("button", { type: "button", className: "more", textContent: `Show more (${list.length - state.limit} older)`,
+    main.append(el("button", { type: "button", className: "more", textContent: `Show ${Math.min(100, list.length - state.limit)} more`,
       onclick: () => { state.limit += 100; render(); } }));
   }
 }
 
 function renderBlogs(main, list) {
-  const grid = el("div", { className: "grid" });
   for (const b of [...DATA.blogs].sort((x, y) => x.filter - y.filter)) {
     if (!byBlog({ blog: b })) continue;
     const ps = list.filter(p => p.blog.id === b.id).slice(0, state.blog === "all" ? 5 : 40);
-    grid.append(el("section", { className: "card" },
-      el("h3", {}, el("a", { href: safeUrl(b.home), target: "_blank", rel: "noopener", textContent: b.name }),
+    main.append(el("section", { className: "blog" },
+      el("h2", {}, el("a", { href: safeUrl(b.home), target: "_blank", rel: "noopener", textContent: b.name }),
+        el("span", { className: "meta", textContent: b.filter ? "topic-filtered" : "full feed" }),
         b.ok ? null : el("span", { className: "warn", textContent: "feed error" })),
-      ...(ps.length ? ps.map(p => postEl(p, { showSource: false, showSummary: false }))
-        : [el("p", { className: "empty", textContent: "Nothing on these topics yet." })])));
+      ps.length ? el("ul", { className: "posts" }, ...ps.map(p => postEl(p, { showSource: false, showSummary: false })))
+        : el("p", { className: "empty", textContent: "Nothing on these topics yet." })));
   }
-  main.append(grid);
 }
 
 function render() {
@@ -261,10 +286,11 @@ const kept = all.filter(relevant);
 const judged = companyPosts.filter(p => p.verdict).length;
 const keptCompany = companyPosts.filter(relevant).length;
 document.getElementById("sub").textContent =
-  `Every post from ${DATA.blogs.filter(b => !b.filter).length} blogs, plus AI, backend and database posts from ${DATA.blogs.filter(b => b.filter).length} more · ${kept.filter(isFresh).length} this week · updated ${new Date(DATA.updated).toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" })}`;
+  `Every post from ${DATA.blogs.filter(b => !b.filter).length} blogs I read in full, plus the AI, backend and database posts from ${DATA.blogs.filter(b => b.filter).length} company engineering blogs. ${kept.filter(isFresh).length} new this week; updated ${new Date(DATA.updated).toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" })}.`;
 document.getElementById("since").textContent =
   `From the topic-filtered blogs, Claude kept ${keptCompany} of ${judged} posts.` + (judged < companyPosts.length ? ` ${companyPosts.length - judged} are waiting to be judged.` : "") +
   (lastVisit ? ` Your last visit: ${new Date(lastVisit).toLocaleString()}.` : "");
+document.getElementById("year").textContent = new Date().getFullYear();
 render();
 </script>
 </body>

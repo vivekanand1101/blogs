@@ -1,20 +1,20 @@
-name: Update blogs
+name: Publish
 
+# The daily Claude routine (ROUTINE.md) fetches and judges posts, then pushes
+# data/posts.json. This workflow only renders and deploys what's committed.
 on:
-  schedule:
-    - cron: "0 3 * * *"   # every day at 03:00 UTC (08:30 IST)
-  workflow_dispatch:
   push:
     branches: [main]
+  workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 
 concurrency:
   group: pages
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -24,14 +24,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: python build.py
-      - name: Save post history
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/posts.json
-          git diff --cached --quiet || git commit -m "Update posts $(date -u +%F)"
-          git push
+      - run: python build.py render
       - uses: actions/upload-pages-artifact@v3
         with:
           path: public

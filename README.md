@@ -1,12 +1,17 @@
 # blogs.anandvivek.in
 
-A one-page tracker for the tech blogs I follow. A GitHub Action runs `build.py`
-every day, pulls each blog's feed, and publishes `public/index.html` to GitHub Pages.
+AI, backend and database posts from the tech blogs I follow.
 
-- `blogs.json` — the blogs to track. Add or remove entries here.
-- `build.py` — fetches feeds (standard library only) and renders the page.
-- `template.html` — the page itself; the build injects the post data.
-- `data/posts.json` — post history the Action commits back each day.
+Every day a scheduled Claude routine pulls each blog's feed, reads the new posts, keeps the
+ones that match [CRITERIA.md](CRITERIA.md), and pushes the result. GitHub Actions then
+renders the page and publishes it to GitHub Pages.
+
+- `blogs.json` — the blogs to track.
+- `CRITERIA.md` — what counts as relevant. Edit it to change what Claude keeps.
+- `ROUTINE.md` — the steps the daily routine follows.
+- `build.py` — `fetch` / `apply` / `render` (standard library only).
+- `template.html` — the page; the build injects the post data.
+- `data/posts.json` — every post with Claude's verdict.
 
 Run it locally:
 

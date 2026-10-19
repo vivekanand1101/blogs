@@ -1,8 +1,13 @@
 #!/usr/bin/env python3
 """Fetch every blog in blogs.json and render public/index.html.
 
-Standard library only. Posts are remembered in data/posts.json so a post
-keeps its "first seen" date and survives a feed that drops older entries.
+  build.py fetch            pull feeds, write data/pending.json (posts with no verdict)
+  build.py apply FILE.json  merge Claude's verdicts {url: {relevant, topics, reason}}
+  build.py render           render public/ from data/posts.json
+
+A daily Claude routine (see ROUTINE.md) runs fetch, judges the pending posts
+against CRITERIA.md, runs apply, and pushes; GitHub Actions then renders and
+deploys. Only posts Claude marks relevant are shown. Standard library only.
 """
 import email.utils
 import html
@@ -18,6 +23,8 @@ from urllib.parse import urljoin
 
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data" / "posts.json"
+PENDING = ROOT / "data" / "pending.json"
+TOPICS = {"ai", "backend", "databases"}
 OUT = ROOT / "public"
 UA = "Mozilla/5.0 (compatible; blogs.anandvivek.in feed reader)"
 KEEP_PER_BLOG = 60
@@ -145,11 +152,9 @@ def fetch_source(src):
     return [p for p in parser(raw, src["url"]) if p["title"] and p["url"].startswith("http")]
 
 
-def main():
-    blogs = json.loads((ROOT / "blogs.json").read_text())
-    store = json.loads(DATA.read_text()) if DATA.exists() else {}
+def fetch_all(blogs, store):
+    """Pull every feed and merge new posts into the store. Returns per-blog status."""
     status = {}
-
     jobs = [(b, s) for b in blogs for s in b["sources"]]
     with ThreadPoolExecutor(max_workers=8) as pool:
         results = list(pool.map(lambda j: _safe(fetch_source, j[1]), jobs))
@@ -166,6 +171,8 @@ def main():
         for p in posts:
             old = known.get(p["url"])
             p["seen"] = old["seen"] if old else now
+            if old and old.get("verdict"):
+                p["verdict"] = old["verdict"]
             if not p["date"] and old:
                 p["date"] = old["date"]
             if not p["date"] and src["type"] == "anthropic":
@@ -179,14 +186,47 @@ def main():
         store[bid].sort(key=lambda p: p["date"], reverse=True)
         store[bid] = store[bid][:KEEP_PER_BLOG]
 
-    DATA.parent.mkdir(exist_ok=True)
-    DATA.write_text(json.dumps(store, indent=1, ensure_ascii=False) + "\n")
+    if all(not s["ok"] for s in status.values()):
+        sys.exit("every source failed")
+    return status
 
+
+def write_pending(blogs, store):
+    """List posts Claude hasn't judged yet, for the daily routine to read."""
+    names = {b["id"]: b["name"] for b in blogs}
+    pending = [
+        {"url": p["url"], "blog": names.get(bid, bid), "title": p["title"], "summary": p.get("summary", "")}
+        for bid, ps in store.items() for p in ps if not p.get("verdict")
+    ]
+    PENDING.write_text(json.dumps(pending, indent=1, ensure_ascii=False) + "\n")
+    print(f"[pending] {len(pending)} posts need a verdict -> {PENDING.relative_to(ROOT)}")
+
+
+def apply_verdicts(store, path):
+    """Merge {url: {relevant, topics, reason}} written by the routine into the store."""
+    verdicts = json.loads(Path(path).read_text())
+    applied = kept = 0
+    for ps in store.values():
+        for p in ps:
+            v = verdicts.get(p["url"])
+            if not v:
+                continue
+            topics = sorted({t for t in v.get("topics", []) if t in TOPICS})
+            p["verdict"] = {"relevant": bool(v.get("relevant")) and bool(topics),
+                            "topics": topics, "reason": str(v.get("reason", ""))[:300]}
+            applied += 1
+            kept += p["verdict"]["relevant"]
+    print(f"[apply] {applied} verdicts applied, {kept} relevant")
+    if PENDING.exists():
+        PENDING.unlink()
+
+
+def render(blogs, store, status=None):
     payload = {
-        "updated": now,
+        "updated": NOW.isoformat(),
         "blogs": [
             {"id": b["id"], "name": b["name"], "home": b["home"],
-             "ok": status.get(b["id"], {}).get("ok", False),
+             "ok": (status or {}).get(b["id"], {"ok": True})["ok"],
              "posts": store.get(b["id"], [])}
             for b in blogs
         ],
@@ -196,10 +236,25 @@ def main():
     page = (ROOT / "template.html").read_text().replace("/*__DATA__*/null", data_js)
     (OUT / "index.html").write_text(page)
     (OUT / "CNAME").write_text("blogs.anandvivek.in\n")
+    print(f"[render] {OUT.relative_to(ROOT)}/index.html")
 
-    failed = [b for b, s in status.items() if not s["ok"]]
-    if len(failed) == len(blogs):
-        sys.exit("every source failed")
+
+def main():
+    cmd = sys.argv[1] if len(sys.argv) > 1 else "all"
+    blogs = json.loads((ROOT / "blogs.json").read_text())
+    store = json.loads(DATA.read_text()) if DATA.exists() else {}
+    status = None
+    if cmd in ("fetch", "all"):
+        status = fetch_all(blogs, store)
+        write_pending(blogs, store)
+    elif cmd == "apply":
+        apply_verdicts(store, sys.argv[2])
+    elif cmd != "render":
+        sys.exit("usage: build.py [fetch | apply VERDICTS.json | render]")
+    DATA.parent.mkdir(exist_ok=True)
+    DATA.write_text(json.dumps(store, indent=1, ensure_ascii=False) + "\n")
+    if cmd in ("render", "all", "apply"):
+        render(blogs, store, status)
 
 
 def _safe(fn, arg):

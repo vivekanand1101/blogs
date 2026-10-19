@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Blog Tracker</title>
-<meta name="description" content="New posts from the tech blogs I follow, refreshed daily.">
+<meta name="description" content="AI, backend and database posts from the tech blogs I follow, picked by Claude daily.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -54,6 +54,14 @@
     padding: 6px 12px; cursor: pointer;
   }
   .toggle button[aria-pressed="true"] { background: var(--surface); color: var(--text); }
+  .rows { display: flex; flex-direction: column; gap: 8px; flex: 1; min-width: 0; }
+  .chips.blogs button.chip { font-size: 12.5px; padding: 4px 10px; }
+  .controls { display: flex; gap: 12px; align-items: center; align-self: flex-start; }
+  .check { font-size: 13px; color: var(--muted); display: flex; gap: 6px; align-items: center; cursor: pointer; white-space: nowrap; }
+  .tag { font-size: 11px; font-weight: 600; color: var(--muted); border: 1px solid var(--line); padding: 0 7px; border-radius: 999px; }
+  .tag.off { border-style: dashed; }
+  .post.skipped { opacity: .6; }
+  .why { font-size: 13px; color: var(--muted); font-style: italic; margin-top: 3px; }
   h2.day {
     font: 600 12px Inter, sans-serif; text-transform: uppercase; letter-spacing: .06em;
     color: var(--muted); margin: 32px 0 6px;
@@ -84,11 +92,11 @@
   @media (max-width: 620px) {
     .grid { grid-template-columns: 1fr; }
     .wrap { padding-top: 32px; }
-    .bar { flex-direction: column; align-items: stretch; }
+    .bar { flex-direction: column; flex-wrap: nowrap; align-items: stretch; }
     .chips { flex-wrap: nowrap; overflow-x: auto; margin: 0 -16px; padding: 0 16px 2px; scrollbar-width: none; }
     .chips::-webkit-scrollbar { display: none; }
     button.chip { flex: none; }
-    .toggle { align-self: flex-start; }
+    .controls { justify-content: space-between; align-self: stretch; }
   }
 </style>
 </head>
@@ -99,18 +107,25 @@
     <p id="sub"></p>
   </header>
   <div class="bar">
-    <div class="chips" id="chips"></div>
+    <div class="rows">
+      <div class="chips" id="topics" aria-label="Topics"></div>
+      <div class="chips blogs" id="chips" aria-label="Blogs"></div>
+    </div>
+    <div class="controls">
+    <label class="check"><input type="checkbox" id="skipped"> Show skipped</label>
     <div class="toggle" role="group" aria-label="View">
       <button data-view="latest">Latest</button>
       <button data-view="blogs">By blog</button>
     </div>
+    </div>
   </div>
   <main id="main"></main>
-  <footer>Refreshed daily from each blog's feed. <span id="since"></span></footer>
+  <footer>Refreshed daily; Claude reads every new post and keeps the ones about AI, backend engineering or databases. <span id="since"></span></footer>
 </div>
 <script>
 const DATA = /*__DATA__*/null;
 const WEEK = 7 * 864e5;
+const TOPICS = { ai: "AI", backend: "Backend", databases: "Databases" };
 const store = {
   get(k) { try { return localStorage.getItem(k); } catch { return null; } },
   set(k, v) { try { localStorage.setItem(k, v); } catch {} },
@@ -118,11 +133,19 @@ const store = {
 const lastVisit = Number(store.get("lastVisit")) || 0;
 store.set("lastVisit", String(Date.now()));
 
-const state = { blog: "all", view: store.get("view") || "latest" };
-const posts = DATA.blogs.flatMap(b => b.posts.map(p => ({ ...p, blog: b })))
+const state = {
+  blog: "all", topic: "all",
+  view: store.get("view") || "latest",
+  skipped: store.get("skipped") === "1",
+};
+const all = DATA.blogs.flatMap(b => b.posts.map(p => ({ ...p, blog: b })))
   .sort((a, b) => b.date.localeCompare(a.date));
+const relevant = p => p.verdict && p.verdict.relevant;
 const isFresh = p => Date.now() - Date.parse(p.date) < WEEK;
 const isUnseen = p => lastVisit && Date.parse(p.seen) > lastVisit;
+const pool = () => all.filter(p => state.skipped ? p.verdict : relevant(p));
+const byTopic = (p, t = state.topic) => t === "all" || (p.verdict.topics || []).includes(t);
+const byBlog = (p, b = state.blog) => b === "all" || p.blog.id === b;
 
 const el = (tag, props = {}, ...kids) => {
   const n = Object.assign(document.createElement(tag), props);
@@ -134,68 +157,85 @@ const fmtDay = d => new Date(d).toLocaleDateString(undefined, { weekday: "long",
 const fmtShort = d => new Date(d).toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" });
 
 function postEl(p, { showSource = true, showSummary = true } = {}) {
+  const ok = relevant(p);
   const meta = el("div", { className: "meta" },
     showSource ? el("span", { className: "src", textContent: p.blog.name }) : null,
     el("span", { textContent: fmtShort(p.date) }),
-    isUnseen(p) ? el("span", { className: "new", textContent: "New since last visit" })
+    ...(p.verdict.topics || []).map(t => el("span", { className: "tag", textContent: TOPICS[t] || t })),
+    !ok ? el("span", { className: "tag off", textContent: "Skipped" })
+      : isUnseen(p) ? el("span", { className: "new", textContent: "New since last visit" })
       : isFresh(p) ? el("span", { className: "new", textContent: "This week" }) : null);
-  return el("a", { className: "post", href: safeUrl(p.url), target: "_blank", rel: "noopener" },
+  return el("a", { className: "post" + (ok ? "" : " skipped"), href: safeUrl(p.url), target: "_blank", rel: "noopener", title: p.verdict.reason || "" },
     meta, el("div", { className: "t", textContent: p.title }),
-    showSummary && p.summary ? el("div", { className: "s", textContent: p.summary }) : null);
+    showSummary && p.summary ? el("div", { className: "s", textContent: p.summary }) : null,
+    !ok && p.verdict.reason ? el("div", { className: "why", textContent: p.verdict.reason }) : null);
+}
+
+function chip(label, n, pressed, onclick) {
+  const b = el("button", { className: "chip", type: "button", onclick }, label,
+    n ? el("span", { className: "n", textContent: n }) : null);
+  b.setAttribute("aria-pressed", pressed);
+  return b;
 }
 
 function renderChips() {
-  const chips = document.getElementById("chips");
-  chips.replaceChildren();
-  const mk = (id, label, n) => {
-    const b = el("button", { className: "chip", type: "button" }, label, n ? el("span", { className: "n", textContent: n }) : null);
-    b.setAttribute("aria-pressed", state.blog === id);
-    b.onclick = () => { state.blog = id; render(); };
-    return b;
-  };
-  chips.append(mk("all", "All", posts.filter(isFresh).length));
-  for (const b of DATA.blogs) chips.append(mk(b.id, b.name, b.posts.filter(isFresh).length));
+  const ps = pool();
+  const fresh = (f) => ps.filter(p => isFresh(p) && f(p)).length;
+  document.getElementById("topics").replaceChildren(
+    chip("All topics", fresh(p => byBlog(p)), state.topic === "all", () => { state.topic = "all"; render(); }),
+    ...Object.entries(TOPICS).map(([id, name]) =>
+      chip(name, fresh(p => byBlog(p) && byTopic(p, id)), state.topic === id, () => { state.topic = id; render(); })));
+  document.getElementById("chips").replaceChildren(
+    chip("All blogs", 0, state.blog === "all", () => { state.blog = "all"; render(); }),
+    ...DATA.blogs.map(b =>
+      chip(b.name, fresh(p => byTopic(p) && byBlog(p, b.id)), state.blog === b.id, () => { state.blog = b.id; render(); })));
 }
 
-function renderLatest(main) {
-  const list = posts.filter(p => state.blog === "all" || p.blog.id === state.blog).slice(0, 150);
-  if (!list.length) return main.append(el("p", { className: "empty", textContent: "No posts yet." }));
+function renderLatest(main, list) {
+  if (!list.length) return main.append(el("p", { className: "empty", textContent: "Nothing matches yet." }));
   let day = "";
-  for (const p of list) {
+  for (const p of list.slice(0, 150)) {
     const d = fmtDay(p.date);
     if (d !== day) { main.append(el("h2", { className: "day", textContent: d })); day = d; }
     main.append(postEl(p));
   }
 }
 
-function renderBlogs(main) {
+function renderBlogs(main, list) {
   const grid = el("div", { className: "grid" });
   for (const b of DATA.blogs) {
-    if (state.blog !== "all" && b.id !== state.blog) continue;
-    const ps = posts.filter(p => p.blog.id === b.id).slice(0, state.blog === "all" ? 5 : 40);
+    if (!byBlog({ blog: b })) continue;
+    const ps = list.filter(p => p.blog.id === b.id).slice(0, state.blog === "all" ? 5 : 40);
     grid.append(el("section", { className: "card" },
       el("h3", {}, el("a", { href: safeUrl(b.home), target: "_blank", rel: "noopener", textContent: b.name }),
         b.ok ? null : el("span", { className: "warn", textContent: "feed error" })),
       ...(ps.length ? ps.map(p => postEl(p, { showSource: false, showSummary: false }))
-        : [el("p", { className: "empty", textContent: "No posts yet." })])));
+        : [el("p", { className: "empty", textContent: "Nothing on these topics yet." })])));
   }
   main.append(grid);
 }
 
 function render() {
   store.set("view", state.view);
+  store.set("skipped", state.skipped ? "1" : "0");
   renderChips();
   document.querySelectorAll(".toggle button").forEach(b => b.setAttribute("aria-pressed", b.dataset.view === state.view));
+  document.getElementById("skipped").checked = state.skipped;
+  const list = pool().filter(p => byTopic(p) && byBlog(p));
   const main = document.getElementById("main");
   main.replaceChildren();
-  (state.view === "blogs" ? renderBlogs : renderLatest)(main);
+  (state.view === "blogs" ? renderBlogs : renderLatest)(main, list);
 }
 
 document.querySelectorAll(".toggle button").forEach(b => b.onclick = () => { state.view = b.dataset.view; render(); });
-const updated = new Date(DATA.updated);
+document.getElementById("skipped").onchange = e => { state.skipped = e.target.checked; render(); };
+const kept = all.filter(relevant);
+const judged = all.filter(p => p.verdict).length;
 document.getElementById("sub").textContent =
-  `${DATA.blogs.length} blogs · ${posts.filter(isFresh).length} posts this week · updated ${updated.toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" })}`;
-if (lastVisit) document.getElementById("since").textContent = `Your last visit: ${new Date(lastVisit).toLocaleString()}.`;
+  `AI, backend and database posts from ${DATA.blogs.length} blogs · ${kept.filter(isFresh).length} this week · updated ${new Date(DATA.updated).toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" })}`;
+document.getElementById("since").textContent =
+  `Claude kept ${kept.length} of ${judged} posts.` + (judged < all.length ? ` ${all.length - judged} are waiting to be judged.` : "") +
+  (lastVisit ? ` Your last visit: ${new Date(lastVisit).toLocaleString()}.` : "");
 render();
 </script>
 </body>

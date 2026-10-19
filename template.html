@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blog Tracker</title>
+<meta name="description" content="New posts from the tech blogs I follow, refreshed daily.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf9f6; --surface: #ffffff; --text: #1c1b19; --muted: #6b6860;
+    --line: #e6e3dc; --accent: #c2410c; --accent-soft: #fdeee6; --chip: #f1efe9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #151413; --surface: #1d1c1a; --text: #ecebe7; --muted: #9c998f;
+      --line: #2e2c29; --accent: #fb923c; --accent-soft: #3a2316; --chip: #262422;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #151413; --surface: #1d1c1a; --text: #ecebe7; --muted: #9c998f;
+    --line: #2e2c29; --accent: #fb923c; --accent-soft: #3a2316; --chip: #262422;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 15px/1.5 Inter, system-ui, sans-serif; -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 48px 16px 80px; }
+  header h1 {
+    font: 600 clamp(30px, 6vw, 42px)/1.1 Newsreader, Georgia, serif;
+    letter-spacing: -0.01em; margin: 0 0 6px;
+  }
+  header p { margin: 0; color: var(--muted); }
+  .bar {
+    position: sticky; top: 0; z-index: 2; background: var(--bg);
+    padding: 20px 0 14px; margin-top: 18px; border-bottom: 1px solid var(--line);
+    display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+  }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; flex: 1; }
+  button.chip {
+    font: 500 13px Inter, sans-serif; color: var(--text); background: var(--chip);
+    border: 1px solid transparent; border-radius: 999px; padding: 5px 11px; cursor: pointer;
+  }
+  button.chip:hover { border-color: var(--line); }
+  button.chip[aria-pressed="true"] { background: var(--text); color: var(--bg); }
+  .chip .n { color: var(--accent); font-weight: 600; margin-left: 4px; }
+  button.chip[aria-pressed="true"] .n { color: inherit; opacity: .75; }
+  .toggle { display: flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+  .toggle button {
+    font: 500 13px Inter, sans-serif; background: none; border: 0; color: var(--muted);
+    padding: 6px 12px; cursor: pointer;
+  }
+  .toggle button[aria-pressed="true"] { background: var(--surface); color: var(--text); }
+  h2.day {
+    font: 600 12px Inter, sans-serif; text-transform: uppercase; letter-spacing: .06em;
+    color: var(--muted); margin: 32px 0 6px;
+  }
+  .post { display: block; padding: 14px 0; border-bottom: 1px solid var(--line); text-decoration: none; color: inherit; }
+  .post:hover .t { color: var(--accent); }
+  .meta { font-size: 12.5px; color: var(--muted); display: flex; gap: 8px; align-items: center; margin-bottom: 3px; }
+  .src { font-weight: 600; color: var(--text); }
+  .new {
+    font-size: 11px; font-weight: 600; color: var(--accent); background: var(--accent-soft);
+    padding: 1px 7px; border-radius: 999px;
+  }
+  .t { font: 600 19px/1.3 Newsreader, Georgia, serif; transition: color .15s; }
+  .s { color: var(--muted); font-size: 14px; margin-top: 3px;
+       display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px; margin-top: 24px; }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 18px 18px 6px; min-width: 0; }
+  .card h3 { margin: 0 0 4px; font: 600 20px Newsreader, Georgia, serif; display: flex; justify-content: space-between; gap: 8px; }
+  .card h3 a { color: inherit; text-decoration: none; }
+  .card h3 a:hover { color: var(--accent); }
+  .card .post { padding: 10px 0; }
+  .card .post:last-child { border-bottom: 0; }
+  .card .t { font-size: 16.5px; }
+  .warn { font: 500 12px Inter, sans-serif; color: var(--accent); }
+  .empty { color: var(--muted); padding: 40px 0; text-align: center; }
+  footer { margin-top: 48px; color: var(--muted); font-size: 13px; }
+  footer a { color: inherit; }
+  @media (max-width: 620px) {
+    .grid { grid-template-columns: 1fr; }
+    .wrap { padding-top: 32px; }
+    .bar { flex-direction: column; align-items: stretch; }
+    .chips { flex-wrap: nowrap; overflow-x: auto; margin: 0 -16px; padding: 0 16px 2px; scrollbar-width: none; }
+    .chips::-webkit-scrollbar { display: none; }
+    button.chip { flex: none; }
+    .toggle { align-self: flex-start; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Blog Tracker</h1>
+    <p id="sub"></p>
+  </header>
+  <div class="bar">
+    <div class="chips" id="chips"></div>
+    <div class="toggle" role="group" aria-label="View">
+      <button data-view="latest">Latest</button>
+      <button data-view="blogs">By blog</button>
+    </div>
+  </div>
+  <main id="main"></main>
+  <footer>Refreshed daily from each blog's feed. <span id="since"></span></footer>
+</div>
+<script>
+const DATA = /*__DATA__*/null;
+const WEEK = 7 * 864e5;
+const store = {
+  get(k) { try { return localStorage.getItem(k); } catch { return null; } },
+  set(k, v) { try { localStorage.setItem(k, v); } catch {} },
+};
+const lastVisit = Number(store.get("lastVisit")) || 0;
+store.set("lastVisit", String(Date.now()));
+
+const state = { blog: "all", view: store.get("view") || "latest" };
+const posts = DATA.blogs.flatMap(b => b.posts.map(p => ({ ...p, blog: b })))
+  .sort((a, b) => b.date.localeCompare(a.date));
+const isFresh = p => Date.now() - Date.parse(p.date) < WEEK;
+const isUnseen = p => lastVisit && Date.parse(p.seen) > lastVisit;
+
+const el = (tag, props = {}, ...kids) => {
+  const n = Object.assign(document.createElement(tag), props);
+  n.append(...kids.filter(k => k != null));
+  return n;
+};
+const safeUrl = u => /^https?:\/\//.test(u) ? u : "#";
+const fmtDay = d => new Date(d).toLocaleDateString(undefined, { weekday: "long", month: "long", day: "numeric", year: "numeric" });
+const fmtShort = d => new Date(d).toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" });
+
+function postEl(p, { showSource = true, showSummary = true } = {}) {
+  const meta = el("div", { className: "meta" },
+    showSource ? el("span", { className: "src", textContent: p.blog.name }) : null,
+    el("span", { textContent: fmtShort(p.date) }),
+    isUnseen(p) ? el("span", { className: "new", textContent: "New since last visit" })
+      : isFresh(p) ? el("span", { className: "new", textContent: "This week" }) : null);
+  return el("a", { className: "post", href: safeUrl(p.url), target: "_blank", rel: "noopener" },
+    meta, el("div", { className: "t", textContent: p.title }),
+    showSummary && p.summary ? el("div", { className: "s", textContent: p.summary }) : null);
+}
+
+function renderChips() {
+  const chips = document.getElementById("chips");
+  chips.replaceChildren();
+  const mk = (id, label, n) => {
+    const b = el("button", { className: "chip", type: "button" }, label, n ? el("span", { className: "n", textContent: n }) : null);
+    b.setAttribute("aria-pressed", state.blog === id);
+    b.onclick = () => { state.blog = id; render(); };
+    return b;
+  };
+  chips.append(mk("all", "All", posts.filter(isFresh).length));
+  for (const b of DATA.blogs) chips.append(mk(b.id, b.name, b.posts.filter(isFresh).length));
+}
+
+function renderLatest(main) {
+  const list = posts.filter(p => state.blog === "all" || p.blog.id === state.blog).slice(0, 150);
+  if (!list.length) return main.append(el("p", { className: "empty", textContent: "No posts yet." }));
+  let day = "";
+  for (const p of list) {
+    const d = fmtDay(p.date);
+    if (d !== day) { main.append(el("h2", { className: "day", textContent: d })); day = d; }
+    main.append(postEl(p));
+  }
+}
+
+function renderBlogs(main) {
+  const grid = el("div", { className: "grid" });
+  for (const b of DATA.blogs) {
+    if (state.blog !== "all" && b.id !== state.blog) continue;
+    const ps = posts.filter(p => p.blog.id === b.id).slice(0, state.blog === "all" ? 5 : 40);
+    grid.append(el("section", { className: "card" },
+      el("h3", {}, el("a", { href: safeUrl(b.home), target: "_blank", rel: "noopener", textContent: b.name }),
+        b.ok ? null : el("span", { className: "warn", textContent: "feed error" })),
+      ...(ps.length ? ps.map(p => postEl(p, { showSource: false, showSummary: false }))
+        : [el("p", { className: "empty", textContent: "No posts yet." })])));
+  }
+  main.append(grid);
+}
+
+function render() {
+  store.set("view", state.view);
+  renderChips();
+  document.querySelectorAll(".toggle button").forEach(b => b.setAttribute("aria-pressed", b.dataset.view === state.view));
+  const main = document.getElementById("main");
+  main.replaceChildren();
+  (state.view === "blogs" ? renderBlogs : renderLatest)(main);
+}
+
+document.querySelectorAll(".toggle button").forEach(b => b.onclick = () => { state.view = b.dataset.view; render(); });
+const updated = new Date(DATA.updated);
+document.getElementById("sub").textContent =
+  `${DATA.blogs.length} blogs · ${posts.filter(isFresh).length} posts this week · updated ${updated.toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" })}`;
+if (lastVisit) document.getElementById("since").textContent = `Your last visit: ${new Date(lastVisit).toLocaleString()}.`;
+render();
+</script>
+</body>
+</html>

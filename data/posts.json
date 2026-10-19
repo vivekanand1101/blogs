@@ -1,0 +1,1796 @@
+{
+ "anthropic": [
+  {
+   "title": "Investing in the public benefit",
+   "url": "https://www.anthropic.com/news/public-benefit-fund",
+   "date": "2026-10-18T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "An update on independent evaluators",
+   "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+   "date": "2026-10-15T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Preparing for the 2026 US midterms",
+   "url": "https://www.anthropic.com/news/2026-us-midterms",
+   "date": "2026-10-14T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Anthropic opens Singapore office and signs MOU with the Government of Singapore",
+   "url": "https://www.anthropic.com/news/singapore-office-opening",
+   "date": "2026-10-14T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Redesigning source control at Anthropic",
+   "url": "https://www.anthropic.com/engineering/redesigning-source-control",
+   "date": "2026-10-13T00:00:00+00:00",
+   "summary": "As our merges per day grew more than tenfold, source control became our biggest development bottleneck. Here, we share how we migrated to an in-house version control system in five months.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "2026 Usage Policy update",
+   "url": "https://www.anthropic.com/news/2026-usage-policy-update",
+   "date": "2026-10-08T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Building on our commitment to American scientific discovery",
+   "url": "https://www.anthropic.com/news/genesis-mission-commitment",
+   "date": "2026-10-08T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Introducing the Anthropic Cyber Mission",
+   "url": "https://www.anthropic.com/news/anthropic-cyber-mission",
+   "date": "2026-10-08T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Expanding the Cyber Verification Program",
+   "url": "https://www.anthropic.com/news/cyber-verification-program",
+   "date": "2026-10-06T00:00:00+00:00",
+   "summary": "We’re launching a new, expanded version of our Cyber Verification Program, which makes advanced cyber capabilities and reduced blocking classifiers available to qualifying security professionals.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap",
+   "url": "https://www.anthropic.com/news/claude-frontier-academy",
+   "date": "2026-10-02T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Barclays scales Claude to upgrade operations and improve client experience",
+   "url": "https://www.anthropic.com/news/barclays-scales-claude",
+   "date": "2026-10-01T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "How we contain Claude across products",
+   "url": "https://www.anthropic.com/engineering/how-we-contain-claude",
+   "date": "2026-05-25T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "An update on recent Claude Code quality reports",
+   "url": "https://www.anthropic.com/engineering/april-23-postmortem",
+   "date": "2026-04-23T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Scaling Managed Agents: Decoupling the brain from the hands",
+   "url": "https://www.anthropic.com/engineering/managed-agents",
+   "date": "2026-04-08T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "How we built Claude Code auto mode: a safer way to skip permissions",
+   "url": "https://www.anthropic.com/engineering/claude-code-auto-mode",
+   "date": "2026-03-25T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Harness design for long-running application development",
+   "url": "https://www.anthropic.com/engineering/harness-design-long-running-apps",
+   "date": "2026-03-24T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Eval awareness in Claude Opus 4.6’s BrowseComp performance",
+   "url": "https://www.anthropic.com/engineering/eval-awareness-browsecomp",
+   "date": "2026-03-06T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Quantifying infrastructure noise in agentic coding evals",
+   "url": "https://www.anthropic.com/engineering/infrastructure-noise",
+   "date": "2026-02-05T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Building a C compiler with a team of parallel Claudes",
+   "url": "https://www.anthropic.com/engineering/building-c-compiler",
+   "date": "2026-02-05T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Designing AI-resistant technical evaluations",
+   "url": "https://www.anthropic.com/engineering/AI-resistant-technical-evaluations",
+   "date": "2026-01-21T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Demystifying evals for AI agents",
+   "url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
+   "date": "2026-01-09T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Effective harnesses for long-running agents",
+   "url": "https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents",
+   "date": "2025-11-26T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Introducing advanced tool use on the Claude Developer Platform",
+   "url": "https://www.anthropic.com/engineering/advanced-tool-use",
+   "date": "2025-11-24T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Code execution with MCP: Building more efficient agents",
+   "url": "https://www.anthropic.com/engineering/code-execution-with-mcp",
+   "date": "2025-11-04T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Beyond permission prompts: making Claude Code more secure and autonomous",
+   "url": "https://www.anthropic.com/engineering/claude-code-sandboxing",
+   "date": "2025-10-20T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Equipping agents for the real world with Agent Skills",
+   "url": "https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills",
+   "date": "2025-10-16T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Effective context engineering for AI agents",
+   "url": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents",
+   "date": "2025-09-29T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "A postmortem of three recent issues",
+   "url": "https://www.anthropic.com/engineering/a-postmortem-of-three-recent-issues",
+   "date": "2025-09-17T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Writing effective tools for agents — with agents",
+   "url": "https://www.anthropic.com/engineering/writing-tools-for-agents",
+   "date": "2025-09-11T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Desktop Extensions: One-click MCP server installation for Claude Desktop",
+   "url": "https://www.anthropic.com/engineering/desktop-extensions",
+   "date": "2025-06-26T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "How we built our multi-agent research system",
+   "url": "https://www.anthropic.com/engineering/multi-agent-research-system",
+   "date": "2025-06-13T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Claude Code: Best practices for agentic coding",
+   "url": "https://www.anthropic.com/engineering/claude-code-best-practices",
+   "date": "2025-04-18T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "The \"think\" tool: Enabling Claude to stop and think in complex tool use situations",
+   "url": "https://www.anthropic.com/engineering/claude-think-tool",
+   "date": "2025-03-20T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Raising the bar on SWE-bench Verified with Claude 3.5 Sonnet",
+   "url": "https://www.anthropic.com/engineering/swe-bench-sonnet",
+   "date": "2025-01-06T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Building effective agents",
+   "url": "https://www.anthropic.com/engineering/building-effective-agents",
+   "date": "2024-12-19T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Introducing Contextual Retrieval",
+   "url": "https://www.anthropic.com/engineering/contextual-retrieval",
+   "date": "2024-09-19T00:00:00+00:00",
+   "summary": "",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  }
+ ],
+ "openai": [
+  {
+   "title": "How Itaú is building generative AI for its entire customer base",
+   "url": "https://openai.com/index/itau-generative-ai",
+   "date": "2026-10-16T19:00:00+00:00",
+   "summary": "With ia.i, a conversational interface, and the IARA governance platform, Itaú is applying its AI First strategy to customers and employees — in one of Brazil’s most regulated sectors.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Benefit Street Partners answers questions faster with Codex",
+   "url": "https://openai.com/index/benefit-street-partners",
+   "date": "2026-10-16T00:00:00+00:00",
+   "summary": "Anant Kumar builds tools to compare loan valuations and analyze credit agreements, using Codex for code review and faster follow-ups.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
+   "url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
+   "date": "2026-10-16T00:00:00+00:00",
+   "summary": "Two engineers shipped Stack Overflow for Agents in a few weeks with Codex, and its ChatGPT plugin helped drive up to 10× growth in agent creation.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Bringing GPT-Rosalind to academic research labs",
+   "url": "https://openai.com/index/introducing-the-rosalind-academic-plan",
+   "date": "2026-10-15T19:00:00+00:00",
+   "summary": "Introducing the Rosalind Academic Plan, offering eligible academic labs sponsored access to GPT-Rosalind and tools to advance life sciences research.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Teaching students to think and learn through questions",
+   "url": "https://openai.com/index/teaching-students-to-think-and-learn-through-questions",
+   "date": "2026-10-15T13:00:00+00:00",
+   "summary": "Celebrate Teachers’ Day with AI for Educators in Brazilian Portuguese and see how Study Mode can help teachers support active, step-by-step learning.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Sullivan & Cromwell brings legal expertise into agreement review",
+   "url": "https://openai.com/index/sullivan-cromwell",
+   "date": "2026-10-15T00:00:00+00:00",
+   "summary": "In collaboration with OpenAI, Sullivan & Cromwell developed Agreement Analyzer, an AI tool for identifying issues in a draft agreement.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Amp puts AI agents to work beyond code with OpenAI models",
+   "url": "https://openai.com/index/amp-beyond-coding",
+   "date": "2026-10-14T12:00:00+00:00",
+   "summary": "See how Amp pushes the frontier of what agents can do with GPT-6 Astra, Ultrafast, GPT-Live-1, and Sign in with ChatGPT.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "SentinelOne cuts malware analysis from weeks to hours",
+   "url": "https://openai.com/index/sentinelone",
+   "date": "2026-10-14T12:00:00+00:00",
+   "summary": "With OpenAI Daybreak, SentinelOne cuts weeks of malware analysis to hours, creating capacity to investigate more threats.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "How Third Moment Research runs 10,000 agents for 36+ hours",
+   "url": "https://openai.com/index/third-moment-research",
+   "date": "2026-10-14T07:00:00+00:00",
+   "summary": "With GPT-6 Astra and GPT-6.1 Sol, Codex, and Daybreak for cybersecurity, this AI lab builds agents that focus for days and improve with use.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "How Block is building AI-powered security with OpenAI technology",
+   "url": "https://openai.com/index/block-ai-powered-security",
+   "date": "2026-10-14T07:00:00+00:00",
+   "summary": "Block is building AI-powered security with OpenAI. Its security team investigates threats faster and proposes patches in minutes.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "The EU’s next chapter in AI is agentic",
+   "url": "https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic",
+   "date": "2026-10-14T00:00:00+00:00",
+   "summary": "New analysis shows how agentic AI adoption is growing across EU enterprises and small businesses—and where deeper use could unlock more value.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Higgsfield takes AI video from 1 minute to over 10",
+   "url": "https://openai.com/index/higgsfield-longer-videos-voice",
+   "date": "2026-10-13T12:00:00+00:00",
+   "summary": "Higgsfield brings creators longer videos with GPT-6 Astra, precise visuals with GPT-Image-2.5, and a path to voice filmmaking with GPT-Live.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
+   "url": "https://openai.com/index/asana-browser-agent",
+   "date": "2026-10-09T07:00:00+00:00",
+   "summary": "Using GPT-6 Astra in Codex, Asana made its browser agent 76x cheaper and 5x faster in tests to offer customers more capable models.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
+   "url": "https://openai.com/index/sophos",
+   "date": "2026-10-09T07:00:00+00:00",
+   "summary": "Discover how Sophos uses OpenAI’s Daybreak to cut cyber-threat investigation time by 96% and automate 52% of MDR cases while preserving human oversight.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "How Oracle turns days of work into minutes with ChatGPT and Codex",
+   "url": "https://openai.com/index/oracle",
+   "date": "2026-10-08T16:00:00+00:00",
+   "summary": "Across recruiting, engineering, and operations, Oracle turns specialist knowledge into fast, repeatable workflows with ChatGPT Work and Codex.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+   "url": "https://openai.com/index/pollo-ai",
+   "date": "2026-10-08T12:00:00+00:00",
+   "summary": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "LegalOn halves Codex costs while maintaining development speed",
+   "url": "https://openai.com/index/legalon-halves-codex-costs",
+   "date": "2026-10-08T12:00:00+00:00",
+   "summary": "LegalOn cut estimated daily Codex costs by 65% while maintaining development speed. It matched Astra, Sol, and Luna to tasks and managed budgets strategically.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Disrupting AI-enabled “false front” operations",
+   "url": "https://openai.com/index/disrupting-ai-enabled-false-front-operations",
+   "date": "2026-10-08T00:00:00+00:00",
+   "summary": "OpenAI disrupted two AI-enabled influence operations that used false-front journalists and a think tank to spread geopolitical messaging.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Helping teens learn, plan, and shape the future of AI",
+   "url": "https://openai.com/index/teens-learn-and-plan",
+   "date": "2026-10-07T12:00:00+00:00",
+   "summary": "College Planner is coming to ChatGPT for Teens to help students manage college applications, alongside new flashcards, quizzes, and a teen AI council.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Radisson Hotel Group brings hotel discovery into ChatGPT",
+   "url": "https://openai.com/index/radisson",
+   "date": "2026-10-07T07:00:00+00:00",
+   "summary": "Radisson partnered with Accenture to build a ChatGPT plugin using OpenAI technology, helping travelers find, compare, and book hotels while planning their trips.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "GPT-6 and Intelligent UI for everyone",
+   "url": "https://openai.com/index/gpt-6-for-everyone",
+   "date": "2026-10-07T00:00:00+00:00",
+   "summary": "GPT‑6 is rolling out globally in ChatGPT with Intelligent UI, delivering faster responses with visuals and interactive experiences you can explore and use directly.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Atlassian and OpenAI expand partnership to turn enterprise knowledge into action",
+   "url": "https://openai.com/index/atlassian-partnership",
+   "date": "2026-10-06T16:00:00+00:00",
+   "summary": "Atlassian and OpenAI are expanding their partnership to connect frontier models with enterprise knowledge and help teams plan, build, and deliver work.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "How Jump Trading is scaling quant research with ChatGPT",
+   "url": "https://openai.com/index/jump-trading",
+   "date": "2026-10-06T12:00:00+00:00",
+   "summary": "Jump Trading uses OpenAI to expand quantitative research. See how longer-running AI workflows combine multiple data sources with human review.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Sharing AI progress in mathematics",
+   "url": "https://openai.com/index/sharing-ai-progress-in-mathematics",
+   "date": "2026-10-06T12:00:00+00:00",
+   "summary": "OpenAI publishes new results on open problems in mathematics from an internal frontier model and shares Lean proof formalizations and research details on GitHub.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Advancing computer use with Ironclad",
+   "url": "https://openai.com/index/advancing-computer-use-with-ironclad",
+   "date": "2026-10-06T10:00:00+00:00",
+   "summary": "Learn how OpenAI and Ironclad are training and evaluating AI agents on complex contracting workflows to advance computer use for professional work.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Our approach to EU text provenance rules",
+   "url": "https://openai.com/index/eu-text-provenance",
+   "date": "2026-10-05T15:00:00+00:00",
+   "summary": "How OpenAI is approaching text watermarking under EU rules. Learn where watermarks apply, how detection works, and why access starts with researchers.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Building advertising for the way people use AI",
+   "url": "https://openai.com/index/new-chatgpt-ads-format-and-measurement",
+   "date": "2026-10-05T10:00:00+00:00",
+   "summary": "OpenAI introduces a new visual ad format in ChatGPT and expands measurement tools, attribution partnerships, and brand suitability for advertisers.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "A model guide for the GPT-6 family",
+   "url": "https://openai.com/index/practical-guide-building-gpt-6",
+   "date": "2026-10-02T16:15:00+00:00",
+   "summary": "Learn how startups can choose GPT-6 models, tune reasoning effort, improve prompts and skills, coordinate tools, and prepare workflows for production.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Chatham scales its capital markets expertise with OpenAI",
+   "url": "https://openai.com/index/chatham-financial",
+   "date": "2026-10-02T00:00:00+00:00",
+   "summary": "Chatham Financial uses Codex and GPT-5.6 to build technology and redesign workflows, cutting trade validation from 30 minutes to under 4.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "The eternal complement",
+   "url": "https://openai.com/index/the-eternal-complement",
+   "date": "2026-10-01T17:00:00+00:00",
+   "summary": "Advanced AI may matter most for the routine work behind breakthrough ideas. Explore why execution could shape the next economy and the pace of progress.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "How Albertsons Companies is reimagining retail from the inside out",
+   "url": "https://openai.com/index/albertsons-reimagining-retail",
+   "date": "2026-10-01T16:00:00+00:00",
+   "summary": "Albertsons Cos. is using ChatGPT Enterprise and the OpenAI API to help teams work faster and make grocery shopping easier for millions of customers.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "The Den frees up 10-15 hours a week to grow with ChatGPT Work",
+   "url": "https://openai.com/index/the-den-family-social",
+   "date": "2026-10-01T00:00:00+00:00",
+   "summary": "As it opens a new location, the social club prepares grant applications in 2 hours instead of 3 days and liquor-license materials in 3 hours instead of 4 days.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Disrupting a coordinated model-distillation campaign",
+   "url": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign",
+   "date": "2026-09-30T10:30:00+00:00",
+   "summary": "Learn how OpenAI disrupted a campaign to extract protected model reasoning and is strengthening defenses against adversarial distillation.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Helping small businesses put AI to work",
+   "url": "https://openai.com/index/helping-small-businesses-put-ai-to-work",
+   "date": "2026-09-30T10:00:00+00:00",
+   "summary": "OpenAI is partnering with America’s SBDC to expand hands-on AI training and local support for small businesses, alongside a new report on how small teams are using AI.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Introducing GPT-6.1 Sol",
+   "url": "https://openai.com/index/introducing-gpt-6-1-sol",
+   "date": "2026-09-29T10:00:00+00:00",
+   "summary": "Meet GPT-6.1 Sol: near-Astra intelligence for coding, computer use, and professional work at one-fifth of Astra’s standard API input and output token prices.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "DevDay 2026 Recap",
+   "url": "https://openai.com/index/devday-2026-recap",
+   "date": "2026-09-29T10:00:00+00:00",
+   "summary": "Explore more than 20 announcements from OpenAI DevDay 2026, including GPT-6 Astra, ChatGPT, Codex, APIs, security, and new tools for builders.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Introducing dots",
+   "url": "https://openai.com/index/introducing-dots",
+   "date": "2026-09-29T00:00:00+00:00",
+   "summary": "Dots by OpenAI are proactive assistants that can keep working across complex projects and everyday tasks. Learn how dots help you stay in control while work moves forward.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Towards safety cases for frontier AI training",
+   "url": "https://openai.com/index/towards-safety-cases-for-frontier-ai-training",
+   "date": "2026-09-28T19:00:00+00:00",
+   "summary": "Our early guidelines for safety cases in frontier AI training cover technical safeguards, operational practices, and investigating misalignment incidents",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "How we will do better for Australia",
+   "url": "https://openai.com/index/how-we-will-do-better-for-australia",
+   "date": "2026-09-28T19:00:00+00:00",
+   "summary": "OpenAI apologises for incidents involving Australian government websites and outlines stronger safeguards and support to strengthen Australia’s cyber defences.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "The Lenfest Institute grows landmark program with expanded OpenAI support",
+   "url": "https://openai.com/index/lenfest-ai-collaborative-expansion",
+   "date": "2026-09-28T07:00:00+00:00",
+   "summary": "OpenAI is expanding the Lenfest AI Collaborative and Fellowship Program with $5 million in funding and up to $5 million in software credits and engineering support.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Are you a Codex Original?",
+   "url": "https://openai.com/form/codex-originals",
+   "date": "2026-09-28T00:00:00+00:00",
+   "summary": "We’re collecting real stories of builders, tinkerers, researchers, and creators who are using Codex to do incredible things. If you want to be a part of the next chapter of the Codex Originals program, tell us more…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Basis completes a tax workbook 2x faster with GPT-6 Astra",
+   "url": "https://openai.com/index/basis-tax-workbook-with-astra",
+   "date": "2026-09-28T00:00:00+00:00",
+   "summary": "GPT-6 Astra completed a 50-tab tax workbook twice as fast as GPT-5.6 Sol, and its stronger understanding of user intent gives Basis more confidence in real-world use.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
+   "url": "https://openai.com/index/proaction",
+   "date": "2026-09-25T19:00:00+00:00",
+   "summary": "With Codex, GPT-Live-1, and GPT-6 Astra, Proaction builds, operates, and sells modern fleet management faster.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Lowe’s answers millions of home improvement questions with OpenAI",
+   "url": "https://openai.com/index/lowes",
+   "date": "2026-09-25T07:00:00+00:00",
+   "summary": "Lowe’s uses OpenAI models to power Mylow and Mylow Companion, helping customers and associates answer 25M+ questions and move home improvement projects forward.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Wayfair boosts catalog accuracy and support speed with OpenAI",
+   "url": "https://openai.com/index/wayfair",
+   "date": "2026-09-25T00:00:00+00:00",
+   "summary": "Wayfair uses OpenAI models to improve ecommerce support and product catalog accuracy, automating ticket triage and enhancing millions of product attributes at scale.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Two years of OpenAI Academy",
+   "url": "https://openai.com/index/two-years-of-openai-academy",
+   "date": "2026-09-23T16:00:00+00:00",
+   "summary": "Marking two years of OpenAI Academy and bringing AI skills to even more communities.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "OpenAI extends cyber access to Ukraine for civilian defense",
+   "url": "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense",
+   "date": "2026-09-23T13:00:00+00:00",
+   "summary": "OpenAI is extending access to its Daybreak program to the Government of Ukraine to support the cyber defense of civilian infrastructure.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+   "url": "https://openai.com/index/ringg",
+   "date": "2026-09-23T12:00:00+00:00",
+   "summary": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Harvey turns legal context into stronger drafts with GPT-6 Astra",
+   "url": "https://openai.com/index/harvey-from-context-to-confidence-with-astra",
+   "date": "2026-09-23T12:00:00+00:00",
+   "summary": "GPT-6 Astra produces more structured, context-aware legal documents, freeing lawyers to focus on strategy.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Sam Altman’s remarks at the United Nations Security Council",
+   "url": "https://openai.com/index/sam-altman-un-security-council-remarks",
+   "date": "2026-09-23T12:00:00+00:00",
+   "summary": "OpenAI CEO Sam Altman discusses AI safety, human control, and international cooperation in remarks to the United Nations Security Council.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "How invideo improves color grading 3x with GPT‑6 Astra",
+   "url": "https://openai.com/index/invideo-builds-with-gpt-6-astra",
+   "date": "2026-09-23T12:00:00+00:00",
+   "summary": "With GPT‑6 Astra, invideo plans edits with greater precision, improves color correction and grading threefold, and produces 50 custom effects in one day.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Introducing MentalHealthBench",
+   "url": "https://openai.com/index/introducing-mentalhealthbench",
+   "date": "2026-09-23T10:00:00+00:00",
+   "summary": "MentalHealthBench is an expert-informed benchmark for evaluating helpful and safe AI responses across realistic mental health conversations.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "ChatGPT Ads expands to Southeast Asia and Taiwan",
+   "url": "https://openai.com/index/chatgpt-ads-expands-southeast-asia-taiwan",
+   "date": "2026-09-23T02:00:00+00:00",
+   "summary": "ChatGPT Ads is expanding to Southeast Asia and Taiwan, giving eligible businesses new ways to reach people across more than 60 countries.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Airbnb widens access to GPT-6 Astra and OpenAI frontier models",
+   "url": "https://openai.com/index/airbnb-gpt-6-astra",
+   "date": "2026-09-23T01:00:00+00:00",
+   "summary": "Learn how Airbnb is expanding access to GPT-6 Astra and OpenAI frontier models to help engineering teams solve bugs, design systems, and ship faster.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Grab and OpenAI bring practical AI skills to Southeast Asia",
+   "url": "https://openai.com/index/grab-openai-ai-skills-southeast-asia",
+   "date": "2026-09-23T00:00:00+00:00",
+   "summary": "OpenAI and Grab launch GO Forward with AI, a regional programme helping 30,000 partners build practical AI skills across Southeast Asia.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Better prompt caching for GPT-6",
+   "url": "https://openai.com/index/better-prompt-caching-for-gpt-6",
+   "date": "2026-09-22T21:00:00+00:00",
+   "summary": "Learn how GPT-6 improves prompt caching with higher cache hit rates, new diagnostics, explicit breakpoints, and controls that reduce latency and costs.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Introducing GPT-6 Sol and Luna",
+   "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
+   "date": "2026-09-22T18:00:00+00:00",
+   "summary": "Meet GPT-6 Sol and Luna, two models that bring frontier intelligence to everyday work with different balances of capability and cost.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Parallel cut research time and cost in half with GPT‑6 Astra",
+   "url": "https://openai.com/index/parallel-cuts-time-and-cost-with-astra",
+   "date": "2026-09-22T12:00:00+00:00",
+   "summary": "GPT‑6 Astra allowed Parallel’s agents to research and synthesize labor-market data in half the time and at half the cost vs. prior models.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Priorities and principles for effective third party assessments",
+   "url": "https://openai.com/index/priorities-principles-third-party-assessments",
+   "date": "2026-09-22T00:00:00+00:00",
+   "summary": "OpenAI outlines priorities and principles for rigorous, secure, and independent third-party AI safety assessments of frontier models and safeguards.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Advisory Group on Mathematics and Artificial Intelligence",
+   "url": "https://openai.com/index/advisory-group-on-mathematics-and-ai",
+   "date": "2026-09-21T12:00:00+00:00",
+   "summary": "OpenAI is working with an independent Advisory Group on Mathematics and Artificial Intelligence to guide the review and communication of emerging AI results.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  }
+ ],
+ "armin": [
+  {
+   "title": "What is Codemode",
+   "url": "https://lucumr.pocoo.org/2026/10/6/codemode/",
+   "date": "2026-10-06T00:00:00+00:00",
+   "summary": "More than a year ago I wrote a few posts here that recommended people not to load custom tools into their context (or MCP servers) but to just use more scripts. Most importantly I wrote that Code Is All You Need and I…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Deser: Rethinking Rust Serialization",
+   "url": "https://lucumr.pocoo.org/2026/9/29/deser/",
+   "date": "2026-09-29T00:00:00+00:00",
+   "summary": "Serde is an amazing serialization library for Rust and it has been a huge reason why I felt productive with it for years. However already while at Sentry I got quite frustrated with some of the limitations with it but…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Interpreting Pangram",
+   "url": "https://lucumr.pocoo.org/2026/9/14/interpreting-pangram/",
+   "date": "2026-09-14T00:00:00+00:00",
+   "summary": "Yesterday David Sacks wrote a tweet and within a few minutes people did, what they usually do, and they asked Pangram if it was AI. And Pangram said it’s entirely AI generated . To which David replied that these AI…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "P(doom)",
+   "url": "https://lucumr.pocoo.org/2026/9/12/pdoom/",
+   "date": "2026-09-12T00:00:00+00:00",
+   "summary": "This week some flavor of “AI is going to kill us all” went viral. In particular one where an employee put his personal probability of that happening above 10%. Which made me go to the Wikipedia page of P(doom) and I…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Astra for Coding: Why Are We Doing This Again?",
+   "url": "https://lucumr.pocoo.org/2026/9/7/astra-why/",
+   "date": "2026-09-07T00:00:00+00:00",
+   "summary": "I’m more and more convinced that all of AI engineering is Neijuan (内卷, meaning curl inwards). In China it describes a system that demands ever more effort and competition without improving output. The way in which it…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Latent Powers",
+   "url": "https://lucumr.pocoo.org/2026/9/5/latent-powers/",
+   "date": "2026-09-05T00:00:00+00:00",
+   "summary": "A few weeks ago I felt like it would be fun to see if I can make one of those cheap Chinese CarPlay dongles run something other than the stock firmware. The idea was that rather than just forwarding CarPlay, why not do…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Anger, Anxiety and Agency",
+   "url": "https://lucumr.pocoo.org/2026/8/24/anger-anxiety-agency/",
+   "date": "2026-08-24T00:00:00+00:00",
+   "summary": "Sean Goedecke wrote a post arguing that you should never be angry at work — a post with which I strongly agree. Anger can be a useful signal, but being angry at work rarely improves the situation. More often, it makes…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Fast and Hard Code",
+   "url": "https://lucumr.pocoo.org/2026/8/22/fast-hard-code/",
+   "date": "2026-08-22T00:00:00+00:00",
+   "summary": "One of the memes on Twitter is that “programming is solved now.” I’m not sure to what degree it is, but one thing is pretty clear: the act of familiarizing yourself with a language no longer matters and some of the…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "What Is Reasoning",
+   "url": "https://lucumr.pocoo.org/2026/8/19/what-is-reasoning/",
+   "date": "2026-08-19T00:00:00+00:00",
+   "summary": "A few weeks ago a paper was shared that showed how to extract reasoning traces from closed-weight models. Together with online discussions about tricking models into leaking them, it made me investigate it more out of…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Codeberg Divides",
+   "url": "https://lucumr.pocoo.org/2026/7/24/codeberg-divides/",
+   "date": "2026-07-24T00:00:00+00:00",
+   "summary": "Codeberg recently changed its terms to exclude projects that are largely written with generative AI. Considering I want GitHub to get some competition I have thoughts about this. GitHub’s governance has never been…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  }
+ ],
+ "thorsten": [
+  {
+   "title": "Joy & Curiosity #102",
+   "url": "https://registerspill.thorstenball.com/p/joy-and-curiosity-102",
+   "date": "2026-10-04T05:05:04+00:00",
+   "summary": "Interesting & joyful things from the previous week",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Joy & Curiosity #101",
+   "url": "https://registerspill.thorstenball.com/p/joy-and-curiosity-101",
+   "date": "2026-09-26T05:52:02+00:00",
+   "summary": "Interesting & joyful things from the previous week",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Joy & Curiosity #100",
+   "url": "https://registerspill.thorstenball.com/p/joy-and-curiosity-100",
+   "date": "2026-09-20T06:23:08+00:00",
+   "summary": "Interesting & joyful things from the previous week",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "What I believe about the future of software development",
+   "url": "http://thorstenball.com/blog/2026/09/19/what-i-believe-about-the-future-of-software-development/",
+   "date": "2026-09-19T19:30:00+00:00",
+   "summary": "This was originally posted on X and blew up. To plant my flag, to say that these are things I believed in September 2026, here it is on the blog, non-ephemeral. Some of these predictions are just observations, they’ve…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Joy & Curiosity #99",
+   "url": "https://registerspill.thorstenball.com/p/joy-and-curiosity-99",
+   "date": "2026-09-12T15:00:18+00:00",
+   "summary": "Interesting & joyful things from the previous week",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Joy & Curiosity #98",
+   "url": "https://registerspill.thorstenball.com/p/joy-and-curiosity-98",
+   "date": "2026-09-06T05:02:46+00:00",
+   "summary": "Interesting & joyful things from the previous week",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Joy & Curiosity #97",
+   "url": "https://registerspill.thorstenball.com/p/joy-and-curiosity-97",
+   "date": "2026-08-30T06:01:01+00:00",
+   "summary": "Interesting & joyful things from the previous week",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Joy & Curiosity #96",
+   "url": "https://registerspill.thorstenball.com/p/joy-and-curiosity-96",
+   "date": "2026-08-23T06:37:46+00:00",
+   "summary": "Interesting & joyful things from the previous week",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Joy & Curiosity #95",
+   "url": "https://registerspill.thorstenball.com/p/joy-and-curiosity-95",
+   "date": "2026-08-16T07:28:14+00:00",
+   "summary": "Interesting & joyful things from the previous week",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Joy & Curiosity #94",
+   "url": "https://registerspill.thorstenball.com/p/joy-and-curiosity-94",
+   "date": "2026-08-08T17:29:15+00:00",
+   "summary": "Interesting & joyful things from the previous week",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Joy & Curiosity #93",
+   "url": "https://registerspill.thorstenball.com/p/joy-and-curiosity-93",
+   "date": "2026-08-02T07:53:28+00:00",
+   "summary": "Interesting & joyful things from the previous week",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Joy & Curiosity #92",
+   "url": "https://registerspill.thorstenball.com/p/joy-and-curiosity-92",
+   "date": "2026-07-18T13:08:38+00:00",
+   "summary": "Interesting & joyful things from the previous week",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Joy & Curiosity #91",
+   "url": "https://registerspill.thorstenball.com/p/joy-and-curiosity-91",
+   "date": "2026-07-11T14:12:09+00:00",
+   "summary": "Interesting & joyful things from the previous week",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Ownership",
+   "url": "https://registerspill.thorstenball.com/p/ownership",
+   "date": "2026-07-08T15:06:42+00:00",
+   "summary": "Thoughts on ownership I sent to the Amp team in internal note",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Joy & Curiosity #90",
+   "url": "https://registerspill.thorstenball.com/p/joy-and-curiosity-90",
+   "date": "2026-07-04T11:06:02+00:00",
+   "summary": "Interesting & joyful things from the previous week",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Joy & Curiosity #89",
+   "url": "https://registerspill.thorstenball.com/p/joy-and-curiosity-89",
+   "date": "2026-06-07T08:01:26+00:00",
+   "summary": "Interesting & joyful things from the previous week",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Building Software Is Learning",
+   "url": "https://registerspill.thorstenball.com/p/building-software-is-learning",
+   "date": "2026-06-02T15:33:52+00:00",
+   "summary": "An internal note to the Amp team on feedback and shipping faster",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Joy & Curiosity #88",
+   "url": "https://registerspill.thorstenball.com/p/joy-and-curiosity-88",
+   "date": "2026-05-31T14:01:55+00:00",
+   "summary": "Interesting & joyful things from the previous week",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Joy & Curiosity #87",
+   "url": "https://registerspill.thorstenball.com/p/joy-and-curiosity-87",
+   "date": "2026-05-24T13:29:03+00:00",
+   "summary": "Interesting & joyful things from the previous week",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Joy & Curiosity #86",
+   "url": "https://registerspill.thorstenball.com/p/joy-and-curiosity-86",
+   "date": "2026-05-17T05:22:28+00:00",
+   "summary": "Interesting & joyful things from the previous week",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Joy & Curiosity #85",
+   "url": "https://registerspill.thorstenball.com/p/joy-and-curiosity-85",
+   "date": "2026-05-10T07:25:13+00:00",
+   "summary": "Interesting & joyful things from the previous week",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Professional Programming: The First 10 Years",
+   "url": "http://thorstenball.com/blog/2022/05/17/professional-programming-the-first-10-years/",
+   "date": "2022-05-17T06:32:00+00:00",
+   "summary": ".main h2 { margin-top: 2.5em; } Last month, April 2022, marked the 10 year anniversary of my start as a professional programmer. I started programming earlier than that, but hadn’t been paid a salary. As a teenager I…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "The context in which we build software",
+   "url": "http://thorstenball.com/blog/2020/09/15/the-context-in-which-we-build-software/",
+   "date": "2020-09-15T18:32:00+00:00",
+   "summary": "I grew up in a what I now know people to consider a really small town. There wasn’t a lot, but even in that small town we had 2-3 lawyers. And to make a point about technology and how we develop software I want to…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "How can you not be romantic about programming?",
+   "url": "http://thorstenball.com/blog/2020/09/08/how-can-you-not-be-romantic-about-programming/",
+   "date": "2020-09-08T18:07:00+00:00",
+   "summary": "There’s a scene in Moneyball in which Brad Pitt’s character, the manager of the Oakland A’s , is watching a recording of one of his players trying so hard to run fast that he stumbles and falls. Lying on the ground…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "No, typing can be the bottleneck",
+   "url": "http://thorstenball.com/blog/2020/09/01/typing-can-be-the-bottleneck/",
+   "date": "2020-09-01T08:00:00+00:00",
+   "summary": "One of the eternal laws of the internet dictates that as soon as one person says they have a new thing that lets them type faster — a keyboard, a keyboard layout, an editor configuration, etc. — somebody else must say:…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "But does it help you ship?",
+   "url": "http://thorstenball.com/blog/2020/08/25/but-does-it-help-you-ship/",
+   "date": "2020-08-25T07:30:00+00:00",
+   "summary": "Whenever I’m not sure whether I’m spending my time on the right thing I ask myself: does it help me ship? If what I consider working on is not the thing we want to ship itself, but lies in the vast grey area of…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "What you think is bad about remote work, can, well, actually be good.",
+   "url": "http://thorstenball.com/blog/2020/05/22/what-you-think-is-bad-about-remote-work-can-actually-be-good/",
+   "date": "2020-05-22T09:30:00+00:00",
+   "summary": "I’ve been working remotely full-time at Sourcegraph for slightly over a year now and, in the five years before that, had 2-3 home office days a week at flinc and ioki. There are a lot of different blog posts I could…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "How much do we bend to the will of our tools?",
+   "url": "http://thorstenball.com/blog/2020/02/04/how-much-do-we-bend-to-the-will-of-our-tools/",
+   "date": "2020-02-04T07:30:00+00:00",
+   "summary": "A few months ago, while looking at some code, a little light bulb that I didn’t even know existed went off in my head: “This was only written in this way, because the tools allow it to be written in this way.” Maybe it…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Learn more programming languages, even if you won't use them",
+   "url": "http://thorstenball.com/blog/2019/04/09/learn-more-programming-languages/",
+   "date": "2019-04-09T08:30:00+00:00",
+   "summary": "This article has been translated into Spanish: Por qué debes aprender más lenguajes de programación (incluso si no los vas a utilizar) Imagine we’ve been handed a task and we’re free to choose the programming language.…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "The Tools I Use To Write Books",
+   "url": "http://thorstenball.com/blog/2018/09/04/the-tools-i-use-to-write-books/",
+   "date": "2018-09-04T17:30:00+00:00",
+   "summary": "This article has been translated into Russian: Полезные инструменты для написания книг Thank you Vlad! In the beginning, there is always a single text file, nothing more. It’s called ideas.md or book.md . It contains a…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "The Paperback Edition of Writing A Compiler In Go",
+   "url": "http://thorstenball.com/blog/2018/08/14/paperback-writing-a-compiler-in-go/",
+   "date": "2018-08-14T17:30:00+00:00",
+   "summary": "Well, that certainly went quicker than I planned. I knew from releasing the paperback edition of Writing An Interpreter In Go that a lot of people still prefer paper over eBooks. So it didn’t come as a big surprise…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "The Lost Chapter: A Macro System For Monkey",
+   "url": "http://thorstenball.com/blog/2017/06/28/the-lost-chapter-a-macro-system-for-monkey/",
+   "date": "2017-06-28T17:30:00+00:00",
+   "summary": "If you don’t care about the Who, Where, When, Why, How and the Why Is It A Lost Chapter? and want to skip to the What: I wrote a new chapter for Writing An Interpreter In Go and you can read it for free at…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Writing An Interpreter In Go: The Paperback Edition",
+   "url": "http://thorstenball.com/blog/2017/02/22/writing-an-interpreter-in-go-the-paperback-edition/",
+   "date": "2017-02-22T17:45:00+00:00",
+   "summary": "If you’d asked me a only few months ago if there’ll ever be a printed version of Writing An Interpreter In Go I’d responded with a “Huh, uummm, well, I don’t know. Maybe. Maybe if I’ll find the time and if there’s any…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Higher Value Tools",
+   "url": "http://thorstenball.com/blog/2017/02/08/higher-value-tools/",
+   "date": "2017-02-08T18:00:00+00:00",
+   "summary": "There are certain tools that provide incredibly high value. Much more so than others. They provide so much value by acting as a multiplier of power and leverage. And I think there’s something they all have in common.…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "What I didn't do to write a book",
+   "url": "http://thorstenball.com/blog/2017/01/16/what-i-didnt-do-to-write-a-book/",
+   "date": "2017-01-16T18:00:00+00:00",
+   "summary": "I wrote my book “Writing An Interpreter In Go” over the course of 11 months. The first four months were spent on building the Monkey programming language and its interpreter. In the following seven months I wrote the…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "A Virtual Brainfuck Machine In Go",
+   "url": "http://thorstenball.com/blog/2017/01/04/a-virtual-brainfuck-machine-in-go/",
+   "date": "2017-01-04T17:00:00+00:00",
+   "summary": "You’re a programmer and your product manager walks up to your desk, taps you on the shoulder and asks if you have a couple of minutes to spare. She needs to talk to you about something. You sit down together and she…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Why I Wrote a Book About Interpreters",
+   "url": "http://thorstenball.com/blog/2016/11/30/why-i-wrote-a-book-about-interpreters/",
+   "date": "2016-11-30T17:15:00+00:00",
+   "summary": "Last week I’ve self-published my first book called “Writing An Interpreter In Go”, which you can get at interpreterbook.com . I want to tell you a little bit about why I chose to write this particular book. Sometimes I…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Putting Eval In Go",
+   "url": "http://thorstenball.com/blog/2016/11/16/putting-eval-in-go/",
+   "date": "2016-11-16T17:00:00+00:00",
+   "summary": "Over the past year I’ve spent a significant amount of time reading through Go’s go packages , the packages used by the Go compiler and other Go tools. But only recently did it occur to me that these are real, public…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Write Stupid Code",
+   "url": "http://thorstenball.com/blog/2015/10/22/write-stupid-code/",
+   "date": "2015-10-22T17:45:00+00:00",
+   "summary": "This post has been translated to Chinese . In the last couple of months I developed a certain approach to writing code. Whenever I write a new function, class or method I ask myself: “Is this code stupid enough?” If…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Unicorn Unix Magic Tricks",
+   "url": "http://thorstenball.com/blog/2014/11/20/unicorn-unix-magic-tricks/",
+   "date": "2014-11-20T17:45:00+00:00",
+   "summary": "This post is based on the talk of the same name I gave at the Arrrrcamp conference in Ghent, Belgium on October 2nd, 2014. You can find the slides here and the video recording here . Unicorn is a webserver written in…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  }
+ ],
+ "mario": [
+  {
+   "title": "How to build a shitty robot",
+   "url": "https://mariozechner.at/posts/2026-05-30-shitty-robot",
+   "date": "2026-05-30T00:00:00+00:00",
+   "summary": "A work in progress post about building a shitty robot.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "I've sold out",
+   "url": "https://mariozechner.at/posts/2026-04-08-ive-sold-out",
+   "date": "2026-04-08T00:00:00+00:00",
+   "summary": "I've sold out",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Thoughts on slowing the fuck down",
+   "url": "https://mariozechner.at/posts/2026-03-25-thoughts-on-slowing-the-fuck-down",
+   "date": "2026-03-25T00:00:00+00:00",
+   "summary": "Thoughts on slowing the fuck down",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Year in Review 2025",
+   "url": "https://mariozechner.at/posts/2025-12-22-year-in-review-2025",
+   "date": "2025-12-22T00:00:00+00:00",
+   "summary": "A look back at 2025",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "What I learned building an opinionated and minimal coding agent",
+   "url": "https://mariozechner.at/posts/2025-11-30-pi-coding-agent",
+   "date": "2025-11-30T00:00:00+00:00",
+   "summary": "Lessons I learned while building my own coding agent from scratch.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Armin is wrong and here's why",
+   "url": "https://mariozechner.at/posts/2025-11-22-armin-is-wrong",
+   "date": "2025-11-22T00:00:00+00:00",
+   "summary": "A rambling rebuttal to Armin's claim that LLM APIs are a state synchronization problem.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "What if you don't need MCP at all?",
+   "url": "https://mariozechner.at/posts/2025-11-02-what-if-you-dont-need-mcp",
+   "date": "2025-11-02T00:00:00+00:00",
+   "summary": "Got Bash and some code interpreter? Skip MCP.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Infinite Footguns: Writing a JavaScript Interpreter in JavaScript",
+   "url": "https://mariozechner.at/posts/2025-10-05-jailjs",
+   "date": "2025-10-05T00:00:00+00:00",
+   "summary": "Building a JavaScript AST interpreter in JavaScript: scope isolation, ES5 implementation, and all the footguns along the way.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "MCP vs CLI: Benchmarking Tools for Coding Agents",
+   "url": "https://mariozechner.at/posts/2025-08-15-mcp-vs-cli",
+   "date": "2025-08-15T00:00:00+00:00",
+   "summary": "A data-driven comparison of MCP and CLI approaches for coding agent terminal control",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Patching Claude Code for debugging and /cost support for Max users",
+   "url": "https://mariozechner.at/posts/2025-08-06-cc-antidebug",
+   "date": "2025-08-06T00:00:00+00:00",
+   "summary": "cc-antidebug patches Claude Code to enable Node.js debugger support for SDK-based apps and restores the /cost command functionality for Max plan users",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "cchistory: Tracking Claude Code System Prompt and Tool Changes",
+   "url": "https://mariozechner.at/posts/2025-08-03-cchistory",
+   "date": "2025-08-03T00:00:00+00:00",
+   "summary": "Exploring how to track and analyze changes in Claude Code's system prompts and tools to understand AI assistant evolution",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Prompts are code, .json/.md files are state",
+   "url": "https://mariozechner.at/posts/2025-06-02-prompts-are-code",
+   "date": "2025-06-02T00:00:00+00:00",
+   "summary": "Treating LLMs as shitty general purpose computers we program with natural language. Because throwing shit at the wall wasn't working anymore.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Boxie - an always offline audio player for my 3 year old",
+   "url": "https://mariozechner.at/posts/2025-04-20-boxie",
+   "date": "2025-04-26T00:00:00+00:00",
+   "summary": "How I built a simple portable audio player for my boy, summoning the spirit of the Gameboy",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Electronic Nights III - Animated LEDs and Buttons",
+   "url": "https://mariozechner.at/posts/2024-08-22-electronic-nights-3",
+   "date": "2024-08-22T00:00:00+00:00",
+   "summary": "How to programmatically turn on LEDs and read button states",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Electronic Nights II - Basic Circuits",
+   "url": "https://mariozechner.at/posts/2024-08-05-electronic-nights-2",
+   "date": "2024-08-05T00:00:00+00:00",
+   "summary": "Exploring the absolute basics.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Electronic Nights I - Getting Started",
+   "url": "https://mariozechner.at/posts/2024-07-25-electronic-nights-1",
+   "date": "2024-07-26T00:00:00+00:00",
+   "summary": "The story of a programmer trying to electronics",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "macOS code injection for fun and no profit",
+   "url": "https://mariozechner.at/posts/2024-07-20-macos-code-injection-fun",
+   "date": "2024-07-20T00:00:00+00:00",
+   "summary": "Fun little vacation project for fun and zero profit.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Two years in review",
+   "url": "https://mariozechner.at/posts/2024-07-15-two-years-in-review",
+   "date": "2024-07-15T00:00:00+00:00",
+   "summary": "Reminiscing about the times I didn't watch TV at night but built stuff.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Dissecting history",
+   "url": "https://mariozechner.at/posts/2024-07-14-dissecting-history",
+   "date": "2024-07-14T00:00:00+00:00",
+   "summary": "Thoughts on acquiring computational thinking skills based on my own experience.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  }
+ ],
+ "meta": [
+  {
+   "title": "Inside Prometheus: Meta’s Journey to a Gigawatt-Scale Supercluster",
+   "url": "https://engineering.fb.com/2026/10/19/data-center-engineering/inside-prometheus-meta-gigawatt-scale-supercluster/",
+   "date": "2026-10-19T13:00:10+00:00",
+   "summary": "With the recent release of the Muse family of foundational models, we want to take you inside the infrastructure that has made it all possible. The first phase of Prometheus, our gigawatt-scale supercluster, is already…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "How Meta Built Forum With AI-Native Engineering",
+   "url": "https://engineering.fb.com/2026/10/15/ml-applications/how-meta-built-forum-ai-native-engineering/",
+   "date": "2026-10-15T19:00:03+00:00",
+   "summary": "Meta’s newest app, Forum, is for anyone who wants to go deeper into the conversations in their Facebook groups. To build Forum, Meta engineers adopted a whole new way of working by bringing an AI agent into the…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "2026 World Cup: Breaking Records, Spiky Charts and Reliability at Scale",
+   "url": "https://engineering.fb.com/2026/10/15/production-engineering/2026-world-cup-record-traffic-reliability-at-scale/",
+   "date": "2026-10-15T18:30:29+00:00",
+   "summary": "Every four years, the World Cup becomes the largest planned stress test of our infrastructure. This year it also set an all-time record! There are a few moments throughout the year, like New Years Eve, that really let…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Sapienz Receives ISSTA 2026 Impact Paper Award",
+   "url": "https://engineering.fb.com/2026/10/15/developer-tools/sapienz-issta-2026-impact-paper-award-meta/",
+   "date": "2026-10-15T16:00:59+00:00",
+   "summary": "Ke Mao, Mark Harman, and Yue Jia have been recognized with the ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA) 2026 Most Influential Paper Award for their 2016 research, “Sapienz:…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Meta’s Generative Ads Model (GEM): Scaling the Central Model and Compute Engine for Frontier Ads AI",
+   "url": "https://engineering.fb.com/2026/10/13/ml-applications/generative-ads-model-gem-scaling-frontier-ads-ai/",
+   "date": "2026-10-13T16:01:00+00:00",
+   "summary": "Last year, we introduced GEM, the industry’s largest recommendation system (RecSys) foundation model. GEM established Meta’s first LLM-inspired paradigm for ads recommendation, driving major performance gains. Building…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "OCP Summit 2026: Powering AI with Open Innovations in Scale-Up, Scale-Out, and Scale-Across Networks",
+   "url": "https://engineering.fb.com/2026/10/12/open-source/ocp-summit-2026-powering-ai-with-open-innovations-in-scale-up-scale-out-and-scale-across-networks/",
+   "date": "2026-10-12T21:19:18+00:00",
+   "summary": "At the 2026 Open Compute Project Global Summit, Meta is sharing the next generation of open networking infrastructure, including: Our first liquid-cooled network rack (IcePack), and 102.4T switch platform (IceCube).…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Shipping Media Over QUIC at Meta Scale for Instagram Live Ingest",
+   "url": "https://engineering.fb.com/2026/10/12/video-engineering/shipping-media-over-quic-at-meta-scale-for-instagram-live-ingest/",
+   "date": "2026-10-12T16:01:32+00:00",
+   "summary": "Meta has begun deploying Media over QUIC (MoQ), an emerging open protocol for real-time video streaming at scale. MoQ will help simplify our protocol stack for live streaming video and enhance overall user experience…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Turning Opportunistic AI Inference Capacity Into Better Ads Recommendations",
+   "url": "https://engineering.fb.com/2026/10/12/ml-applications/turning-opportunistic-ai-inference-capacity-into-better-ads-recommendations/",
+   "date": "2026-10-12T16:00:50+00:00",
+   "summary": "At Meta, we’ve built a system that enhances ads recommendations by leveraging idle inference capacity in our fleet. Two elasticity levers in the system allow ads recommendation work to expand across opportunistic…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "NTS: Authenticated Time at Meta",
+   "url": "https://engineering.fb.com/2026/10/06/production-engineering/nts-authenticated-time-at-meta/",
+   "date": "2026-10-06T16:00:06+00:00",
+   "summary": "Meta’s public time service now speaks NTS (Network Time Security, RFC 8915) at nts.meta.com. Packets are authenticated, so a device can verify the time came from us and was not modified on the way. Our NTS servers hold…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  }
+ ],
+ "cloudflare": [
+  {
+   "title": "Beyond the patch: Protecting your NetScaler gateway against future vulnerabilities",
+   "url": "https://blog.cloudflare.com/protect-your-netscaler-gateway/",
+   "date": "2026-10-19T13:00:00+00:00",
+   "summary": "CVE-2026-88771 lets attackers run commands on NetScaler Gateway before anyone signs in. Patching takes time most teams don't have, so the sign-in decision has to move in front of the vulnerable code.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Continuous accountability for Verified bots",
+   "url": "https://blog.cloudflare.com/verified-bots-accountability/",
+   "date": "2026-10-16T13:00:00+00:00",
+   "summary": "Identity alone doesn't guarantee a bot will behave responsibly. We are introducing a system to continuously evaluate whether Verified bots honor site preferences, like robots.txt and HTTP 429s, ensuring they remain…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "A fully programmable secure web gateway",
+   "url": "https://blog.cloudflare.com/programmable-gateway-dlp/",
+   "date": "2026-10-15T17:11:12+00:00",
+   "summary": "Cloudflare Gateway and Data Loss Prevention have inherited the flexibility and power of Cloudflare Workers through our full-stack integration with the Cloudflare Developer platform.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Deploy with Void",
+   "url": "https://blog.cloudflare.com/deploy-with-void/",
+   "date": "2026-10-15T14:00:00+00:00",
+   "summary": "Introducing Void: an open-source SDK, CLI, and self-hosted platform for building full-stack Vite apps and deploying them to Cloudflare.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Cloudflare and OpenAI: Making AI discovery better for everyone",
+   "url": "https://blog.cloudflare.com/cloudflare-openai-discovery-agentic-web/",
+   "date": "2026-10-15T13:00:00+00:00",
+   "summary": "How Cloudflare and OpenAI are working together to help AI find useful content, keep up with changes, and make fewer wasted requests — making the experience better for users and website owners alike.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Yandex outage: Data shows that instead of going dark, malicious bots went on the move",
+   "url": "https://blog.cloudflare.com/yandex-outage/",
+   "date": "2026-10-14T20:24:19+00:00",
+   "summary": "When strikes hit Yandex data centers, many assumed Russian bot operations went dark. Cloudflare data reveals that while search crawling stopped, malicious bots simply migrated to other networks.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Inside Hyperdrive: How we solved a rare Hyperdrive MySQL caching bug",
+   "url": "https://blog.cloudflare.com/hyperdrive-mysql/",
+   "date": "2026-10-14T13:00:00+00:00",
+   "summary": "While adding MySQL support to Hyperdrive, we found a subtle protocol bug when caching query results. Here is how we tracked down a 0.001% rate error and made Hyperdrive MySQL generally available.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Under the hood, off the hot path: How D1 scales to millions of databases",
+   "url": "https://blog.cloudflare.com/d1-control-plane/",
+   "date": "2026-10-13T16:20:18+00:00",
+   "summary": "A deep dive into how D1 architected its control plane to scale and manage millions of databases, while keeping data plane query operations at the edge. We share guiding principles on how to build on the Developer…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Rewinding the exponential: How we keep hardware usage down",
+   "url": "https://blog.cloudflare.com/rewinding-the-exponential/",
+   "date": "2026-10-13T15:51:41+00:00",
+   "summary": "Our strategies to optimize our data pipeline throughput without compromising data quality.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Filter, reshape, and redact logs before export with Transformers",
+   "url": "https://blog.cloudflare.com/transformers-on-logpush/",
+   "date": "2026-10-12T14:44:59+00:00",
+   "summary": "Logpush now supports Transformers, allowing teams to filter, redact, and reshape log streams using SQL before export. Powered by Apache DataFusion and Apache Arrow, Transformers apply those changes directly to log data…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Introducing Clef-omni with full multimodality, plus a faster Clef and a cheaper Clef-flash",
+   "url": "https://blog.cloudflare.com/clef-faster-cheaper-multimodal/",
+   "date": "2026-10-09T18:27:34+00:00",
+   "summary": "We are expanding the Clef decision model family with Clef-omni, natively processing audio, video, images, and text in a single pipeline. We’ve also lowered Clef-flash pricing and boosted Clef inference speeds by up to…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Introducing on-demand CPU and memory profiling with flamegraphs for Workers and Durable Objects",
+   "url": "https://blog.cloudflare.com/workers-on-demand-profiling/",
+   "date": "2026-10-09T13:00:00+00:00",
+   "summary": "On-demand CPU and memory profiling for Cloudflare Workers and Durable Objects is now available. Now you can generate interactive flamegraphs directly in production to quickly track down memory leaks and performance…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Deno is joining Cloudflare",
+   "url": "https://blog.cloudflare.com/deno-joins-cloudflare/",
+   "date": "2026-10-09T12:50:00+00:00",
+   "summary": "The Deno team is joining Cloudflare to radically simplify self-hosting Workers and Durable Objects, so developers can use the same primitives in more places.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Bridging technical depth and usability: The story behind Radar’s redesign",
+   "url": "https://blog.cloudflare.com/radar-redesign/",
+   "date": "2026-10-08T13:00:00+00:00",
+   "summary": "We redesigned Cloudflare Radar to make real-time global traffic and outage data accessible to a wider audience — including journalists, less technical researchers, and everyday users. By introducing an interactive map…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Building an evidence-grounded agentic security operations harness on Cloudflare",
+   "url": "https://blog.cloudflare.com/agentic-security-operations/",
+   "date": "2026-10-07T16:30:36+00:00",
+   "summary": "Cloudflare Managed Defense uses a team of specialized AI agents built on Workers and global network telemetry to analyze security alerts. By separating deterministic evidence collection from model inference, the system…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "The keys to the Internet change on October 11. Are you ready?",
+   "url": "https://blog.cloudflare.com/root-ksk-2024-rollover/",
+   "date": "2026-10-06T17:50:11+00:00",
+   "summary": "On October 11, 2026, the DNS root switches to a new key-signing key (KSK-2024). Learn what this means for you, and how RFC 8509 trust anchor sentinels allow you to test whether your DNS resolver is ready for the…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Everything we launched during Birthday Week 2026",
+   "url": "https://blog.cloudflare.com/birthday-week-2026-wrap-up/",
+   "date": "2026-10-05T13:00:00+00:00",
+   "summary": "We celebrated our 16th birthday with 46 announcements across open source, post-quantum security, AI agents, and developer platform upgrades. Here’s a day-by-day roundup of everything we shipped.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "One year later: the power of 1.1.1.1 interns",
+   "url": "https://blog.cloudflare.com/one-year-later-1111-interns/",
+   "date": "2026-10-05T13:00:00+00:00",
+   "summary": "A year after announcing our goal to hire 1,111 interns, more than 750 early-career builders have shipped real products across 48 teams at Cloudflare. From Birthday Week launches to post-quantum security, our interns…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "8 major updates to Cloudflare Observability",
+   "url": "https://blog.cloudflare.com/one-observability-platform/",
+   "date": "2026-10-02T18:00:00+00:00",
+   "summary": "Cloudflare is launching eight major updates that bring logs, traces, analytics, alerts, dashboards, querying, and telemetry export into one observability platform, with simpler and more predictable pricing.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Streamline: custom video pipelines with Cloudflare Stream and Workers",
+   "url": "https://blog.cloudflare.com/streamline/",
+   "date": "2026-10-02T16:13:45+00:00",
+   "summary": "Streamline demonstrates how to build long-running, continuous video processing pipelines by pairing Cloudflare Workers and Durable Objects with a containerized media engine.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  }
+ ],
+ "railway": [
+  {
+   "title": "The Best Declarative Deploy Configs in 2026",
+   "url": "https://blog.railway.com/p/declarative-deploy-configs",
+   "date": "2026-10-14T20:03:47+00:00",
+   "summary": "A comparison of declarative deployment config systems across cloud providers.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Introducing Railway Authentication via identity-aware proxy",
+   "url": "https://blog.railway.com/p/railway-authentication-identity-aware-proxy",
+   "date": "2026-10-08T18:23:00+00:00",
+   "summary": "Railway Authentication implements an identity aware proxy at the service or environment level to lock down sensitive http endpoints",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Railway Agent now available in Slack and Discord",
+   "url": "https://blog.railway.com/p/railway-agent-slack-discord",
+   "date": "2026-10-05T21:40:00+00:00",
+   "summary": "Railway Agent is now available in Slack and Discord, here's how to get started and some example use cases.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Incident Report: September 30, 2026: Domain Routing Disruption",
+   "url": "https://blog.railway.com/p/incident-report-sept-30-2026-routing-disruption",
+   "date": "2026-09-30T22:42:12+00:00",
+   "summary": "Railway experienced a platform-wide disruption to domain routing on September 30, 2026. For roughly five minutes, between about 07:35 and 07:40 UTC, new connections to domains hosted on Railway returned 404 errors.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "How to Deploy and Scale Docker Containers on Railway in 2026",
+   "url": "https://blog.railway.com/p/deploy-scale-docker-containers-railway",
+   "date": "2026-09-30T14:36:04+00:00",
+   "summary": "Deploy a Docker container on Railway from a Dockerfile or a pre-built image, then learn how Railway builds and caches images, how to scale with replica limits and regions, what Docker workloads cost, and how to…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Usage-Based vs. Fixed Pricing: Which Is Cheaper in 2026?",
+   "url": "https://blog.railway.com/p/usage-based-vs-fixed-pricing-2026",
+   "date": "2026-09-17T14:59:13+00:00",
+   "summary": "Provisioned, resource-consumption, and request-based cloud pricing compared, with worked examples showing which model is cheaper for each workload shape.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "First-Class Databases on Railway",
+   "url": "https://blog.railway.com/p/first-class-databases-on-railway",
+   "date": "2026-09-10T13:43:22+00:00",
+   "summary": "A guide to features of a first-class database offering, and how to enable one on Railway.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Node.js Hosting Options Compared",
+   "url": "https://blog.railway.com/p/nodejs-hosting-options-compared",
+   "date": "2026-09-01T13:57:03+00:00",
+   "summary": "A guide to the most popular hosting options for Node.js applications.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Railway for Everyone: Deploy for free without a Railway account",
+   "url": "https://blog.railway.com/p/deploy-without-account",
+   "date": "2026-08-17T03:27:00+00:00",
+   "summary": "We are allowing people to deploy code on Railway without an account, read how we made this new development happen.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Your Cloud should come with an app builder",
+   "url": "https://blog.railway.com/p/dev-new",
+   "date": "2026-08-13T08:07:00+00:00",
+   "summary": "Announcing: dev.new, an agent that can build, preview, test, and deploy an app from the same place. We tested the whole loop by asking it to ship a real-time multiplayer FPS game that runs in the browser",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "How we made a viral commercial for developers",
+   "url": "https://blog.railway.com/p/how-to-make-viral-commercial",
+   "date": "2026-07-31T15:50:54+00:00",
+   "summary": "We made a commercial for Railway featuring the actor behind Gilfoyle from Silicon Valley. This is how we made it so that a developer like you would watch it.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Roll it out, roll it back, never redeploy",
+   "url": "https://blog.railway.com/p/feature-flags",
+   "date": "2026-07-17T07:00:00+00:00",
+   "summary": "Merge now, release when you're ready: turn a feature on for your team, then 10% of users, then everyone. Feature flags are now built into every Railway project, and your agents can run the rollout from the CLI, SDK,…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Incident Report: July 2, 2026 — US East Services Outage",
+   "url": "https://blog.railway.com/p/incident-report-july-2-2026-us-east-services-outage",
+   "date": "2026-07-03T13:48:08+00:00",
+   "summary": "Railway experienced a Major Outage concentrated in one of our US East availability zones on July 2, 2026 between roughly 07:44 and 12:01 UTC.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Every (Agents) Connection to Railway",
+   "url": "https://blog.railway.com/p/agent-connection-to-railway",
+   "date": "2026-06-26T13:00:00+00:00",
+   "summary": "We've created a few workflow patterns on how to get your agent talking to Railway peacefully. The balance of Local and Remote MCPs, Railway's Agent Skills, the CLI + Railway Agent give your local harness all the ways…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Skill Issue, Writing /skills to solve agent failures",
+   "url": "https://blog.railway.com/p/skills-issue-writing-skills",
+   "date": "2026-06-24T23:24:33+00:00",
+   "summary": "How we wrote the Railway Agent skills, which give agents repeatable workflows to follow.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Agents in the Sandbox",
+   "url": "https://blog.railway.com/p/agents-in-the-sandbox",
+   "date": "2026-06-24T13:00:00+00:00",
+   "summary": "This week we shipped the most popular agent harnesses as default options in Railway Sandboxes. Once configured with your credentials, you can fire off prompts against Claude Code, OpenAI Codex, OpenCode, and Pi, right…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "State of Railway: Agents",
+   "url": "https://blog.railway.com/p/state-of-railway-agents",
+   "date": "2026-06-23T13:00:00+00:00",
+   "summary": "Railway is turning the full deploy loop into something agents can actually drive: discovering Railway, signing up, shipping the first deploy, debugging failures, iterating in sandboxes, and handing off platform work to…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "How to build a 30M RPS CDN in 30 days with Rust and WASM",
+   "url": "https://blog.railway.com/p/railway-cdn",
+   "date": "2026-06-04T00:00:00+00:00",
+   "summary": "Learn about how we built the CDN we built (which served you this very page!) serving customers at scale.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Less Dashboards. More Robots. Railway, for Agents",
+   "url": "https://blog.railway.com/p/railway-for-agents",
+   "date": "2026-06-03T00:00:00+00:00",
+   "summary": "We’re building the Agent Experience in Railway to be the easiest way to go from code running on your laptop, to the full stack up and running. One command, fully set up across the Railway CLI, MCP, and Railway’s agent…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Claude please rack me a datacenter, make no mistakes",
+   "url": "https://blog.railway.com/p/datacenter-no-mistakes",
+   "date": "2026-06-03T00:00:00+00:00",
+   "summary": "The story on how we have fully streamlined compute deployment for our customers at scale with thousands of new hosts for millions of users.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "The next generation of Metal; Railway Metal Gen 2",
+   "url": "https://blog.railway.com/p/railway-metal-gen-2",
+   "date": "2026-06-02T00:00:00+00:00",
+   "summary": "We onboarded more compute in Q1 2026 than in all of 2025. To do that without hiring a datacenter team, we redesigned what a Railway site looks like. This is what Gen 2 is, how we're rolling it out, and why your bill…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Going multi-cloud with an in-housed status page",
+   "url": "https://blog.railway.com/p/multi-cloud-status-page",
+   "date": "2026-06-01T00:00:00+00:00",
+   "summary": "We needed a new status page. None of the alternatives could do what we wanted, so we built our own with Rust and TanStack.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Why Usage-Based Pricing Is the Right Pricing Model for Cloud",
+   "url": "https://blog.railway.com/p/why-usage-based-pricing-is-honest",
+   "date": "2026-05-27T00:00:00+00:00",
+   "summary": "Every cloud pricing model is a story about how the vendor wants you to behave. A manifesto on why usage-based pricing is the only model where vendor and customer incentives genuinely align.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Where Railway is, and where it's going (Summer 2026)",
+   "url": "https://blog.railway.com/p/railway-summer-update-2026",
+   "date": "2026-05-27T00:00:00+00:00",
+   "summary": "A direct look at what we shipped, and what is to come in the next quarter.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "The Best PaaS for Multi-Region Deployments in 2026",
+   "url": "https://blog.railway.com/p/best-paas-multi-region-deployments-2026",
+   "date": "2026-05-27T00:00:00+00:00",
+   "summary": "Narrower than the general multi-region listicle. Specifically the PaaS-shaped products that handle deploys, scaling, routing, and database adjacency across regions, with the seven regions Railway runs in as the anchor.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "The Best Continuous Deployment Tools in 2026",
+   "url": "https://blog.railway.com/p/best-continuous-deployment-tools-2026",
+   "date": "2026-05-27T00:00:00+00:00",
+   "summary": "Continuous Deployment is not the same as CI/CD. An honest ranking of the platforms that handle the deploy half: rollouts, traffic shifting, rollback, environment promotion.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "PaaS vs IaaS vs SaaS: What Each Means and Who Should Pick What in 2026",
+   "url": "https://blog.railway.com/p/paas-vs-iaas-vs-saas-2026",
+   "date": "2026-05-27T00:00:00+00:00",
+   "summary": "The classic three-tier model needs an update. A 2026 guide to IaaS, PaaS, SaaS, FaaS, and the emerging agentic-PaaS tier, with concrete examples and a decision framework.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "What is BYOC (Bring Your Own Cloud)? A Developer's Guide for 2026",
+   "url": "https://blog.railway.com/p/what-is-byoc-developer-guide-2026",
+   "date": "2026-05-26T00:00:00+00:00",
+   "summary": "What BYOC actually means, who needs it, who doesn't, and the platforms making serious BYOC plays in 2026.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "The Best Platforms for Monorepo Deployments in 2026",
+   "url": "https://blog.railway.com/p/best-monorepo-deployment-platforms-2026",
+   "date": "2026-05-26T00:00:00+00:00",
+   "summary": "Monorepo discussions conflate two distinct categories: build orchestration (Turborepo, Nx, Bazel) and deploy platforms (Railway, Vercel, Render). A ranking that separates them and explains how they fit together.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "The Best Managed Kubernetes Hosting in 2026",
+   "url": "https://blog.railway.com/p/best-managed-kubernetes-hosting-2026",
+   "date": "2026-05-26T00:00:00+00:00",
+   "summary": "Most teams searching 'best managed Kubernetes' should be asking 'do I actually need Kubernetes.' An honest ranking, with the four cases where K8s is the right answer and the cost of running it when it isn't.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "The Best Container Registries in 2026",
+   "url": "https://blog.railway.com/p/best-container-registries-2026",
+   "date": "2026-05-26T00:00:00+00:00",
+   "summary": "Container registries are the under-thought-about piece of cloud infrastructure. The six jobs a real registry has to do, and an honest ranking of the platforms in 2026.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Compliance Isn't a Feature, It's a Posture",
+   "url": "https://blog.railway.com/p/compliance-isnt-a-feature-its-a-posture",
+   "date": "2026-05-26T00:00:00+00:00",
+   "summary": "A SOC 2 attestation tells you what a vendor was doing twelve months ago. Compliance is a posture, an operational discipline you can evaluate by looking at defaults, postmortems, and engineer ownership. The sequel to…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "What is a PaaS? A Developer's Guide for 2026",
+   "url": "https://blog.railway.com/p/what-is-a-paas-developer-guide-2026",
+   "date": "2026-05-25T00:00:00+00:00",
+   "summary": "The contract Heroku invented in 2007, the five primitives that define a real PaaS today, the difference between PaaS / IaaS / SaaS / FaaS, and how to evaluate one in 2026.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "The Vanilla Cloud Tax: What Rolling Your Own on AWS Actually Costs",
+   "url": "https://blog.railway.com/p/vanilla-cloud-tax",
+   "date": "2026-05-25T00:00:00+00:00",
+   "summary": "Setup engineering, ongoing operational time, support contracts, opportunity cost. The four components of the vanilla cloud tax most teams underbudget by an order of magnitude.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "The Best Tools to Deploy Backends in 2026",
+   "url": "https://blog.railway.com/p/best-tools-to-deploy-backends-2026",
+   "date": "2026-05-25T00:00:00+00:00",
+   "summary": "What deploying a backend actually requires in 2026, and an honest ranking of where to put your APIs, your workers, your jobs, and your queues.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "The Best Serverless Platforms in 2026",
+   "url": "https://blog.railway.com/p/best-serverless-platforms-2026",
+   "date": "2026-05-25T00:00:00+00:00",
+   "summary": "What 'serverless' actually means in 2026, the rewrite tax most teams underestimate, and an honest ranking of the platforms by which runtime contract they ship.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "The Best Secrets Management Platforms for Cloud Apps in 2026",
+   "url": "https://blog.railway.com/p/best-secrets-management-2026",
+   "date": "2026-05-25T00:00:00+00:00",
+   "summary": "The seven jobs of a real secrets manager, when your PaaS handles it for you, and which dedicated tools earn their keep across multi-platform stacks.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "The Best Preview Environment Platforms in 2026",
+   "url": "https://blog.railway.com/p/best-preview-environment-platforms-2026",
+   "date": "2026-05-25T00:00:00+00:00",
+   "summary": "Why preview environments are the most underrated PaaS feature in 2026, the collaboration flywheel they unlock, and which platforms make them one-click vs a project.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "The Best PostgreSQL Hosting for Developers in 2026",
+   "url": "https://blog.railway.com/p/best-postgresql-hosting-2026",
+   "date": "2026-05-25T00:00:00+00:00",
+   "summary": "Postgres hosting fragmented into three shapes in 2026: integrated PaaS, dedicated SaaS, and hyperscaler-native. A ranking that helps you pick the shape before you pick the vendor.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "The Best Platforms to Deploy AI Apps in 2026 (Not the Models, the Apps Around Them)",
+   "url": "https://blog.railway.com/p/best-platforms-deploy-ai-apps-2026",
+   "date": "2026-05-25T00:00:00+00:00",
+   "summary": "Most 'best AI hosting' lists conflate model serving with hosting the app that calls the model. A ranking that splits the two layers and shows which platform serves which.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "The Best PaaS Providers in 2026",
+   "url": "https://blog.railway.com/p/best-paas-providers-2026",
+   "date": "2026-05-25T00:00:00+00:00",
+   "summary": "What counts as a Platform-as-a-Service in 2026, who is still carrying the contract Heroku invented, and where each provider actually fits.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "The Best Multi-Region Hosting Platforms in 2026",
+   "url": "https://blog.railway.com/p/best-multi-region-hosting-platforms-2026",
+   "date": "2026-05-25T00:00:00+00:00",
+   "summary": "Multi-region means three different things in 2026, and most listicles conflate them. A ranking that separates static asset CDN, stateless compute multi-region, and true multi-master writes.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "The Best GitOps Deployment Platforms in 2026",
+   "url": "https://blog.railway.com/p/best-gitops-deployment-platforms-2026",
+   "date": "2026-05-25T00:00:00+00:00",
+   "summary": "GitOps means two completely different things in 2026, and most listicles conflate them. A ranking that separates application GitOps (push code, deploy app) from infrastructure GitOps (commit config, reconcile cloud…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "The Best Cloud Platform MCP Servers in 2026",
+   "url": "https://blog.railway.com/p/best-cloud-platform-mcps-2026",
+   "date": "2026-05-25T00:00:00+00:00",
+   "summary": "Which cloud platforms expose their full surface area to agents over MCP, which expose only fragments, and where each provider actually fits for agent-driven workflows.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "The Best Cloud Observability and Logging Tools in 2026",
+   "url": "https://blog.railway.com/p/best-cloud-observability-tools-2026",
+   "date": "2026-05-25T00:00:00+00:00",
+   "summary": "The three pillars (logs, metrics, traces), why unifying them matters, and an honest ranking from PaaS-bundled observability through enterprise APM.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "The Best Cloud Hosting Platforms in 2026",
+   "url": "https://blog.railway.com/p/best-cloud-hosting-platforms-2026",
+   "date": "2026-05-25T00:00:00+00:00",
+   "summary": "Cloud hosting in 2026 is a spectrum, from VPS-style hosts up through modern agentic-PaaS. Here is where each platform actually sits, and how to pick the level of abstraction your team should be on.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "The Best Cloud Application Deployment Platforms in 2026",
+   "url": "https://blog.railway.com/p/best-cloud-application-deployment-platforms-2026",
+   "date": "2026-05-25T00:00:00+00:00",
+   "summary": "A working developer's field guide to the deployment platform landscape in 2026. The honest case for Railway, the honest case against, and the eight criteria that actually decide which platform you end up on.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "The Best CI/CD Tools for 2026",
+   "url": "https://blog.railway.com/p/best-ci-cd-tools-2026",
+   "date": "2026-05-25T00:00:00+00:00",
+   "summary": "What CI/CD actually does in 2026, why most teams don't need a separate tool anymore, and an honest ranking of the platforms that handle it for you alongside the standalone tools for teams that still need them.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "The Agent-Native Cloud: What It Means and Why It Matters",
+   "url": "https://blog.railway.com/p/the-agent-native-cloud",
+   "date": "2026-05-25T00:00:00+00:00",
+   "summary": "The cloud category reorders itself every seven years around a new primitive. The 2026 primitive is the agent, and most clouds have not picked a position on it yet. A manifesto on the next consolidation event.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Agentic Coding on Railway: A Practical Guide for 2026",
+   "url": "https://blog.railway.com/p/agentic-coding-on-railway-2026",
+   "date": "2026-05-25T00:00:00+00:00",
+   "summary": "A practitioner walkthrough on using Claude Code, Cursor, and Codex to drive Railway deployments end to end. Five real workflows, six production gotchas, and what works today vs what's coming.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Incident Report: May 19, 2026- GCP Account Suspension",
+   "url": "https://blog.railway.com/p/incident-report-may-19-2026-gcp-account-outage",
+   "date": "2026-05-20T00:00:00+00:00",
+   "summary": "Railway experienced a platform-wide service disruption due to Google Cloud incorrectly placing our account in a suspended status. This resulted in a temporary loss of service for all GCP hosted infrastructure.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Counting to 3 with a new builder processing 50M+ monthly builds",
+   "url": "https://blog.railway.com/p/new-builder-scale-big",
+   "date": "2026-05-14T00:00:00+00:00",
+   "summary": "We replaced our Docker-buildx GCP autoscaler with a fleet of microVM build cells running BuildKit. Here's what we learned rolling it out.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Railway iOS preview now available via TestFlight",
+   "url": "https://blog.railway.com/p/ios-app-testflight",
+   "date": "2026-05-11T00:00:00+00:00",
+   "summary": "We’re releasing the first preview of the Railway iOS app via Testflight",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Kill your onboarding: selling to 10,000+ new users a day",
+   "url": "https://blog.railway.com/p/kill-your-onboarding",
+   "date": "2026-05-06T00:00:00+00:00",
+   "summary": "A Solutions Engineer's playbook for turning 10,000 daily PLG signups into a warm enterprise pipeline using PostHog, Hex, and customer.io Why brute-forcing dimensions beats fancy ML, and how a deliberately boring…",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Your AI wants to nuke your database. Guardrails fix that.",
+   "url": "https://blog.railway.com/p/your-ai-wants-to-nuke-your-database",
+   "date": "2026-04-29T00:00:00+00:00",
+   "summary": "An AI agent deleted a customer's production database on Railway. Here's what happened, what we've shipped to fix it, and the surfaces we're building so agents can move fast on Railway without breaking things.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Better Rails for Agents: A New Remote MCP and Railway Agent in the CLI",
+   "url": "https://blog.railway.com/p/agent-rails-remote-mcp-cli",
+   "date": "2026-04-17T00:00:00+00:00",
+   "summary": "We want to make it effortless to use agents in Railway. No friction. Today we’re launching a new Remote MCP that uses our Railway Agent, and bringing that agent into the CLI.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Moving Railway's Frontend Off Next.js",
+   "url": "https://blog.railway.com/p/moving-railways-frontend-off-nextjs",
+   "date": "2026-04-03T00:00:00+00:00",
+   "summary": "We migrated http://railway.com, the dashboard, and the canvas from Next.js to Vite + TanStack Router in two PRs. Here's why, how, and what we learned.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Incident Report: March 30th, 2026 — Authenticated user data cached",
+   "url": "https://blog.railway.com/p/incident-report-march-30-2026-authenticated-user-data-cached",
+   "date": "2026-03-30T00:00:00+00:00",
+   "summary": "Railway experienced an issue where authenticated content was cached and shown to unauthenticated users",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "Incident Report: March 30th, 2026 — Authenticated user data cached",
+   "url": "https://blog.railway.com/p/incident-report-march-30-2026-accidental-cdn-caching",
+   "date": "2026-03-30T00:00:00+00:00",
+   "summary": "Railway experienced an incident where CDN features were accidentally enabled for some domains without users enabling them.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  },
+  {
+   "title": "One command deploys, there's a Stripe APP for that",
+   "url": "https://blog.railway.com/p/railway-stripe-app",
+   "date": "2026-03-19T00:00:00+00:00",
+   "summary": "We've partnered with Stripe and built on their new https://docs.stripe.com/agentic-provisioning spec to let developers sign up and deploy in one command.",
+   "seen": "2026-10-19T14:51:25.580290+00:00"
+  }
+ ]
+}

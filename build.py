@@ -18,9 +18,9 @@ import sys
 import urllib.request
 import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse
 
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data" / "posts.json"
@@ -28,7 +28,8 @@ PENDING = ROOT / "data" / "pending.json"
 TOPICS = {"ai", "backend", "databases"}
 OUT = ROOT / "public"
 UA = "Mozilla/5.0 (compatible; blogs.anandvivek.in feed reader)"
-KEEP_PER_BLOG = 60
+KEEP_MIN = 60          # keep the newest 60 posts per blog
+KEEP_DAYS = 365        # ...and, for full-feed blogs, everything from the last year
 NOW = datetime.now(timezone.utc)
 
 
@@ -169,7 +170,14 @@ def article_date(url):
 def fetch_source(src):
     raw = fetch(src["url"])
     parser = {"anthropic": parse_anthropic, "framer": parse_framer}.get(src["type"], parse_feed)
-    return [p for p in parser(raw, src["url"]) if p["title"] and p["url"].startswith("http")]
+    posts = [p for p in parser(raw, src["url"]) if p["title"] and p["url"].startswith("http")]
+    if src.get("label"):  # e.g. Mario's "Recommended" links, shown under his name
+        for p in posts:
+            p["label"] = src["label"]
+            if p["title"].lower().startswith("recommended"):
+                p["summary"] = p["summary"] or p["title"]
+                p["title"] = re.sub(r"^www\.", "", urlparse(p["url"]).netloc)
+    return posts
 
 
 def fetch_all(blogs, store):
@@ -188,9 +196,11 @@ def fetch_all(blogs, store):
             print(f"[warn] {blog['id']} {src['url']}: {err}", file=sys.stderr)
             continue
         known = {p["url"]: p for p in store.get(blog["id"], [])}
+        # A source seen for the first time is a backfill: don't flag its history as new.
+        first_time = not any(p["url"] in known for p in posts)
         for p in posts:
             old = known.get(p["url"])
-            p["seen"] = old["seen"] if old else now
+            p["seen"] = old["seen"] if old else (p["date"] or now) if first_time else now
             if old and old.get("verdict"):
                 p["verdict"] = old["verdict"]
             if not p["date"] and old:
@@ -202,9 +212,11 @@ def fetch_all(blogs, store):
         store[blog["id"]] = list(known.values())
         print(f"[ok] {blog['id']} {src['url']}: {len(posts)} posts")
 
+    full_feed = {b["id"] for b in blogs if not b.get("filter", True)}
     for bid in store:
         store[bid].sort(key=lambda p: p["date"], reverse=True)
-        store[bid] = store[bid][:KEEP_PER_BLOG]
+        cutoff = (NOW - timedelta(days=KEEP_DAYS)).isoformat() if bid in full_feed else "9"
+        store[bid] = [p for i, p in enumerate(store[bid]) if i < KEEP_MIN or p["date"] >= cutoff]
 
     if all(not s["ok"] for s in status.values()):
         sys.exit("every source failed")

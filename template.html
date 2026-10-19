@@ -77,6 +77,7 @@
   .check input { accent-color: var(--accent); margin: 0; }
   .tag { font-size: 11px; font-weight: 600; color: var(--muted); border: 1px solid var(--line); padding: 0 7px; border-radius: 999px; }
   .tag.off { border-style: dashed; }
+  .tag.label { color: var(--accent); border-color: var(--accent); }
   .post.skipped { opacity: .6; }
   .why { font-size: 13px; color: var(--muted); font-style: italic; margin-top: 3px; }
   h2.day {
@@ -105,6 +106,11 @@
   .card .t { font-size: 16.5px; }
   .warn { font: 500 12px Inter, sans-serif; color: var(--accent); }
   .empty { color: var(--muted); padding: 40px 0; text-align: center; }
+  button.more {
+    display: block; margin: 24px auto 0; font: 500 13px Inter, sans-serif; color: var(--text);
+    background: var(--chip); border: 0; border-radius: 10px; padding: 9px 16px; cursor: pointer;
+  }
+  button.more:hover { box-shadow: 0 0 0 1px var(--line); }
   footer { margin-top: 48px; color: var(--muted); font-size: 13px; }
   footer a { color: inherit; }
   @media (max-width: 620px) {
@@ -151,7 +157,7 @@ const lastVisit = Number(store.get("lastVisit")) || 0;
 store.set("lastVisit", String(Date.now()));
 
 const state = {
-  blog: "all", topic: "all",
+  blog: "all", topic: "all", limit: 100,
   view: store.get("view") || "latest",
   skipped: store.get("skipped") === "1",
 };
@@ -180,6 +186,7 @@ function postEl(p, { showSource = true, showSummary = true } = {}) {
   const meta = el("div", { className: "meta" },
     showSource ? el("span", { className: "src", textContent: p.blog.name }) : null,
     el("span", { textContent: fmtShort(p.date) }),
+    p.label ? el("span", { className: "tag label", textContent: p.label }) : null,
     ...topicsOf(p).map(t => el("span", { className: "tag", textContent: TOPICS[t] || t })),
     !ok ? el("span", { className: "tag off", textContent: "Skipped" })
       : isUnseen(p) ? el("span", { className: "new", textContent: "New since last visit" })
@@ -208,10 +215,14 @@ function renderFilters() {
 function renderLatest(main, list) {
   if (!list.length) return main.append(el("p", { className: "empty", textContent: "Nothing matches yet." }));
   let day = "";
-  for (const p of list.slice(0, 150)) {
+  for (const p of list.slice(0, state.limit)) {
     const d = fmtDay(p.date);
     if (d !== day) { main.append(el("h2", { className: "day", textContent: d })); day = d; }
     main.append(postEl(p));
+  }
+  if (list.length > state.limit) {
+    main.append(el("button", { type: "button", className: "more", textContent: `Show more (${list.length - state.limit} older)`,
+      onclick: () => { state.limit += 100; render(); } }));
   }
 }
 
@@ -230,6 +241,7 @@ function renderBlogs(main, list) {
 }
 
 function render() {
+  if (render.key !== state.blog + state.topic + state.skipped) { state.limit = 100; render.key = state.blog + state.topic + state.skipped; }
   store.set("view", state.view);
   store.set("skipped", state.skipped ? "1" : "0");
   renderFilters();

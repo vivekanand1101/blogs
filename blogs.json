@@ -64,6 +64,18 @@
     ]
   },
   {
+    "id": "earendil",
+    "name": "Earendil",
+    "home": "https://earendil.com/posts/",
+    "filter": true,
+    "sources": [
+      {
+        "type": "feed",
+        "url": "https://earendil.com/posts/feed.atom"
+      }
+    ]
+  },
+  {
     "id": "armin",
     "name": "Armin Ronacher",
     "home": "https://lucumr.pocoo.org/",
@@ -100,6 +112,11 @@
       {
         "type": "feed",
         "url": "https://mariozechner.at/rss.xml"
+      },
+      {
+        "type": "feed",
+        "url": "https://mariozechner.at/recommended-reading/rss.xml",
+        "label": "Recommended"
       }
     ]
   },

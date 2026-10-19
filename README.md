@@ -4,8 +4,8 @@ Every post from the people I follow, plus the AI, backend and database posts fro
 engineering blogs.
 
 Every day a scheduled Claude routine pulls each blog's feed, reads the new posts, keeps the
-company-blog posts that match [CRITERIA.md](CRITERIA.md), tags topics on everything, and pushes the result. GitHub Actions then
-renders the page and publishes it to GitHub Pages.
+company-blog posts that match [CRITERIA.md](CRITERIA.md), tags topics on everything, and pushes the result. Cloudflare Pages
+builds every push to `main` (`python3 build.py render`, output `public/`) and serves it.
 
 - `blogs.json` — the blogs to track. `"filter": false` means show every post (people);
   `"filter": true` means Claude filters it (companies).

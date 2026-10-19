@@ -37,27 +37,44 @@
   .bar {
     position: sticky; top: 0; z-index: 2; background: var(--bg);
     padding: 20px 0 14px; margin-top: 18px; border-bottom: 1px solid var(--line);
-    display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+    display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
   }
-  .chips { display: flex; flex-wrap: wrap; gap: 6px; flex: 1; }
-  button.chip {
-    font: 500 13px Inter, sans-serif; color: var(--text); background: var(--chip);
-    border: 1px solid transparent; border-radius: 999px; padding: 5px 11px; cursor: pointer;
+  .seg {
+    display: inline-flex; padding: 3px; gap: 2px; background: var(--chip);
+    border-radius: 10px;
   }
-  button.chip:hover { border-color: var(--line); }
-  button.chip[aria-pressed="true"] { background: var(--text); color: var(--bg); }
-  .chip .n { color: var(--accent); font-weight: 600; margin-left: 4px; }
-  button.chip[aria-pressed="true"] .n { color: inherit; opacity: .75; }
-  .toggle { display: flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
-  .toggle button {
-    font: 500 13px Inter, sans-serif; background: none; border: 0; color: var(--muted);
-    padding: 6px 12px; cursor: pointer;
+  .seg button {
+    font: 500 13px Inter, sans-serif; color: var(--muted); background: none;
+    border: 0; border-radius: 7px; padding: 6px 12px; cursor: pointer; white-space: nowrap;
   }
-  .toggle button[aria-pressed="true"] { background: var(--surface); color: var(--text); }
-  .rows { display: flex; flex-direction: column; gap: 8px; flex: 1; min-width: 0; }
-  .chips.blogs button.chip { font-size: 12.5px; padding: 4px 10px; }
-  .controls { display: flex; gap: 12px; align-items: center; align-self: flex-start; }
-  .check { font-size: 13px; color: var(--muted); display: flex; gap: 6px; align-items: center; cursor: pointer; white-space: nowrap; }
+  .seg button:hover { color: var(--text); }
+  .seg button[aria-pressed="true"] {
+    background: var(--surface); color: var(--text);
+    box-shadow: 0 1px 2px rgba(0,0,0,.08), 0 0 0 1px var(--line);
+  }
+  .select {
+    position: relative; display: inline-flex; align-items: center;
+  }
+  .select select {
+    appearance: none; -webkit-appearance: none; font: 500 13px Inter, sans-serif;
+    color: var(--text); background: var(--chip); border: 0; border-radius: 10px;
+    padding: 9px 32px 9px 12px; cursor: pointer; max-width: 100%;
+  }
+  .select select:focus-visible, .seg button:focus-visible, .check input:focus-visible {
+    outline: 2px solid var(--accent); outline-offset: 2px;
+  }
+  .select::after {
+    content: ""; position: absolute; right: 13px; top: 50%; width: 6px; height: 6px;
+    border: solid var(--muted); border-width: 0 1.5px 1.5px 0;
+    transform: translateY(-70%) rotate(45deg); pointer-events: none;
+  }
+  .spacer { flex: 1; }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .check {
+    font-size: 13px; color: var(--muted); display: inline-flex; gap: 6px; align-items: center;
+    cursor: pointer; white-space: nowrap;
+  }
+  .check input { accent-color: var(--accent); margin: 0; }
   .tag { font-size: 11px; font-weight: 600; color: var(--muted); border: 1px solid var(--line); padding: 0 7px; border-radius: 999px; }
   .tag.off { border-style: dashed; }
   .post.skipped { opacity: .6; }
@@ -68,7 +85,8 @@
   }
   .post { display: block; padding: 14px 0; border-bottom: 1px solid var(--line); text-decoration: none; color: inherit; }
   .post:hover .t { color: var(--accent); }
-  .meta { font-size: 12.5px; color: var(--muted); display: flex; gap: 8px; align-items: center; margin-bottom: 3px; }
+  .meta { font-size: 12.5px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 4px 8px; align-items: center; margin-bottom: 3px; }
+  .meta > * { white-space: nowrap; }
   .src { font-weight: 600; color: var(--text); }
   .new {
     font-size: 11px; font-weight: 600; color: var(--accent); background: var(--accent-soft);
@@ -92,11 +110,13 @@
   @media (max-width: 620px) {
     .grid { grid-template-columns: 1fr; }
     .wrap { padding-top: 32px; }
-    .bar { flex-direction: column; flex-wrap: nowrap; align-items: stretch; }
-    .chips { flex-wrap: nowrap; overflow-x: auto; margin: 0 -16px; padding: 0 16px 2px; scrollbar-width: none; }
-    .chips::-webkit-scrollbar { display: none; }
-    button.chip { flex: none; }
-    .controls { justify-content: space-between; align-self: stretch; }
+    .bar { gap: 8px; }
+    #topics { display: flex; width: 100%; }
+    #topics button { flex: 1; padding: 6px 4px; }
+    .select { flex: 1 1 100%; }
+    .check { margin-right: auto; }
+    .select select { width: 100%; }
+    .spacer { display: none; }
   }
 </style>
 </head>
@@ -107,16 +127,13 @@
     <p id="sub"></p>
   </header>
   <div class="bar">
-    <div class="rows">
-      <div class="chips" id="topics" aria-label="Topics"></div>
-      <div class="chips blogs" id="chips" aria-label="Blogs"></div>
-    </div>
-    <div class="controls">
+    <div class="seg" id="topics" role="group" aria-label="Topic"></div>
+    <label class="select"><span class="sr">Blog</span><select id="blog" aria-label="Blog"></select></label>
+    <span class="spacer"></span>
     <label class="check"><input type="checkbox" id="skipped"> Show skipped</label>
-    <div class="toggle" role="group" aria-label="View">
-      <button data-view="latest">Latest</button>
-      <button data-view="blogs">By blog</button>
-    </div>
+    <div class="seg" id="view" role="group" aria-label="View">
+      <button type="button" data-view="latest">Latest</button>
+      <button type="button" data-view="blogs">By blog</button>
     </div>
   </div>
   <main id="main"></main>
@@ -146,7 +163,8 @@ const isUnseen = p => lastVisit && Date.parse(p.seen) > lastVisit;
 const pool = () => all.filter(p => relevant(p) || (state.skipped && p.verdict));
 const topicsOf = p => (p.verdict && p.verdict.topics) || [];
 const byTopic = (p, t = state.topic) => t === "all" || topicsOf(p).includes(t);
-const byBlog = (p, b = state.blog) => b === "all" || p.blog.id === b;
+const byBlog = (p, b = state.blog) =>
+  b === "all" || (b === "people" ? !p.blog.filter : b === "companies" ? p.blog.filter : p.blog.id === b);
 
 const el = (tag, props = {}, ...kids) => {
   const n = Object.assign(document.createElement(tag), props);
@@ -172,24 +190,19 @@ function postEl(p, { showSource = true, showSummary = true } = {}) {
     !ok && p.verdict && p.verdict.reason ? el("div", { className: "why", textContent: p.verdict.reason }) : null);
 }
 
-function chip(label, n, pressed, onclick) {
-  const b = el("button", { className: "chip", type: "button", onclick }, label,
-    n ? el("span", { className: "n", textContent: n }) : null);
-  b.setAttribute("aria-pressed", pressed);
-  return b;
-}
-
-function renderChips() {
-  const ps = pool();
-  const fresh = (f) => ps.filter(p => isFresh(p) && f(p)).length;
-  document.getElementById("topics").replaceChildren(
-    chip("All topics", fresh(p => byBlog(p)), state.topic === "all", () => { state.topic = "all"; render(); }),
-    ...Object.entries(TOPICS).map(([id, name]) =>
-      chip(name, fresh(p => byBlog(p) && byTopic(p, id)), state.topic === id, () => { state.topic = id; render(); })));
-  document.getElementById("chips").replaceChildren(
-    chip("All blogs", 0, state.blog === "all", () => { state.blog = "all"; render(); }),
-    ...DATA.blogs.map(b =>
-      chip(b.name, fresh(p => byTopic(p) && byBlog(p, b.id)), state.blog === b.id, () => { state.blog = b.id; render(); })));
+function renderFilters() {
+  const topics = [["all", "All"], ...Object.entries(TOPICS)];
+  document.getElementById("topics").replaceChildren(...topics.map(([id, name]) => {
+    const b = el("button", { type: "button", textContent: name, onclick: () => { state.topic = id; render(); } });
+    b.setAttribute("aria-pressed", state.topic === id);
+    return b;
+  }));
+  const opt = (value, label) => el("option", { value, textContent: label, selected: state.blog === value });
+  const group = (label, blogs) => el("optgroup", { label }, ...blogs.map(b => opt(b.id, b.name)));
+  document.getElementById("blog").replaceChildren(
+    opt("all", "All blogs"), opt("people", "All people"), opt("companies", "All companies"),
+    group("People", DATA.blogs.filter(b => !b.filter)),
+    group("Companies", DATA.blogs.filter(b => b.filter)));
 }
 
 function renderLatest(main, list) {
@@ -204,7 +217,7 @@ function renderLatest(main, list) {
 
 function renderBlogs(main, list) {
   const grid = el("div", { className: "grid" });
-  for (const b of DATA.blogs) {
+  for (const b of [...DATA.blogs].sort((x, y) => x.filter - y.filter)) {
     if (!byBlog({ blog: b })) continue;
     const ps = list.filter(p => p.blog.id === b.id).slice(0, state.blog === "all" ? 5 : 40);
     grid.append(el("section", { className: "card" },
@@ -219,8 +232,8 @@ function renderBlogs(main, list) {
 function render() {
   store.set("view", state.view);
   store.set("skipped", state.skipped ? "1" : "0");
-  renderChips();
-  document.querySelectorAll(".toggle button").forEach(b => b.setAttribute("aria-pressed", b.dataset.view === state.view));
+  renderFilters();
+  document.querySelectorAll("#view button").forEach(b => b.setAttribute("aria-pressed", b.dataset.view === state.view));
   document.getElementById("skipped").checked = state.skipped;
   const list = pool().filter(p => byTopic(p) && byBlog(p));
   const main = document.getElementById("main");
@@ -228,7 +241,8 @@ function render() {
   (state.view === "blogs" ? renderBlogs : renderLatest)(main, list);
 }
 
-document.querySelectorAll(".toggle button").forEach(b => b.onclick = () => { state.view = b.dataset.view; render(); });
+document.querySelectorAll("#view button").forEach(b => b.onclick = () => { state.view = b.dataset.view; render(); });
+document.getElementById("blog").onchange = e => { state.blog = e.target.value; render(); };
 document.getElementById("skipped").onchange = e => { state.skipped = e.target.checked; render(); };
 const companyPosts = all.filter(p => p.blog.filter);
 const kept = all.filter(relevant);

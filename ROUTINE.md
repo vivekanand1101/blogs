@@ -14,6 +14,6 @@ Instructions for the scheduled Claude run that updates blogs.anandvivek.in.
    Every URL from `pending.json` must have an entry.
 4. `python3 build.py apply data/verdicts.json`, then delete `data/verdicts.json`.
 5. Commit `data/posts.json` with the message `Update posts YYYY-MM-DD` and push to `main`.
-   The push triggers GitHub Actions, which publishes the site.
+   The push triggers a Cloudflare Pages build, which publishes the site.
 
 Do not change any other file.

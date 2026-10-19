@@ -6,8 +6,9 @@
   build.py render           render public/ from data/posts.json
 
 A daily Claude routine (see ROUTINE.md) runs fetch, judges the pending posts
-against CRITERIA.md, runs apply, and pushes; GitHub Actions then renders and
-deploys. Only posts Claude marks relevant are shown. Standard library only.
+against CRITERIA.md, runs apply, and pushes; Cloudflare Pages then renders and
+deploys. People's blogs ("filter": false) show every post; company blogs show
+only what Claude marks relevant. Standard library only.
 """
 import email.utils
 import html
@@ -238,7 +239,6 @@ def render(blogs, store, status=None):
     data_js = json.dumps(payload, ensure_ascii=False).replace("</", "<\\/")
     page = (ROOT / "template.html").read_text().replace("/*__DATA__*/null", data_js)
     (OUT / "index.html").write_text(page)
-    (OUT / "CNAME").write_text("blogs.anandvivek.in\n")
     print(f"[render] {OUT.relative_to(ROOT)}/index.html")
 
 

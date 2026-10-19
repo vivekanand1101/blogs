@@ -1,7 +1,7 @@
 # What counts as relevant
 
-This applies only to company blogs (`"filter": true` in `blogs.json`). Posts from individual
-people (`"filter": false`) are always shown; for those, only tag the topics that fit.
+This applies only to blogs with `"filter": true` in `blogs.json` (company engineering blogs).
+Posts from `"filter": false` blogs are always shown; for those, only tag the topics that fit.
 
 I'm a backend engineer. Keep a post only when its main subject is one or more of:
 

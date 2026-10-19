@@ -126,5 +126,53 @@
         "url": "https://world.hey.com/dhh/feed.atom"
       }
     ]
+  },
+  {
+    "id": "amp",
+    "name": "Amp",
+    "home": "https://ampcode.com/news",
+    "filter": false,
+    "sources": [
+      {
+        "type": "feed",
+        "url": "https://ampcode.com/news.rss"
+      }
+    ]
+  },
+  {
+    "id": "typesafe",
+    "name": "TypeSafe AI",
+    "home": "https://typesafe.ai/blog",
+    "filter": false,
+    "sources": [
+      {
+        "type": "framer",
+        "url": "https://typesafe.ai/blog"
+      }
+    ]
+  },
+  {
+    "id": "simon",
+    "name": "Simon Willison",
+    "home": "https://simonwillison.net/",
+    "filter": false,
+    "sources": [
+      {
+        "type": "feed",
+        "url": "https://simonwillison.net/atom/entries/"
+      }
+    ]
+  },
+  {
+    "id": "pragmatic",
+    "name": "The Pragmatic Engineer",
+    "home": "https://newsletter.pragmaticengineer.com/",
+    "filter": false,
+    "sources": [
+      {
+        "type": "feed",
+        "url": "https://newsletter.pragmaticengineer.com/feed"
+      }
+    ]
   }
 ]

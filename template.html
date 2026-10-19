@@ -137,7 +137,7 @@
     </div>
   </div>
   <main id="main"></main>
-  <footer>Refreshed daily. Posts from people are always shown; from company blogs, Claude keeps the ones about AI, backend engineering or databases. <span id="since"></span></footer>
+  <footer>Refreshed daily. Full-feed blogs show every post; for the others, Claude keeps the ones about AI, backend engineering or databases. <span id="since"></span></footer>
 </div>
 <script>
 const DATA = /*__DATA__*/null;
@@ -200,9 +200,9 @@ function renderFilters() {
   const opt = (value, label) => el("option", { value, textContent: label, selected: state.blog === value });
   const group = (label, blogs) => el("optgroup", { label }, ...blogs.map(b => opt(b.id, b.name)));
   document.getElementById("blog").replaceChildren(
-    opt("all", "All blogs"), opt("people", "All people"), opt("companies", "All companies"),
-    group("People", DATA.blogs.filter(b => !b.filter)),
-    group("Companies", DATA.blogs.filter(b => b.filter)));
+    opt("all", "All blogs"), opt("people", "All full-feed blogs"), opt("companies", "All topic-filtered blogs"),
+    group("Full feed", DATA.blogs.filter(b => !b.filter)),
+    group("Topic-filtered by Claude", DATA.blogs.filter(b => b.filter)));
 }
 
 function renderLatest(main, list) {
@@ -249,9 +249,9 @@ const kept = all.filter(relevant);
 const judged = companyPosts.filter(p => p.verdict).length;
 const keptCompany = companyPosts.filter(relevant).length;
 document.getElementById("sub").textContent =
-  `Everything from ${DATA.blogs.filter(b => !b.filter).length} people, plus AI, backend and database posts from ${DATA.blogs.filter(b => b.filter).length} company blogs · ${kept.filter(isFresh).length} this week · updated ${new Date(DATA.updated).toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" })}`;
+  `Every post from ${DATA.blogs.filter(b => !b.filter).length} blogs, plus AI, backend and database posts from ${DATA.blogs.filter(b => b.filter).length} more · ${kept.filter(isFresh).length} this week · updated ${new Date(DATA.updated).toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" })}`;
 document.getElementById("since").textContent =
-  `From company blogs, Claude kept ${keptCompany} of ${judged} posts.` + (judged < companyPosts.length ? ` ${companyPosts.length - judged} are waiting to be judged.` : "") +
+  `From the topic-filtered blogs, Claude kept ${keptCompany} of ${judged} posts.` + (judged < companyPosts.length ? ` ${companyPosts.length - judged} are waiting to be judged.` : "") +
   (lastVisit ? ` Your last visit: ${new Date(lastVisit).toLocaleString()}.` : "");
 render();
 </script>

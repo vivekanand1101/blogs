@@ -139,18 +139,36 @@ def parse_anthropic(raw, base):
     return list(by_url.values())
 
 
-def anthropic_date(url):
-    """Featured posts on the listing page carry no date; read it off the article."""
+def parse_framer(raw, base):
+    """Framer blogs (typesafe.ai) have no RSS; each card reads "Category | Title | Summary"."""
+    page = raw.decode("utf-8", "replace")
+    posts, seen = [], set()
+    for m in re.finditer(r'<a[^>]+href="\./blog/([^"#?]+)"[^>]*>(.*?)</a>', page, re.S):
+        url = urljoin(base.rstrip("/") + "/", m.group(1))
+        parts = [strip_tags(x) for x in re.split(r"<[^>]+>", m.group(2))]
+        parts = [x for x in parts if x]
+        if url in seen or len(parts) < 2:
+            continue
+        seen.add(url)
+        posts.append({"title": parts[1], "url": url, "date": None,
+                      "summary": summarize(parts[2]) if len(parts) > 2 else ""})
+    return posts
+
+
+def article_date(url):
+    """Some listing pages carry no dates; read the date off the article itself."""
     try:
-        m = re.search(r'"datePublished":"([^"]+)"', fetch(url).decode("utf-8", "replace"))
-        return parse_date(m.group(1)) if m else None
+        page = fetch(url).decode("utf-8", "replace")
     except Exception:
         return None
+    m = (re.search(r'"datePublished":"([^"]+)"', page)
+         or re.search(r'(20\d\d-\d\d-\d\dT00:00:00\.000Z)', page))  # Framer's publish date
+    return parse_date(m.group(1)) if m else None
 
 
 def fetch_source(src):
     raw = fetch(src["url"])
-    parser = parse_anthropic if src["type"] == "anthropic" else parse_feed
+    parser = {"anthropic": parse_anthropic, "framer": parse_framer}.get(src["type"], parse_feed)
     return [p for p in parser(raw, src["url"]) if p["title"] and p["url"].startswith("http")]
 
 
@@ -177,8 +195,8 @@ def fetch_all(blogs, store):
                 p["verdict"] = old["verdict"]
             if not p["date"] and old:
                 p["date"] = old["date"]
-            if not p["date"] and src["type"] == "anthropic":
-                p["date"] = anthropic_date(p["url"])
+            if not p["date"] and src["type"] != "feed":
+                p["date"] = article_date(p["url"])
             p["date"] = p["date"] or p["seen"]
             known[p["url"]] = p
         store[blog["id"]] = list(known.values())

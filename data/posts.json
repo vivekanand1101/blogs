@@ -2106,6 +2106,21 @@
  ],
  "meta": [
   {
+   "title": "GenRecs Tokenization: Transforming Ads Recommendation at Meta with Stable Model Vocabulary",
+   "url": "https://engineering.fb.com/2026/10/19/ml-applications/genrecs-tokenization-transforming-ads-recommendation-at-meta-with-stable-model-vocabulary/",
+   "date": "2026-10-19T16:00:47+00:00",
+   "summary": "Generative Recommenders (GenRecs) represent a paradigm shift from scoring every ad to reasoning about ad content and user preferences together in order to predict the best outcome for advertisers. Leveraging the world…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai",
+     "backend"
+    ],
+    "reason": "How Meta tokenizes ad recommendation models with a stable vocabulary."
+   }
+  },
+  {
    "title": "The Thin Orchestrator: How We Made Our AI Agents More Reliable by Giving the Router Less to Do",
    "url": "https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture/",
    "date": "2026-10-19T15:30:37+00:00",
@@ -3731,6 +3746,1433 @@
    "verdict": {
     "relevant": false,
     "topics": [],
+    "reason": ""
+   }
+  }
+ ],
+ "amp": [
+  {
+   "title": "See Your Runner's Desktop",
+   "url": "https://ampcode.com/news/runner-desktop",
+   "date": "2026-10-16T00:00:00+00:00",
+   "summary": "You can now see and control your macOS or Linux runner's desktop. This is nice for trying native apps that Amp builds for you, such as iOS apps: Turn on Share This Mac's Display under Settings › Runner in the macOS app…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Take Puck with You",
+   "url": "https://ampcode.com/news/take-puck-with-you",
+   "date": "2026-10-13T00:00:00+00:00",
+   "summary": "You can now talk to Puck from ChatGPT, Claude, and other agents via MCP. After developing an idea with ChatGPT's voice mode on a walk, send it directly to Puck for implementation. Puck knows your projects in Amp and…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "First Things First, Faster",
+   "url": "https://ampcode.com/news/first-things-first-faster",
+   "date": "2026-10-12T00:00:00+00:00",
+   "summary": "The Changes pane now automatically puts files in an intelligent order. Amp reads the diff, identifies the files that are essential to the change, and puts them first. If the diff changes, Amp computes an updated order…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "You've Got Comments",
+   "url": "https://ampcode.com/news/github-listeners",
+   "date": "2026-10-12T00:00:00+00:00",
+   "summary": "Amp now follows up on GitHub pull requests it opens. Comments, reviews, and CI results show up in the same thread. When Amp opens a PR, the agent can now subscribe to the PR's comments, reviews, and CI for its latest…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Use Your Claude Plan in Amp",
+   "url": "https://ampcode.com/news/use-your-claude-plan",
+   "date": "2026-10-10T00:00:00+00:00",
+   "summary": "You can now use your Claude Pro/Max subscription in Amp. It's free and available for everyone now. When creating a new thread, just pick Mode > Claude Code . It'll ask to link your Claude sub if you haven't already…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Many, Many Pucks",
+   "url": "https://ampcode.com/news/many-many-pucks",
+   "date": "2026-10-06T00:00:00+00:00",
+   "summary": "You can now have multiple separate conversations with Puck. We know you love Puck. We also know you've been asking Puck about your recent orbs, a bug fix, and dinner plans, all in the same conversation. Now each of…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Plaid Speed",
+   "url": "https://ampcode.com/news/plaid-mode",
+   "date": "2026-09-29T00:00:00+00:00",
+   "summary": "Amp now supports Plaid speed for modes that use GPT-6 Astra. Plaid uses OpenAI's ultrafast speed tier, which enables inference requests to run up to 6× faster, with 6× cost per token. Open the mode picker in the new…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Opus 5.5",
+   "url": "https://ampcode.com/news/opus-5.5",
+   "date": "2026-09-28T00:00:00+00:00",
+   "summary": "article[data-news-slug=\"opus-5.5\"] .prose li blockquote, article[data-news-slug=\"opus-5.5\"] .prose li blockquote p { font-size: inherit !important; font-weight: inherit !important; line-height: inherit !important;…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Less Noise",
+   "url": "https://ampcode.com/news/less-noise",
+   "date": "2026-09-25T00:00:00+00:00",
+   "summary": "@media (min-width: 1200px) { article[data-news-slug=\"less-noise\"] > .cell-pad.overflow-x-clip { overflow-x: visible; } .less-noise-illustration { display: block; width: min(calc(100vw - 12rem), calc(100% + 50rem));…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Shared Runners",
+   "url": "https://ampcode.com/news/shared-runners",
+   "date": "2026-09-24T00:00:00+00:00",
+   "summary": "You can now share a runner with your workspace. Start it with --share and everyone in your workspace can start threads on that machine from ampcode.com. If you have a machine with GPUs, a Mac that's used to build and…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "The Mac App Is Your Runner",
+   "url": "https://ampcode.com/news/the-mac-app-is-your-runner",
+   "date": "2026-09-24T00:00:00+00:00",
+   "summary": "The Amp app for macOS now starts a runner for you. You no longer need amp --no-tui open in a terminal to run threads on your Mac. Open App Settings… (⌘⇧,), go to Runner , and click + to add a folder or one of your…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "One Runner, Many Worktrees",
+   "url": "https://ampcode.com/news/one-runner-many-worktrees",
+   "date": "2026-09-22T00:00:00+00:00",
+   "summary": "A runner can now create Git worktrees. Pick a repository the runner serves, hit Tab, name the branch, and the thread starts in a fresh checkout. Your main checkout stays untouched. In the directory picker, every Git…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "One Runner Is Now Enough",
+   "url": "https://ampcode.com/news/one-runner-is-now-enough",
+   "date": "2026-09-17T00:00:00+00:00",
+   "summary": "A runner can now serve many directories, not just the one it was started in. You can point it at specific projects and directories or let it find your Git repositories. Start a runner and tell it which directories to…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Free Agent",
+   "url": "https://ampcode.com/news/free-agent",
+   "date": "2026-09-13T00:00:00+00:00",
+   "summary": "Amp is now free to use when you bring your own compute and model subscriptions/keys. No monthly plan is required anymore to use your ChatGPT subscription with Amp. No BYOK token fees or limits for anyone (except our…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Restack Your Changes",
+   "url": "https://ampcode.com/news/restack-your-changes",
+   "date": "2026-09-11T00:00:00+00:00",
+   "summary": "We've added a Restack button that organizes all of your thread's changes into a cleaner set of commits. Use it to split a large diff into logical pieces for review, clean up an agent's intermediate commits before…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Customize Your Dial",
+   "url": "https://ampcode.com/news/build-your-own-dial",
+   "date": "2026-09-10T00:00:00+00:00",
+   "summary": "You can now choose the models behind Amp's builtin modes and put your own agents on the Dial . There are two tabs in Settings → Mode Dial . Tune Your Modes In Tune Modes , choose the model and reasoning effort for a…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Steer, Don't Queue",
+   "url": "https://ampcode.com/news/steer-dont-queue",
+   "date": "2026-09-08T00:00:00+00:00",
+   "summary": "When you send a message while the agent is working, it's now delivered at the next possible opportunity, instead of being queued until the agent finishes its turn. This means the agent acts on your feedback sooner and…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Desktop",
+   "url": "https://ampcode.com/news/desktop",
+   "date": "2026-09-04T00:00:00+00:00",
+   "summary": "Your orb now has a desktop you can see and control . Use the Desktop tab in any orb thread to get a high-resolution interactive Linux desktop. It's useful for verifying the agent's work when developing for Linux,…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Fable 5.1",
+   "url": "https://ampcode.com/news/fable-5.1",
+   "date": "2026-09-01T00:00:00+00:00",
+   "summary": "Claude Fable 5.1 now powers Amp's ultra mode, replacing Fable 5. It's very good at writing, very good at taking direction mid-task, and very good at working on its own. And it costs less to run. Long Tasks and Proof of…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Intelligently Ordered Diffs",
+   "url": "https://ampcode.com/news/intelligently-ordered-diffs",
+   "date": "2026-09-01T00:00:00+00:00",
+   "summary": "The first challenge in code review is figuring out which files to read first. Amp now orders diffs intelligently and highlights which files contain the essential changes. Click the file order button to toggle between…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Space to Talk",
+   "url": "https://ampcode.com/news/space",
+   "date": "2026-08-31T00:00:00+00:00",
+   "summary": "Every thread in Amp now comes with its own space to talk. Hit Enter and you're in. Turn on your camera, share your screen, and talk it over with your team while the agent works. No links to paste, no calendar invite,…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Amp on iOS & macOS",
+   "url": "https://ampcode.com/news/amp-on-ios-and-macos",
+   "date": "2026-08-28T00:00:00+00:00",
+   "summary": "Control your orbs from anywhere. Install the iOS app through TestFlight[^1], and the macOS app through direct download. Download at ampcode.com/app . It's orbin' time no matter where you are.",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "No Mailmap Required",
+   "url": "https://ampcode.com/news/no-mailmap-required",
+   "date": "2026-08-28T00:00:00+00:00",
+   "summary": "Amp can now use a Git identity that is separate from the email on your Amp account. Pick the name and verified email that should appear on commits made in orbs. You can ask Puck to set it for you: If you have not added…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Projects with Multiple Repositories",
+   "url": "https://ampcode.com/news/multi-repo-projects",
+   "date": "2026-08-27T00:00:00+00:00",
+   "summary": "Projects in Amp can now include more than one repository. Additional repositories are checked out to an adjacent directory in the orb and the agent is made aware of them. The changes panel will show the diff across all…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "So Long, TUI Sidebar",
+   "url": "https://ampcode.com/news/so-long-tui-sidebar",
+   "date": "2026-08-27T00:00:00+00:00",
+   "summary": "We are removing the sidebar from the Amp TUI . Why? Because orbs , runners , and cross-agent messages means that there are more threads than ever. We believe the best place to keep track of all those threads is in the…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Setup Without a Commit",
+   "url": "https://ampcode.com/news/setup-without-a-commit",
+   "date": "2026-08-25T00:00:00+00:00",
+   "summary": "You can now store scripts to set up orbs outside of your repository. Amp can store pre-clone and pre-setup scripts in your project settings and access them when spawning an orb. The pre-clone setup script gives Amp…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Friendly URLs for Sharing Orbs",
+   "url": "https://ampcode.com/news/friendly-urls-for-sharing-orbs",
+   "date": "2026-08-23T00:00:00+00:00",
+   "summary": "We use orb portals all the time to share what we're builing and get feedback. But the URLs were ugly and auto-generated. So, we made them nice and friendly. Now, instead of sharing…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Explain Usage",
+   "url": "https://ampcode.com/news/explain-usage",
+   "date": "2026-08-21T00:00:00+00:00",
+   "summary": ".explain-usage-video-border { margin: 1.5rem 0; padding: 8px; border: 1px solid rgb(128 128 128 / 20%); border-radius: 18px; background: rgb(128 128 128 / 20%); } .explain-usage-video-clip { overflow: hidden;…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "MCP in Orbs",
+   "url": "https://ampcode.com/news/mcp-in-orbs",
+   "date": "2026-08-19T00:00:00+00:00",
+   "summary": "You can now connect remote MCP servers on ampcode.com and use them in orbs, the TUI, and with Puck. To add an MCP server: Visit ampcode.com/settings/mcp-servers , Select a pre-configured server or click \"Add MCP…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Pass the Orb to the Left Hand Side",
+   "url": "https://ampcode.com/news/pass-the-orb-to-the-left-hand-side",
+   "date": "2026-08-19T00:00:00+00:00",
+   "summary": "You can now bring your team into your orb. Use @ to tag members of your team, and they'll be able to view, drive, and send chat messages to the thread. We've been having a lot of fun with this feature recently. Here…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Education Discount",
+   "url": "https://ampcode.com/news/edu-discount",
+   "date": "2026-08-18T00:00:00+00:00",
+   "summary": "Students and teachers can now subscribe to Amp for $10/month, half the usual price. What do you get for $10? Quite a lot! You get to use the best frontier agent. You get orbs , our remote machines that let you run…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Talk to Puck",
+   "url": "https://ampcode.com/news/talk-to-puck",
+   "date": "2026-08-18T00:00:00+00:00",
+   "summary": "You can now call Puck and talk with it out loud: Calling Puck is powered by gpt-realtime-2.1 . It delegates work to the Puck agent you already know, powered by GPT-5.6 Sol . Once the agent responds, gpt-realtime-2.1…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Global Plugins and Skills",
+   "url": "https://ampcode.com/news/global-plugins-and-skills",
+   "date": "2026-08-11T00:00:00+00:00",
+   "summary": "With so much work happening in orbs there needed to be a new place to store Amp plugins and skills. So we added global plugins and skills . They're Amp-hosted, built for agents, and work everywhere Amp runs. You can…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "A Dial for You",
+   "url": "https://ampcode.com/news/a-dial-for-you",
+   "date": "2026-08-10T00:00:00+00:00",
+   "summary": "We changed the Dial . Link a ChatGPT subscription and low , medium , and high only use OpenAI models: as the main agent, as the oracle, as the thread reader, as code review. Every model behind those modes is an OpenAI…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Size the Orbs of Production!",
+   "url": "https://ampcode.com/news/size-the-orbs-of-production",
+   "date": "2026-08-07T00:00:00+00:00",
+   "summary": "People are using a lot of orbs . We love to see that. We've shipped a lot of things so that Amp subscriptions keep covering the whole month of orb usage for almost everyone, even as orb usage grows quickly. Way back on…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Portals into Orbs",
+   "url": "https://ampcode.com/news/portals",
+   "date": "2026-08-06T00:00:00+00:00",
+   "summary": ".portal-video-border { margin: 1.5rem 0; padding: 8px; border: 1px solid rgb(128 128 128 / 20%); border-radius: 18px; background: rgb(128 128 128 / 20%); } .portal-video-clip { overflow: hidden; border-radius: 10px; }…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Attach Anything",
+   "url": "https://ampcode.com/news/attach-anything",
+   "date": "2026-08-04T00:00:00+00:00",
+   "summary": "You can now upload any file to your orbs for Amp to see and use: videos, logs, PDFs, spreadsheets, datasets, and more. What new stuff can you do? Here's what we've found useful so far: Screen-record your app and ask…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Banking on the Frontier",
+   "url": "https://ampcode.com/news/amp-labs-westpac",
+   "date": "2026-07-29T00:00:00+00:00",
+   "summary": "Amp Labs has partnered with Westpac , one of Australia's oldest and most respected companies, a fixture of Australian business for more than two centuries, to transform how the bank builds and delivers technology. Amp…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Who Cares About the Model?",
+   "url": "https://ampcode.com/news/who-cares-about-the-model",
+   "date": "2026-07-29T00:00:00+00:00",
+   "summary": "Two weeks ago we shipped the Dial and quietly did something that's supposed to be traumatic: we changed the default model. Before the Dial, Amp's default mode was smart , running Claude Opus 4.8 and carrying more than…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Event Driven Orbs",
+   "url": "https://ampcode.com/news/event-driven-orbs",
+   "date": "2026-07-23T00:00:00+00:00",
+   "summary": "Amp's orbs can now receive requests and react to events outside Amp. That means an orb can wake up when CI fails on GitHub, when someone opens a Linear issue, when a monitor raises an alert, or when an event arrives…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Multiplayer",
+   "url": "https://ampcode.com/news/multiplayer",
+   "date": "2026-07-22T00:00:00+00:00",
+   "summary": "Three weeks ago, we shipped agents in orbs . Today, more and more of our work happens inside orbs. In fact, the orbs are quickly becoming the de facto \"unit of work.\" They contain not just the code of the solution, but…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Right on Schedule",
+   "url": "https://ampcode.com/news/schedule",
+   "date": "2026-07-21T00:00:00+00:00",
+   "summary": "Agents in Amp can now set their own schedules and wake themselves up. When a schedule fires, the agent wakes up with its saved prompt and continues right where it left off, with all of its context and history. Works…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Meet Puck",
+   "url": "https://ampcode.com/news/meet-puck",
+   "date": "2026-07-20T00:00:00+00:00",
+   "summary": "Say Hello to Puck, your new assistant in Amp: Open it up from anywhere on ampcode.com: Puck is always available and has access to many different tools to help you manage your agents in Amp. Here are some examples of…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Amp Is Now In Slack",
+   "url": "https://ampcode.com/news/slack-integration",
+   "date": "2026-07-20T00:00:00+00:00",
+   "summary": "You can now summon Amp in Slack. Connect your workspace from Amp's settings , then mention @Amp in any channel or thread. Amp sends your message to your personal Puck , which can initiate bug fixes, spike new features,…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Subscriptions, At Last",
+   "url": "https://ampcode.com/news/subscriptions",
+   "date": "2026-07-18T00:00:00+00:00",
+   "summary": "Today we're launching Amp Subscriptions in Beta . You can now subscribe monthly to Amp and explore the frontier with us, with cheaper and more predictable pricing. See current tiers and pricing . Tier FAQs Amp Is Not…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "From Agent to Agent",
+   "url": "https://ampcode.com/news/from-agent-to-agent",
+   "date": "2026-07-17T00:00:00+00:00",
+   "summary": "You can now ask your agents in Amp to spawn other agents. In orbs , your local machine [^1], or on any other machine . They can send messages and files to each other, too. You can have agents in orbs work on side…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Secrets of the Orb",
+   "url": "https://ampcode.com/news/secrets-of-the-orb",
+   "date": "2026-07-14T00:00:00+00:00",
+   "summary": "Orbs can now prove their identity using OIDC , so you can use Amp for ops and infrastructure tasks more safely. Service providers that support OIDC authentication can be configured to trust the identity provided by Amp…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "The Dial",
+   "url": "https://ampcode.com/news/the-dial",
+   "date": "2026-07-09T00:00:00+00:00",
+   "summary": "Amp's agent modes are now a dial: low , medium , high , ultra . They replace smart , deep , rush , and large . The old modes were models in disguise: each name hid a model, a prompt, a reasoning effort — and to pick…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Agents, Anywhere",
+   "url": "https://ampcode.com/news/agents-anywhere",
+   "date": "2026-07-08T00:00:00+00:00",
+   "summary": "video { border-radius:10px !important; box-shadow: none !important; --tw-ring-shadow: 0 0 #0000 !important; } .demo-video { width: 100% !important; } @media (min-width: 1200px) { .demo-video { width: min(calc(100vw -…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "More Orb Sizes",
+   "url": "https://ampcode.com/news/more-orb-sizes",
+   "date": "2026-07-03T00:00:00+00:00",
+   "summary": "You can now pick the size of the orbs used to run Amp agents remotely. See orb sizes and pricing in the Amp Owner's Manual. Go to project settings to change the size of a project's orbs. We also doubled orb storage…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Read Bigger Threads",
+   "url": "https://ampcode.com/news/read-bigger-threads",
+   "date": "2026-07-02T00:00:00+00:00",
+   "summary": "Threads outgrew read_thread , so we rewrote it. read_thread is the tool that lets Amp pull context out of other Amp threads when you mention them. Before the rewrite, it would fetch the whole thread and extract the…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Agents in Orbs",
+   "url": "https://ampcode.com/news/agents-in-orbs",
+   "date": "2026-06-30T00:00:00+00:00",
+   "summary": "video { border-radius:10px !important; box-shadow: none !important; --tw-ring-shadow: 0 0 #0000 !important; } .demo-video { width: 100% !important; } @media (min-width: 1200px) { .demo-video { width: min(calc(100vw -…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Custom Agents",
+   "url": "https://ampcode.com/news/custom-agents",
+   "date": "2026-06-19T00:00:00+00:00",
+   "summary": "You can now create custom agents in Amp with plugins. You can use these custom agents as your main Amp agent, or as subagents. You can use them as a small part of a tool pipeline that you invoke with amp -x . Or you…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "A Faster Librarian",
+   "url": "https://ampcode.com/news/a-faster-librarian",
+   "date": "2026-06-18T00:00:00+00:00",
+   "summary": "The Librarian is now ~3x faster and 43% cheaper, with the same quality. It now runs on GPT-5.5 (no reasoning) with websocket mode and an updated system prompt that encourages more parallel exploration. The Librarian…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Diffs",
+   "url": "https://ampcode.com/news/diffs",
+   "date": "2026-06-16T00:00:00+00:00",
+   "summary": "Outsource your coding, but not your understanding of the code. As agents generate larger quantities of code, it is more important than ever for humans to comprehend the code to ensure its quality. You can now review…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Faster Deep & Rush",
+   "url": "https://ampcode.com/news/faster-deep-rush",
+   "date": "2026-06-05T00:00:00+00:00",
+   "summary": "The first token now arrives 87% faster and entire responses are 32% faster, p50, in Amp's deep and rush modes. How? Mostly using websockets for communication with OpenAI, partly because we rebuilt Amp to be much faster…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Agents, Everywhere",
+   "url": "https://ampcode.com/news/agents-everywhere",
+   "date": "2026-06-04T00:00:00+00:00",
+   "summary": "Amp has a new UI and sidebar, built for watching and driving all of your Amp agents, on web, mobile, and CLI. We rebuilt Amp's foundation last month, so that your agents can run for longer, with less handholding…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Opus 4.8",
+   "url": "https://ampcode.com/news/opus-4.8",
+   "date": "2026-06-04T00:00:00+00:00",
+   "summary": "Opus 4.8 now powers Amp's smart mode, replacing Opus 4.7. It is a better coding agent than Opus 4.7: more faithful to the prompt, tighter in the changes it makes, and better at checking its own work. In our internal…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "The End of Public Threads",
+   "url": "https://ampcode.com/news/end-of-public-threads",
+   "date": "2026-06-02T00:00:00+00:00",
+   "summary": "We’ve removed public, internet-wide, discoverable thread sharing from Amp. You can still share threads within a workspace, or as Unlisted to share them with anyone by unguessable URL. Why? It’s getting too hard to…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Plugins, Everywhere",
+   "url": "https://ampcode.com/news/plugins-everywhere",
+   "date": "2026-05-28T00:00:00+00:00",
+   "summary": "Amp plugins can now show UI elements on the web, too. Supported are notifications, confirmation dialogs, input fields, and select elements. See the plugin documentation for examples of what's possible.",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  }
+ ],
+ "typesafe": [
+  {
+   "title": "Jev: For the builders AND dreamers",
+   "url": "https://typesafe.ai/blog/jev-1-14",
+   "date": "2026-10-14T00:00:00+00:00",
+   "summary": "TL;DR: We're releasing an improved Jev 1.14.0 along with experimental features for our dreamers: images, a new type, and longer context. Enter the danger zone at your own risk. 🔥",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "TypeSafe A raises Series AI",
+   "url": "https://typesafe.ai/blog/series-ai",
+   "date": "2026-10-09T00:00:00+00:00",
+   "summary": "TL;DR raised a lot of money, and we’re going to make sure it shows up as benefits to y’all 🫶",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Introducing System One Models & Jev",
+   "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+   "date": "2026-09-15T00:00:00+00:00",
+   "summary": "After two years in stealth, we’re excited to finally introduce a new intelligence primitive for software.",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Lies, Damned Lies, and Benchmarks",
+   "url": "https://typesafe.ai/blog/antibenchmaxxing",
+   "date": "2026-09-11T00:00:00+00:00",
+   "summary": "As the famously misattributed quote goes: “There are three kinds of lies: lies, damned lies, and statistics.” There is now a fourth kind: AI benchmarks.",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "The Bitterest Lesson",
+   "url": "https://typesafe.ai/blog/bitterest-lesson",
+   "date": "2026-09-10T00:00:00+00:00",
+   "summary": "TL;DR: Compute drives progress in AI, but what good is progress if you are not doing the right task!",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "AI: too good to be true, too bad to be useful | TypeSafe AI",
+   "url": "https://typesafe.ai/blog/ai-too-good-to-be-true-too-bad-to-be-useful-typesafe-ai",
+   "date": "2026-06-19T00:00:00+00:00",
+   "summary": "RLHF-trained language models please humans and assist rather than make reliable autonomous decisions. What comes next?",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Diogo Almeida - Founders You Should Know",
+   "url": "https://typesafe.ai/blog/diogo-almeida---founders-you-should-know",
+   "date": "2026-03-31T00:00:00+00:00",
+   "summary": "Why are some AI applications too good to be true and others total bunk? What is the reason behind the massive gap between over-promise and under-deliver?",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  }
+ ],
+ "simon": [
+  {
+   "title": "Hello Python 3.15, goodbye 3.10, and now I can use 3.11",
+   "url": "https://simonwillison.net/2026/Oct/12/python-3-15/",
+   "date": "2026-10-12T18:15:38+00:00",
+   "summary": "Python 3.15 is here ! Here's the essential What's new in Python 3.15 guide, this year curated by 3.14 and 3.15 release manager Hugo van Kemenade. As someone who builds open source software that works in every supported…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "backend"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "A new feature for my blog, built using my voice",
+   "url": "https://simonwillison.net/2026/Oct/9/built-using-my-voice/",
+   "date": "2026-10-09T12:54:06+00:00",
+   "summary": "I shipped a new feature for my blog today: the Newsletters page, which offers an index of all of the newsletters I've sent out, both my free weekly Substack and my monthly sponsors-only updates. I built the feature…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Claude Haiku 5.5",
+   "url": "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
+   "date": "2026-10-07T20:56:21+00:00",
+   "summary": "As previously promised , here's Anthropic's new fast, low cost model: Introducing Claude Haiku 5.5 . The previous Haiku, 4.5, was very much showing its age. It came out almost a year ago , and was priced at $1/million…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "We're going to need default hard budget caps on pretty much everything",
+   "url": "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/",
+   "date": "2026-10-03T23:34:02+00:00",
+   "summary": "Here's a product feature which the world is going to need a whole lot more of over the coming months and years: default hard budget caps . I'm talking about the feature of pay-by-usage services and APIs that lets you…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "OpenAI DevDay 2026 live blog",
+   "url": "https://simonwillison.net/2026/Sep/29/openai-devday-2026-live-blog/",
+   "date": "2026-09-29T15:55:13+00:00",
+   "summary": "I'm at OpenAI DevDay today, in Fort Mason, San Francisco. Same as last year I'll be live blogging the keynote and some other notes during the day. OpenAI gave me a free ticket and a seat in the \"creator\" area for the…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "2026 in LLMs (so far)",
+   "url": "https://simonwillison.net/2026/Sep/27/2026-in-llms-so-far/",
+   "date": "2026-09-27T23:54:15+00:00",
+   "summary": "On Friday I gave the closing keynote at the WeAreDevelopers World Congress North America in San Jose. I tied together the key trends from the past year into a chronological exploration of everything that happened in…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Claude Opus 5.5, GPT-6 Sol, GPT-6 Luna, and a new price war",
+   "url": "https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/",
+   "date": "2026-09-22T23:46:41+00:00",
+   "summary": "Yesterday was Grok 4.7 ( pelicans ) and MiMo v2.6 Flash/Pro ( more pelicans ). Today Anthropic released Claude Opus 5.5 , and around an hour later OpenAI released GPT-6 Sol and GPT-6 Luna . It's going to take a while…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Jev introduces a new shape of LLM - System One, aka Decision Models",
+   "url": "https://simonwillison.net/2026/Sep/21/jev/",
+   "date": "2026-09-21T23:09:20+00:00",
+   "summary": "Last week TypeSafe AI unveiled Jev , their first example of a new category of model that they are calling \"System One models\" (I'm with Maggie Appleton, I think \"decision models\" is a better name for these). Jev is an…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Generating running routes with GPT-6 Astra and ChatGPT Work",
+   "url": "https://simonwillison.net/2026/Sep/12/astra-running-routes/",
+   "date": "2026-09-12T23:56:42+00:00",
+   "summary": "Here's a neat thing I had ChatGPT Work with GPT-6 Astra (Max) do this morning: I live at <my address>. Figure out 5K and 10K running routes from me that loop from my house. Use OSM data. It worked for 27 minutes and…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "OpenAI agents attacked RubyGems back in May",
+   "url": "https://simonwillison.net/2026/Sep/12/openai-agents-rubygems/",
+   "date": "2026-09-12T00:42:25+00:00",
+   "summary": "OpenAI agents carried out an undisclosed attack on RubyGems is a new bombshell report from Spencer Kitts, Thomas Larsen, and Sydney Von Arx - three of the four authors of the report on the agent attack on disused wikis…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Some thoughts on the Navier–Stokes Millennium Prize Problem",
+   "url": "https://simonwillison.net/2026/Sep/8/on-navier-stokes/",
+   "date": "2026-09-08T23:55:12+00:00",
+   "summary": "On the Navier–Stokes Millennium Prize Problem introduces an impressive result from OpenAI, who used an unreleased model to produce a resolution to the Navier–Stokes existence and smoothness problem , one of the seven…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": ""
+   }
+  },
+  {
+   "title": "The Pelican comparison grid for Astra is pretty interesting",
+   "url": "https://simonwillison.net/2026/Sep/4/astra-pelicans/",
+   "date": "2026-09-04T23:59:05+00:00",
+   "summary": "I got access to GPT-6 Astra this afternoon, so naturally I used it to generate SVGs of pelicans riding bicycles - at low, medium, high, xhigh and max reasoning levels (Astra doesn't support reasoning=none). Then I…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "OpenAI's rogue agents were caught communicating via public wikis",
+   "url": "https://simonwillison.net/2026/Sep/4/rogue-agent-wikis/",
+   "date": "2026-09-04T17:38:48+00:00",
+   "summary": "Here we go again... Discovery of a new OpenAI agent message board by Sydney Von Arx, Cormac Slade Byrd, Spencer Kitts, and Thomas Larsen describes the latest accidental cyberattack by models being trained by OpenAI.…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Claude's new system prompt really doesn't want to reproduce song lyrics",
+   "url": "https://simonwillison.net/2026/Sep/2/claudes-new-system-prompt/",
+   "date": "2026-09-02T14:16:42+00:00",
+   "summary": "Anthropic publish the system prompts for their Claude consumer applications ( Claude.ai and the Claude mobile apps - sadly not for Claude Cowork or Claude Code). I love that they do this, and that they share not just…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Claude Fable 5.1 made me a really nice animated pelican",
+   "url": "https://simonwillison.net/2026/Sep/1/claude-fable-5-1/",
+   "date": "2026-09-01T23:57:28+00:00",
+   "summary": "Today is Claude Fable (and Mythos) 5.1 day . Anthropic say that Fable 5.1 \"sets a new standard for coding, knowledge work, and long-running problem-solving tasks\". Their announcement spends a notable amount of time on…",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  }
+ ],
+ "pragmatic": [
+  {
+   "title": "The Pulse: OpenAI software engineer accused of spying",
+   "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-openai-software-engineer",
+   "date": "2026-10-15T16:55:18+00:00",
+   "summary": "Also: insider details on how and why Anthropic moved off Git, a new trend of AI-assisted coding rounds inside of Big Tech, and more",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Uber’s AI infra, from the inside",
+   "url": "https://newsletter.pragmaticengineer.com/p/ubers-ai-infra-from-the-inside",
+   "date": "2026-10-14T17:06:56+00:00",
+   "summary": "Uber Distinguished Engineer Uday Kiran Medisetty shares how Uber builds internal developer tools, integrates AI agents into engineering workflows, and measures their impact on productivity.",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai",
+     "backend"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Building resilient AI-powered software, and planning for when things go wrong",
+   "url": "https://newsletter.pragmaticengineer.com/p/building-resilient-systems",
+   "date": "2026-10-13T16:03:33+00:00",
+   "summary": "How to handle uncertainty with AI vendors and disaster recovery (DR) approaches to consider. An excerpt from the book Building Resilient Distributed Systems by Sam Newman",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai",
+     "backend"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "The Pulse: new trend of building “internal vibe-coding apps” at tech companies",
+   "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-new-trend-of-building-internal",
+   "date": "2026-10-08T16:55:51+00:00",
+   "summary": "Also: do us engineers truly enjoy ‘hard problems’, or do we really just want to solve those which attract promotions, new open models launch in the EU and US, and more",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Building resilient systems with Sam Newman",
+   "url": "https://newsletter.pragmaticengineer.com/p/building-resilient-systems-with-sam",
+   "date": "2026-10-07T17:19:58+00:00",
+   "summary": "Sam Newman joins me to discuss when to use microservices, how to build resilient distributed systems, and how AI is changing software development.",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "backend"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "The state of the tech industry in 2026",
+   "url": "https://newsletter.pragmaticengineer.com/p/the-state-of-the-tech-industry-in",
+   "date": "2026-10-06T16:25:03+00:00",
+   "summary": "A look into what has changed, what’s still the same – and what’s broken – in the tech industry. The full video and the summary of my keynote at LDX3 New York",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": ""
+   }
+  },
+  {
+   "title": "The Pulse: Firebase’s global outage & poor response",
+   "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-firebases-global-outage",
+   "date": "2026-10-01T16:43:19+00:00",
+   "summary": "Also: OpenAI’s platform play that has similarities to AWS, more data on companies moving to open models, and more",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "backend"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Distributed databases with Peter Mattis",
+   "url": "https://newsletter.pragmaticengineer.com/p/distributed-databases-with-peter",
+   "date": "2026-09-30T16:30:05+00:00",
+   "summary": "Cockroach Labs co-founder Peter Mattis discusses building reliable distributed systems and how AI helps him write more code without sacrificing quality.",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "backend",
+     "databases"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Why has Shopify dropped React Native?",
+   "url": "https://newsletter.pragmaticengineer.com/p/shopify-native-mobile",
+   "date": "2026-09-29T15:53:19+00:00",
+   "summary": "It’s only been a year since the e-commerce platform declared it was very happy with React Native, but now Shopify is dumping it – and the reason, unsurprisingly, is AI",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": ""
+   }
+  },
+  {
+   "title": "The Pulse: RoR creator sparks new “death of coding by hand” debate",
+   "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-end-of-coding-by-hand",
+   "date": "2026-09-24T16:44:27+00:00",
+   "summary": "37signals – the creator of Ruby on Rails (RoR) – moves over to agents generating nearly all its code. Also: Amazon and Meta struggle to hire engineers, code reviews will probably also go away and more",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Design Engineering with Maggie Appleton",
+   "url": "https://newsletter.pragmaticengineer.com/p/design-engineering-with-maggie-appleton",
+   "date": "2026-09-23T17:07:22+00:00",
+   "summary": "Maggie Appleton on what engineers can learn from designers, working with AI agents, and why human judgment still matters.",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": ""
+   }
+  },
+  {
+   "title": "How will AI change operating systems? Part 2: Windows",
+   "url": "https://newsletter.pragmaticengineer.com/p/windows-and-ai",
+   "date": "2026-09-22T17:17:31+00:00",
+   "summary": "Deepdive into the Windows team’s efforts to make the OS “AI agent-friendly” and win back developers by going all-in on Linux on Windows, local models, GPUs, & more",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "AI Skills with Matt Pocock",
+   "url": "https://newsletter.pragmaticengineer.com/p/ai-skills-with-matt-pocock",
+   "date": "2026-09-17T11:29:00+00:00",
+   "summary": "Matt Pocock explains how he uses AI coding skills and agents to plan and build software, and why engineering fundamentals matter more than ever.",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Inside OpenAI’s agentic software factory",
+   "url": "https://newsletter.pragmaticengineer.com/p/openai-software-factory",
+   "date": "2026-09-15T15:41:25+00:00",
+   "summary": "A deepdive into how Codex has “taken over” OpenAI, how the frontier lab builds its agentic software factory, and the engineering challenges of one billion users. Details from inside OpenAI",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "The Pulse #191: a new trend of CPU shortages",
+   "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-191-a-new-trend-of-cpu",
+   "date": "2026-09-10T17:13:44+00:00",
+   "summary": "For compute-intensive services: it’s worth reserving more compute now. Also: growth dreams end for more COVID-era unicorns, engineers losing touch with systems when AI handles incidents, and more",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "backend"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "Building Codex with Tibo Sottiaux",
+   "url": "https://newsletter.pragmaticengineer.com/p/building-codex-with-tibo-sottiaux",
+   "date": "2026-09-09T15:57:24+00:00",
+   "summary": "OpenAI’s Tibo Sottiaux shares how Codex was built and how it’s reshaping software development.",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "What is happening with code reviews?",
+   "url": "https://newsletter.pragmaticengineer.com/p/what-is-happening-with-code-reviews",
+   "date": "2026-09-08T16:32:01+00:00",
+   "summary": "AI generates more code than devs can track in 2026, so will the code review process have to adapt – or is it doomed? A look into this decades-old practice and the approaches that could replace it",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "backend"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "The Pulse: tech companies move to open AI models",
+   "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-tech-companies-move-to",
+   "date": "2026-09-03T17:00:14+00:00",
+   "summary": "Cost-saving efforts reveal that moving simpler workloads to open AI models is the easiest way to save ~50% on AI bills. Also: automated software maintenance experience, and more",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
+    "reason": ""
+   }
+  },
+  {
+   "title": "The Pragmatic Engineer: Five years",
+   "url": "https://newsletter.pragmaticengineer.com/p/the-pragmatic-engineer-five-years",
+   "date": "2026-09-01T17:14:34+00:00",
+   "summary": "As the newsletter reaches its fifth birthday, we reflect on how the publication has changed, and what to expect. Also: the launch of the ‘How Software Engineering is Changing’ essay contest",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": false,
+    "topics": [],
+    "reason": ""
+   }
+  },
+  {
+   "title": "The Pulse: Meta wanted to reduce teams by 60% because of AI",
+   "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-meta-wanted-to-reduce-teams",
+   "date": "2026-08-27T17:59:17+00:00",
+   "summary": "We find out why Meta destroyed its standout engineering culture: it feared AI-native startups doing more with less. Also: thoughts on Ramp’s AI infra, GitHub’s load doubles in four months, and more",
+   "seen": "2026-10-19T16:14:41.608148+00:00",
+   "verdict": {
+    "relevant": true,
+    "topics": [
+     "ai"
+    ],
     "reason": ""
    }
   }

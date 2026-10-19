@@ -57,7 +57,7 @@
   /* Controls: plain text, one accent */
   .bar {
     position: sticky; top: 0; z-index: 2; background: var(--bg);
-    display: flex; flex-direction: column; gap: 10px;
+    display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 8px 24px;
     padding: 14px 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
     font-size: 16px;
   }
@@ -68,14 +68,26 @@
   }
   .opts button:hover { color: var(--text); }
   .opts button[aria-pressed="true"] { color: var(--text); text-decoration: underline; text-decoration-thickness: 1px; }
-  .bar select {
-    font: inherit; color: var(--text); background: transparent; cursor: pointer;
-    border: 0; border-bottom: 1px solid var(--rule); border-radius: 0; padding: 0 2px 2px;
+  .right { display: flex; align-items: baseline; gap: 24px; }
+  .pick { position: relative; display: inline-flex; align-items: baseline; }
+  .pick select {
+    appearance: none; -webkit-appearance: none; field-sizing: content;
+    font: inherit; color: var(--muted); background: none; border: 0; border-radius: 0;
+    padding: 0 16px 0 0; margin: 0; cursor: pointer;
   }
-  .bar select option, .bar select optgroup { background: var(--bg); color: var(--text); }
-  .check { color: var(--muted); display: inline-flex; gap: 6px; align-items: baseline; cursor: pointer; white-space: nowrap; }
-  .check input { accent-color: var(--link); margin: 0; position: relative; top: 1px; }
-  .row { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 8px 24px; }
+  .pick select:hover, .pick select.set { color: var(--text); }
+  .pick select.set { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 6px; }
+  .pick select option, .pick select optgroup { background: var(--bg); color: var(--text); }
+  .pick::after {
+    content: ""; position: absolute; right: 2px; top: 50%; width: 5px; height: 5px;
+    border: solid var(--muted); border-width: 0 1px 1px 0;
+    transform: translateY(-75%) rotate(45deg); pointer-events: none;
+  }
+  .toggle-skipped {
+    font: inherit; color: var(--muted); background: none; border: 0; padding: 0; cursor: pointer;
+    text-decoration: underline; text-underline-offset: 2px;
+  }
+  .toggle-skipped:hover { color: var(--text); }
   .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
 
   /* Post list, after the blog's home page */
@@ -116,6 +128,7 @@
     .site-header { flex-direction: column; gap: 12px; padding: 24px 0 32px; }
     h1 { font-size: 34px; }
     .bar { position: static; }
+    .right { width: 100%; justify-content: space-between; }
     .posts li { flex-direction: column; gap: 0; padding: 8px 0; }
     .posts time { flex: none; font-size: 14px; }
   }
@@ -137,23 +150,20 @@
   <p class="intro" id="sub"></p>
 
   <div class="bar">
-    <div class="row">
-      <div class="opts" id="topics" role="group" aria-label="Topic"></div>
+    <div class="opts" id="topics" role="group" aria-label="Topic"></div>
+    <div class="right">
+      <label class="pick"><span class="sr">Blog</span><select id="blog"></select></label>
       <div class="opts" id="view" role="group" aria-label="View">
         <button type="button" data-view="latest">Latest</button>
         <button type="button" data-view="blogs">By blog</button>
       </div>
-    </div>
-    <div class="row">
-      <label><span class="sr">Blog</span><select id="blog" aria-label="Blog"></select></label>
-      <label class="check"><input type="checkbox" id="skipped"> Show skipped</label>
     </div>
   </div>
 
   <main id="main"></main>
 
   <footer class="site-footer">
-    <p>Refreshed daily. Full-feed blogs show every post; for the others, Claude keeps the ones about AI, backend engineering or databases. <span id="since"></span></p>
+    <p>Refreshed daily. Full-feed blogs show every post; for the others, Claude keeps the ones about AI, backend engineering or databases. <span id="since"></span> <button type="button" class="toggle-skipped" id="skipped"></button></p>
     <p>&copy; <span id="year"></span> Vivek Anand &middot;
       <a href="https://github.com/vivekanand1101">GitHub</a> &middot;
       <a href="https://linkedin.com/in/vivekanandxyz">LinkedIn</a> &middot;
@@ -271,7 +281,9 @@ function render() {
   store.set("skipped", state.skipped ? "1" : "0");
   renderFilters();
   document.querySelectorAll("#view button").forEach(b => b.setAttribute("aria-pressed", b.dataset.view === state.view));
-  document.getElementById("skipped").checked = state.skipped;
+  const skippedCount = all.filter(p => p.verdict && !relevant(p)).length;
+  document.getElementById("skipped").textContent = state.skipped ? "Hide skipped posts." : `Show the ${skippedCount} skipped posts.`;
+  document.getElementById("blog").classList.toggle("set", state.blog !== "all");
   const list = pool().filter(p => byTopic(p) && byBlog(p));
   const main = document.getElementById("main");
   main.replaceChildren();
@@ -280,7 +292,7 @@ function render() {
 
 document.querySelectorAll("#view button").forEach(b => b.onclick = () => { state.view = b.dataset.view; render(); });
 document.getElementById("blog").onchange = e => { state.blog = e.target.value; render(); };
-document.getElementById("skipped").onchange = e => { state.skipped = e.target.checked; render(); };
+document.getElementById("skipped").onclick = () => { state.skipped = !state.skipped; render(); scrollTo({ top: 0 }); };
 const companyPosts = all.filter(p => p.blog.filter);
 const kept = all.filter(relevant);
 const judged = companyPosts.filter(p => p.verdict).length;
